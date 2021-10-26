@@ -95,7 +95,7 @@ $.fn.fancySelect = (opts = {}) ->
 
     sel.on 'change.fs', (e) ->
       if e.originalEvent && e.originalEvent.isTrusted
-        # discard firefox-only automatic event when hitting enter, we want to trigger our own
+# discard firefox-only automatic event when hitting enter, we want to trigger our own
         e.stopPropagation()
       else
         updateTriggerText()
@@ -163,7 +163,7 @@ $.fn.fancySelect = (opts = {}) ->
       options.find('.hover').removeClass('hover')
 
     copyOptionsToList = ->
-      # update our trigger to reflect the select (it really already should, this is just a safety)
+# update our trigger to reflect the select (it really already should, this is just a safety)
       updateTriggerText()
 
       return if isiOS && !settings.forceiOS
@@ -177,7 +177,7 @@ $.fn.fancySelect = (opts = {}) ->
         opt = $(opt)
 
         if !opt.prop('disabled') && (opt.val() || settings.includeBlank)
-          # Generate the inner HTML for the option from our template
+# Generate the inner HTML for the option from our template
           optHtml = settings.optionTemplate(opt)
 
           # Is there a select option on page load?

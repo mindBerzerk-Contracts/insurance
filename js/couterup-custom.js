@@ -4,7 +4,7 @@
 
     $(document).ready(function () {
 
-        var counter_select =  $('.counter');
+        var counter_select = $('.counter');
 
         counter_select.counterUp({
             delay: 10,

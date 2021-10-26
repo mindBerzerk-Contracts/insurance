@@ -9,33 +9,33 @@ var replace = require('gulp-replace');
 
 var jshint = require('gulp-jshint');
 
-gulp.task( 'hint-js', function() {
-  return gulp.src('js/*.js')
-    .pipe( jshint() )
-    .pipe( jshint.reporter('default') );
+gulp.task('hint-js', function () {
+    return gulp.src('js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
 });
 
-gulp.task( 'hint-test', function() {
-  return gulp.src('test/unit/*.js')
-    .pipe( jshint() )
-    .pipe( jshint.reporter('default') );
+gulp.task('hint-test', function () {
+    return gulp.src('test/unit/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
 });
 
-gulp.task( 'hint-task', function() {
-  return gulp.src('gulpfile.js')
-    .pipe( jshint() )
-    .pipe( jshint.reporter('default') );
+gulp.task('hint-task', function () {
+    return gulp.src('gulpfile.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
 });
 
 var jsonlint = require('gulp-json-lint');
 
-gulp.task( 'jsonlint', function() {
-  return gulp.src( '*.json' )
-    .pipe( jsonlint() )
-    .pipe( jsonlint.report('verbose') );
+gulp.task('jsonlint', function () {
+    return gulp.src('*.json')
+        .pipe(jsonlint())
+        .pipe(jsonlint.report('verbose'));
 });
 
-gulp.task( 'hint', [ 'hint-js', 'hint-test', 'hint-task', 'jsonlint' ]);
+gulp.task('hint', ['hint-js', 'hint-test', 'hint-task', 'jsonlint']);
 
 // -------------------------- make pkgd -------------------------- //
 
@@ -43,48 +43,48 @@ gulp.task( 'hint', [ 'hint-js', 'hint-test', 'hint-task', 'jsonlint' ]);
 var reBannerComment = new RegExp('^\\s*(?:\\/\\*[\\s\\S]*?\\*\\/)\\s*');
 
 function getBanner() {
-  var src = fs.readFileSync( 'js/isotope.js', 'utf8' );
-  var matches = src.match( reBannerComment );
-  var banner = matches[0].replace( 'Isotope', 'Isotope PACKAGED' );
-  return banner;
+    var src = fs.readFileSync('js/isotope.js', 'utf8');
+    var matches = src.match(reBannerComment);
+    var banner = matches[0].replace('Isotope', 'Isotope PACKAGED');
+    return banner;
 }
 
-function addBanner( str ) {
-  return replace( /^/, str );
+function addBanner(str) {
+    return replace(/^/, str);
 }
 
 var rjsOptimize = require('gulp-requirejs-optimize');
 
-gulp.task( 'requirejs', function() {
-  var definitionRE = /define\(\s*'isotope\/isotope'(.|\n)+\],/;
-  var banner = getBanner();
-  // HACK src is not needed
-  // should refactor rjsOptimize to produce src
-  return gulp.src('js/isotope.js')
-    .pipe( rjsOptimize({
-      baseUrl: 'bower_components',
-      optimize: 'none',
-      include: [
-        'jquery-bridget/jquery-bridget',
-        'isotope/isotope'
-      ],
-      paths: {
-        isotope: '../js/',
-        jquery: 'empty:'
-      }
-    }) )
-    // munge AMD definition
-    .pipe( replace( definitionRE, function( definition ) {
-      // remove named module
-      return definition.replace( "'isotope/isotope',", '' )
-        // use explicit file paths, './item' -> 'isotope/js/item'
-        .replace( /'.\//g, "'isotope/js/" );
-    }) )
-    .pipe( replace( "define( 'isotope/", "define( 'isotope/js/" ) )
-    // add banner
-    .pipe( addBanner( banner ) )
-    .pipe( rename('isotope.pkgd.js') )
-    .pipe( gulp.dest('dist') );
+gulp.task('requirejs', function () {
+    var definitionRE = /define\(\s*'isotope\/isotope'(.|\n)+\],/;
+    var banner = getBanner();
+    // HACK src is not needed
+    // should refactor rjsOptimize to produce src
+    return gulp.src('js/isotope.js')
+        .pipe(rjsOptimize({
+            baseUrl: 'bower_components',
+            optimize: 'none',
+            include: [
+                'jquery-bridget/jquery-bridget',
+                'isotope/isotope'
+            ],
+            paths: {
+                isotope: '../js/',
+                jquery: 'empty:'
+            }
+        }))
+        // munge AMD definition
+        .pipe(replace(definitionRE, function (definition) {
+            // remove named module
+            return definition.replace("'isotope/isotope',", '')
+                // use explicit file paths, './item' -> 'isotope/js/item'
+                .replace(/'.\//g, "'isotope/js/");
+        }))
+        .pipe(replace("define( 'isotope/", "define( 'isotope/js/"))
+        // add banner
+        .pipe(addBanner(banner))
+        .pipe(rename('isotope.pkgd.js'))
+        .pipe(gulp.dest('dist'));
 });
 
 
@@ -92,14 +92,14 @@ gulp.task( 'requirejs', function() {
 
 var uglify = require('gulp-uglify');
 
-gulp.task( 'uglify', [ 'requirejs' ], function() {
-  var banner = getBanner();
-  gulp.src('dist/isotope.pkgd.js')
-    .pipe( uglify() )
-    // add banner
-    .pipe( addBanner( banner ) )
-    .pipe( rename('isotope.pkgd.min.js') )
-    .pipe( gulp.dest('dist') );
+gulp.task('uglify', ['requirejs'], function () {
+    var banner = getBanner();
+    gulp.src('dist/isotope.pkgd.js')
+        .pipe(uglify())
+        // add banner
+        .pipe(addBanner(banner))
+        .pipe(rename('isotope.pkgd.min.js'))
+        .pipe(gulp.dest('dist'));
 });
 
 // ----- version ----- //
@@ -111,32 +111,32 @@ var gutil = require('gulp-util');
 var chalk = require('chalk');
 
 // use gulp version -t 1.2.3
-gulp.task( 'version', function() {
-  var args = minimist( process.argv.slice(3) );
-  var version = args.t;
-  if ( !version || !/^\d\.\d+\.\d+/.test( version ) ) {
-    gutil.log( 'invalid version: ' + chalk.red( version ) );
-    return;
-  }
-  gutil.log( 'ticking version to ' + chalk.green( version ) );
+gulp.task('version', function () {
+    var args = minimist(process.argv.slice(3));
+    var version = args.t;
+    if (!version || !/^\d\.\d+\.\d+/.test(version)) {
+        gutil.log('invalid version: ' + chalk.red(version));
+        return;
+    }
+    gutil.log('ticking version to ' + chalk.green(version));
 
-  gulp.src('js/isotope.js')
-    .pipe( replace( /Isotope v\d\.\d+\.\d+/, 'Isotope v' + version ) )
-    .pipe( gulp.dest('js') );
+    gulp.src('js/isotope.js')
+        .pipe(replace(/Isotope v\d\.\d+\.\d+/, 'Isotope v' + version))
+        .pipe(gulp.dest('js'));
 
-  gulp.src( [ 'package.json' ] )
-    .pipe( replace( /"version": "\d\.\d+\.\d+"/, '"version": "' + version + '"' ) )
-    .pipe( gulp.dest('.') );
-  // replace CDN links in README
-  var minorVersion = version.match( /^\d\.\d+/ )[0];
-  gulp.src('README.md')
-    .pipe( replace( /isotope-layout@\d\.\d+/g, 'isotope-layout@' + minorVersion ))
-    .pipe( gulp.dest('.') );
+    gulp.src(['package.json'])
+        .pipe(replace(/"version": "\d\.\d+\.\d+"/, '"version": "' + version + '"'))
+        .pipe(gulp.dest('.'));
+    // replace CDN links in README
+    var minorVersion = version.match(/^\d\.\d+/)[0];
+    gulp.src('README.md')
+        .pipe(replace(/isotope-layout@\d\.\d+/g, 'isotope-layout@' + minorVersion))
+        .pipe(gulp.dest('.'));
 });
 
 // ----- default ----- //
 
-gulp.task( 'default', [
-  'hint',
-  'uglify'
+gulp.task('default', [
+    'hint',
+    'uglify'
 ]);

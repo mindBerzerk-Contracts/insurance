@@ -8,9 +8,9 @@
 
         // filter items on button click
         $filter.each(function () {
-            $filter.on( 'click', 'li', function() {
+            $filter.on('click', 'li', function () {
                 var filterValue = $(this).attr('data-filter');
-                $isoContainer.isotope({ filter: filterValue });
+                $isoContainer.isotope({filter: filterValue});
             });
             var $buttonGroup = $('.filter-button-group');
             $buttonGroup.on('click', 'li', function () {
@@ -31,7 +31,7 @@
         });
 
         // layout Isotope after each image loads
-        $grid.imagesLoaded().progress( function() {
+        $grid.imagesLoaded().progress(function () {
             $grid.isotope('layout');
         });
     });

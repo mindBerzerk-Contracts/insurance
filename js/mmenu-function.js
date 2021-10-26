@@ -2,7 +2,7 @@
     // USE STRICT
     "use strict";
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         var mmenu = $("#mmenu");
         mmenu.mmenu({
             "extensions": [
@@ -11,7 +11,7 @@
                 "shadow-page"
             ],
             "offCanvas": {
-                zposition   : "front"
+                zposition: "front"
             },
             navbar: {
                 title: "INSURANCE"
@@ -30,9 +30,9 @@
                 }
             ]
         });
-        var API = mmenu.data( "mmenu" );
+        var API = mmenu.data("mmenu");
 
-        $(".navbar-toggle").click(function() {
+        $(".navbar-toggle").click(function () {
             API.open();
         });
     });

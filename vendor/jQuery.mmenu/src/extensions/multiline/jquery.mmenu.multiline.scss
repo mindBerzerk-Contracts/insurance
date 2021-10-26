@@ -7,12 +7,10 @@
 
 .mm-menu.mm-multiline .mm-listview > li,
 .mm-listview.mm-multiline > li
-.mm-listview > li.mm-multiline
-{
-	> a,
-	> span
-	{
-		text-overflow: clip;
-		white-space: normal;
-	}
+.mm-listview > li.mm-multiline {
+  > a,
+  > span {
+    text-overflow: clip;
+    white-space: normal;
+  }
 }

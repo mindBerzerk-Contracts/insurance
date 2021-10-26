@@ -4,7 +4,7 @@
  * MIT Licensed.
  */
 
-;(function ( $, window, document, undefined ) {
+;(function ($, window, document, undefined) {
 
     var pluginName = 'accordion',
         defaults = {
@@ -30,12 +30,12 @@
 
         var $accordion = $(self.element),
             $controls = $accordion.find('> ' + opts.controlElement),
-            $content =  $accordion.find('> ' + opts.contentElement);
+            $content = $accordion.find('> ' + opts.contentElement);
 
         var accordionParentsQty = $accordion.parents('[data-accordion]').length,
             accordionHasParent = accordionParentsQty > 0;
 
-        var closedCSS = { 'max-height': 0, 'overflow': 'hidden' };
+        var closedCSS = {'max-height': 0, 'overflow': 'hidden'};
 
         var CSStransitions = supportsTransitions();
 
@@ -71,7 +71,7 @@
 
             p = 'Transition';
 
-            for (var i=0; i<v.length; i++) {
+            for (var i = 0; i < v.length; i++) {
                 if (typeof s[v[i] + p] == 'string') {
                     return true;
                 }
@@ -81,17 +81,17 @@
         }
 
         function requestAnimFrame(cb) {
-            if(window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame) {
-                return  requestAnimationFrame(cb) ||
-                        webkitRequestAnimationFrame(cb) ||
-                        mozRequestAnimationFrame(cb);
+            if (window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame) {
+                return requestAnimationFrame(cb) ||
+                    webkitRequestAnimationFrame(cb) ||
+                    mozRequestAnimationFrame(cb);
             } else {
                 return setTimeout(cb, 1000 / 60);
             }
         }
 
         function toggleTransition($el, remove) {
-            if(!remove) {
+            if (!remove) {
                 $content.css({
                     '-webkit-transition': 'max-height ' + opts.transitionSpeed + 'ms ' + opts.transitionEasing,
                     'transition': 'max-height ' + opts.transitionSpeed + 'ms ' + opts.transitionEasing
@@ -107,7 +107,7 @@
         function calculateHeight($el) {
             var height = 0;
 
-            $el.children().each(function() {
+            $el.children().each(function () {
                 height = height + $(this).outerHeight(true);
             });
 
@@ -119,14 +119,14 @@
                 $childs = $content.find('[data-accordion].open > [data-content]'),
                 $matched;
 
-            if(!opts.singleOpen) {
+            if (!opts.singleOpen) {
                 $childs = $childs.not($currentAccordion.siblings('[data-accordion].open').find('> [data-content]'));
             }
 
             $matched = $content.add($childs);
 
-            if($parentAccordion.hasClass('open')) {
-                $matched.each(function() {
+            if ($parentAccordion.hasClass('open')) {
+                $matched.each(function () {
                     var currentHeight = $(this).data('oHeight');
 
                     switch (operation) {
@@ -146,7 +146,7 @@
         }
 
         function refreshHeight($accordion) {
-            if($accordion.hasClass('open')) {
+            if ($accordion.hasClass('open')) {
                 var $content = $accordion.find('> [data-content]'),
                     $childs = $content.find('[data-accordion].open > [data-content]'),
                     $matched = $content.add($childs);
@@ -159,9 +159,9 @@
 
         function closeAccordion($accordion, $content) {
             $accordion.trigger('accordion.close');
-            
-            if(CSStransitions) {
-                if(accordionHasParent) {
+
+            if (CSStransitions) {
+                if (accordionHasParent) {
                     var $parentAccordions = $accordion.parents('[data-accordion]');
 
                     updateParentHeight($parentAccordions, $accordion, $content.data('oHeight'), '-');
@@ -181,16 +181,16 @@
 
         function openAccordion($accordion, $content) {
             $accordion.trigger('accordion.open');
-            if(CSStransitions) {
+            if (CSStransitions) {
                 toggleTransition($content);
 
-                if(accordionHasParent) {
+                if (accordionHasParent) {
                     var $parentAccordions = $accordion.parents('[data-accordion]');
 
                     updateParentHeight($parentAccordions, $accordion, $content.data('oHeight'), '+');
                 }
 
-                requestAnimFrame(function() {
+                requestAnimFrame(function () {
                     $content.css('max-height', $content.data('oHeight'));
                 });
 
@@ -198,7 +198,7 @@
             } else {
                 $content.animate({
                     'max-height': $content.data('oHeight')
-                }, opts.transitionSpeed, function() {
+                }, opts.transitionSpeed, function () {
                     $content.css({'max-height': 'none'});
                 });
 
@@ -214,7 +214,7 @@
 
             var $otherAccordions = $siblings.add($siblingsChildren);
 
-            $otherAccordions.each(function() {
+            $otherAccordions.each(function () {
                 var $accordion = $(this),
                     $content = $accordion.find(opts.contentElement);
 
@@ -229,11 +229,11 @@
 
             calculateHeight($content);
 
-            if(isAccordionGroup) {
+            if (isAccordionGroup) {
                 closeSiblingAccordions($accordion);
             }
 
-            if($accordion.hasClass('open')) {
+            if ($accordion.hasClass('open')) {
                 closeAccordion($accordion, $content);
             } else {
                 openAccordion($accordion, $content);
@@ -242,31 +242,31 @@
 
         function addEventListeners() {
             $controls.on('click', toggleAccordion);
-            
-            $controls.on('accordion.toggle', function() {
-                if(opts.singleOpen && $controls.length > 1) {
+
+            $controls.on('accordion.toggle', function () {
+                if (opts.singleOpen && $controls.length > 1) {
                     return false;
                 }
-                
+
                 toggleAccordion();
             });
-            
-            $controls.on('accordion.refresh', function() {
+
+            $controls.on('accordion.refresh', function () {
                 refreshHeight($accordion);
             });
 
-            $(window).on('resize', debounce(function() {
+            $(window).on('resize', debounce(function () {
                 refreshHeight($accordion);
             }));
         }
 
         function setup() {
-            $content.each(function() {
+            $content.each(function () {
                 var $curr = $(this);
 
-                if($curr.css('max-height') != 0) {
-                    if(!$curr.closest('[data-accordion]').hasClass('open')) {
-                        $curr.css({ 'max-height': 0, 'overflow': 'hidden' });
+                if ($curr.css('max-height') != 0) {
+                    if (!$curr.closest('[data-accordion]').hasClass('open')) {
+                        $curr.css({'max-height': 0, 'overflow': 'hidden'});
                     } else {
                         toggleTransition($curr);
                         calculateHeight($curr);
@@ -277,7 +277,7 @@
             });
 
 
-            if(!$accordion.attr('data-accordion')) {
+            if (!$accordion.attr('data-accordion')) {
                 $accordion.attr('data-accordion', '');
                 $accordion.find(opts.controlElement).attr('data-control', '');
                 $accordion.find(opts.contentElement).attr('data-content', '');
@@ -288,13 +288,13 @@
         addEventListeners();
     };
 
-    $.fn[pluginName] = function ( options ) {
+    $.fn[pluginName] = function (options) {
         return this.each(function () {
             if (!$.data(this, 'plugin_' + pluginName)) {
                 $.data(this, 'plugin_' + pluginName,
-                new Accordion( this, options ));
+                    new Accordion(this, options));
             }
         });
     }
 
-})( jQuery, window, document );
+})(jQuery, window, document);

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Agent List V1</title>
-    <meta name="referrer" content="no-referrer">
-    <meta name="description" content="Au theme template">
-    <meta name="keywords" content="Au theme template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/icons/favicon.ico" type="image/gif" sizes="16x16">
+    <meta content="no-referrer" name="referrer">
+    <meta content="Au theme template" name="description">
+    <meta content="Au theme template" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="img/icons/favicon.ico" rel="icon" sizes="16x16" type="image/gif">
     <!--Styles-->
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -16,609 +16,176 @@
     <!-- Fonts-->
     <link href="fonts/open-sans/css/open-sans.css" rel="stylesheet">
     <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/Linearicons-Free-v1.0.0/style.css">
+    <link href="fonts/Linearicons-Free-v1.0.0/style.css" rel="stylesheet">
     <!--Theme style-->
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header main-->
-    <header>
-        <div id="loading">
-            <div class="image-load">
-                <img src="img/icons/Marty.gif" alt="loader" />
+
+<!-- Header main-->
+<header>
+    <div id="loading">
+        <div class="image-load">
+            <img alt="loader" src="img/icons/Marty.gif"/>
+        </div>
+    </div>
+
+    <!--Mobile Menu-->
+    <nav id="mmenu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="insurance-products.html">INSURANCE PRODUCTS</a>
+            </li>
+
+            <li>
+                <a href="services-list.html">Compare Insurance</a>
+            </li>
+
+
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+
+            <li>
+                <a href="about.html">Q & A</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Mobile Menu-->
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="quick-link">
+                <p class="greeting">
+                    Free Insurance and Investment Advice
+                </p>
             </div>
         </div>
-        <nav id="mmenu">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                    <ul>
-                        <li>
-                            <a href="index.html">HOME LAYOUT 1</a>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img alt="Logo" class="img-responsive" src="img/icons/logo.png"/>
+                </a>
+            </div>
+            <div class="contact-widget">
+                <div class="contact-list hidden-lg-tablet">
+
+                    <button
+                            onclick="window.location.href='get-a-quote.html';"
+                            class="au-btn au-btn-sm au-btn-orange hidden-md-phone">Get a Quote</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navbar-main">
+        <div class="container">
+            <div class="navbar-holder">
+                <a class="navbar-toggle collapsed" href="#mmenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <nav class="navbar-menu">
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <a href="index.html">Home</a>
                         </li>
-                        <li>
-                            <a href="home-page-2.html">HOME LAYOUT 2</a>
+
+                        <li class="dropdown">
+                            <a href="insurance-products.html">INSURANCE Products</a>
+
                         </li>
+
+                        <li class="dropdown">
+                            <a href="compare-insurance.html">Compare Insurance</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="articles.html">Articles</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="">Q & A</a>
+                        </li>
+
+
+
                     </ul>
+                </nav>
+                <div class="search">
+                    <form>
+                        <input class="search-input" placeholder="Search" type="text"/>
+                        <input class="search-submit" type="button" value="search"/>
+                        <span class="search-icon"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End header main-->
+
+<div class="page-content agent-list-1">
+    <!-- HEADING PAGE-->
+    <section class="heading-page heading-agent-list-1 heading-services-detail-5"
+             style="background: url(&quot;img/backgrounds/heading-page-12.jpg&quot;) center center no-repeat;">
+        <div class="container">
+            <ul class="au-breadcrumb">
+                <li class="au-breadcrumb-item">
+                    <a href="index.html">Home</a>
                 </li>
-                <li>
-                    <a href="services-list.html">PRODUCTS</a>
-                    <ul>
-                        <li>
-                            <a href="services-detail-1.html">CAR INSURANCE</a>
-                        </li>
-                        <li>
-                            <a href="services-detail-2.html">LIFE INSURANCE</a>
-                        </li>
-                        <li>
-                            <a href="services-detail-3.html">HOME INSURANCE</a>
-                        </li>
-                        <li>
-                            <a href="services-detail-4.html">TRAVEL INSURANCE</a>
-                        </li>
-                        <li>
-                            <a href="services-detail-5.html">BUSINESS INSURANCE</a>
-                        </li>
-                        <li>
-                            <a href="services-detail-6.html">LANDLORD INSURANCE</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="get-a-quote-1.html">GET A QUOTE</a>
-                    <ul>
-                        <li>
-                            <a href="get-a-quote-1.html">QUOTE LAYOUT 1</a>
-                        </li>
-                        <li>
-                            <a href="get-a-quote-2.html">QUOTE LAYOUT 2</a>
-                        </li>
-                        <li>
-                            <a href="get-a-quote-3.html">QUOTE LAYOUT 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="about.html">OUR COMPANY</a>
-                </li>
-                <li>
-                    <a href="blog-list.html">BLOG</a>
-                    <ul>
-                        <li>
-                            <a href="blog-list.html">BLOG LIST</a>
-                        </li>
-                        <li>
-                            <a href="blog-detail.html">BLOG SINGLE</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">PAGES</a>
-                    <ul>
-                        <li>
-                            <a href="#">AGENT</a>
-                            <ul>
-                                <li>
-                                    <a href="agent-list-1.html">AGENT LAYOUT 1</a>
-                                </li>
-                                <li>
-                                    <a href="agent-list-2.html">AGENT LAYOUT 2</a>
-                                </li>
-                                <li>
-                                    <a href="agent-detail.html">AGENT DETAIL</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">PROJECT</a>
-                            <ul>
-                                <li>
-                                    <a href="project-list.html">PROJECT LIST</a>
-                                </li>
-                                <li>
-                                    <a href="project-detail.html">PROJECT DETAILS</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT US</a>
-                    <ul>
-                        <li>
-                            <a href="contact.html">Contact 1</a>
-                        </li>
-                        <li>
-                            <a href="contact-2.html">Contact 2</a>
-                        </li>
-                        <li>
-                            <a href="contact-3.html">Contact 3</a>
-                        </li>
-                        <li>
-                            <a href="contact-4.html">Contact 4</a>
-                        </li>
-                        <li>
-                            <a href="contact-5.html">Contact 5</a>
-                        </li>
-                    </ul>
+                <li class="au-breadcrumb-item active">
+                    <a href="index.html">About Us</a>
                 </li>
             </ul>
-        </nav>
-        <div class="top-bar">
-            <div class="container">
-                <p class="greeting">Welcome to insurance company, we're here to help you</p>
-                <div class="quick-link">
-                    <a href="get-a-quote-1.html">Get a Quote</a>|
-                    <a href="agent-list-1.html">Find an Agent</a>|
-                    <a href="#">Pricing</a>|
-                    <a href="about.html">FAQS</a>
-                </div>
+            <div class="heading-title">
+                <h1>Agent Listing</h1>
             </div>
         </div>
-        <div class="header-main">
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html">
-                        <img class="img-responsive" src="img/icons/logo.png" alt="Logo" />
-                    </a>
-                </div>
-                <div class="contact-widget">
-                    <div class="contact-list hidden-lg-tablet">
-                        <div class="item">
-                            <i class="lnr lnr-phone-handset"></i>
-                            <div class="text">
-                                <p class="top">Need Help?</p>
-                                <p class="bot">1-800-123-6889</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="lnr lnr-map-marker"></i>
-                            <div class="text">
-                                <p class="top">8th floor, 379 Hudson St</p>
-                                <p class="bot">New York, NY 10018</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="lnr lnr-clock"></i>
-                            <div class="text">
-                                <p class="top">07:30 am – 05:30 pm</p>
-                                <p class="bot">Every Day</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="au-btn au-btn-sm au-btn-orange hidden-md-phone">Get a Quote</button>
-                </div>
+    </section>
+    <!-- END HEADING PAGE-->
+    <!-- OUR TEAM, STYLE 2-->
+    <section class="team team-layout style-2 style-1">
+        <div class="container">
+            <div class="heading">
+                <h3 class="heading-section">Meet our team</h3>
             </div>
-        </div>
-        <div class="navbar-main">
-            <div class="container">
-                <div class="navbar-holder">
-                    <a class="navbar-toggle collapsed" href="#mmenu">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <nav class="navbar-menu">
-                        <ul class="menu">
-                            <li class="dropdown">
-                                <a href="index.html">Home</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="index.html">Home 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="home-page-2.html">Home 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="services-list.html">Products</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="services-detail-1.html">CAR INSURANCE</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-detail-2.html">LIFE INSURANCE</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-detail-5.html">HOME INSURANCE</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-detail-3.html">TRAVEL INSURANCE</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-detail-4.html">BUSINESS INSURANCE</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-detail-1.html">LANDLORD INSURANCE</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">Get A Quote</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="get-a-quote-1.html">Get A Quote 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="get-a-quote-2.html">Get A Quote 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="get-a-quote-3.html">Get A Quote 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="about.html">Our Company</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="blog-list.html">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="blog-list.html">Blog List</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-detail.html">Blog Detail</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-child">
-                                        <a href="agent-list-1.html">Agent List</a>
-                                        <ul class="dropdown-menu-child">
-                                            <li>
-                                                <a href="agent-list-1.html">Agent List 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="agent-list-2.html">Agent List 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="agent-detail.html">Agent Detail</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-child">
-                                        <a href="project-list.html">Projects</a>
-                                        <ul class="dropdown-menu-child">
-                                            <li>
-                                                <a href="project-list.html">Projects List</a>
-                                            </li>
-                                            <li>
-                                                <a href="project-detail.html">Project Detail</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                    <li class="dropdown-child">
-                                        <a href="blog-list.html">Blog</a>
-                                        <ul class="dropdown-menu-child">
-                                            <li>
-                                                <a href="blog-list.html">Blog List</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-detail.html">Blog Detail</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="contact.html">Contact Us</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="contact.html">Contact 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-2.html">Contact 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-3.html">Contact 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-4.html">Contact 4</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-5.html">Contact 5</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="search">
-                        <form>
-                            <input class="search-input" type="text" placeholder="Search" />
-                            <input class="search-submit" type="button" value="search" />
-                            <span class="search-icon"></span>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End header main-->
-    <div class="page-content agent-list-1">
-        <!-- HEADING PAGE-->
-        <section class="heading-page heading-agent-list-1 heading-services-detail-5" style="background: url(&quot;img/backgrounds/heading-page-12.jpg&quot;) center center no-repeat;">
-            <div class="container">
-                <ul class="au-breadcrumb">
-                    <li class="au-breadcrumb-item">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="au-breadcrumb-item active">
-                        <a href="index.html">About Us</a>
-                    </li>
-                </ul>
-                <div class="heading-title">
-                    <h1>Agent Listing</h1>
-                </div>
-            </div>
-        </section>
-        <!-- END HEADING PAGE-->
-        <!-- OUR TEAM, STYLE 2-->
-        <section class="team team-layout style-2 style-1">
-            <div class="container">
-                <div class="heading">
-                    <h3 class="heading-section">Meet our team</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="team-item style-1 match-item">
-                            <div class="team-image">
-                                <img class="img-responsive" src="img/team/team-1.jpg" alt="Jason George" />
-                            </div>
-                            <div class="team-info">
-                                <div class="name">
-                                    <a href="agent-detail.html">Jason George</a>
-                                </div>
-                                <div class="title-job">
-                                    <span>CEO - Founder</span>
-                                </div>
-                                <div class="content">
-                                    <p>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet</p>
-                                </div>
-                                <div class="phone">
-                                    <i class="fa fa-phone"></i>
-                                    <span>(+1) 96 716 6879</span>
-                                </div>
-                                <ul class="social-list">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-skype"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="team-item style-1 match-item">
+                        <div class="team-image">
+                            <img alt="Jason George" class="img-responsive" src="img/team/team-1.jpg"/>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="team-item style-1 match-item">
-                            <div class="team-image">
-                                <img class="img-responsive" src="img/team/team-2.jpg" alt="Linda Dunn" />
+                        <div class="team-info">
+                            <div class="name">
+                                <a href="agent-detail.html">Jason George</a>
                             </div>
-                            <div class="team-info">
-                                <div class="name">
-                                    <a href="agent-detail.html">Linda Dunn</a>
-                                </div>
-                                <div class="title-job">
-                                    <span>Sales Director</span>
-                                </div>
-                                <div class="content">
-                                    <p>Donec rhoncus ex ante, ut mattis enim facilisis a. Nam ex tortor, commodo eu maximus vel, sagittis id dui . Nunc sit amet nisl tempus, finibus lectus ac, vehicula libero.</p>
-                                </div>
-                                <div class="phone">
-                                    <i class="fa fa-phone"></i>
-                                    <span>(+1) 96 716 6879</span>
-                                </div>
-                                <ul class="social-list">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-skype"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="title-job">
+                                <span>CEO - Founder</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="team-item style-1 match-item">
-                            <div class="team-image">
-                                <img class="img-responsive" src="img/team/team-3.jpg" alt="Nancy Gardner" />
-                            </div>
-                            <div class="team-info">
-                                <div class="name">
-                                    <a href="agent-detail.html">Nancy Gardner</a>
-                                </div>
-                                <div class="title-job">
-                                    <span>Agent</span>
-                                </div>
-                                <div class="content">
-                                    <p>Duis ultrices, augue in auctor interdum, ipsum erat pulvinar mi, eget convallis ipsum sapien fringilla nisi. Etiam augue tortor, gravida in finibus vitae, mattis vel.</p>
-                                </div>
-                                <div class="phone">
-                                    <i class="fa fa-phone"></i>
-                                    <span>(+1) 96 800 6819</span>
-                                </div>
-                                <ul class="social-list">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-skype"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="team-item style-1 match-item">
-                            <div class="team-image">
-                                <img class="img-responsive" src="img/team/team-4.jpg" alt="Jack Johnston" />
-                            </div>
-                            <div class="team-info">
-                                <div class="name">
-                                    <a href="agent-detail.html">Jack Johnston</a>
-                                </div>
-                                <div class="title-job">
-                                    <span>Advisor</span>
-                                </div>
-                                <div class="content">
-                                    <p>Fusce vitae erat nec eros consectetur pellentesque a et nibh. Aliquam erat volutpat. Donec ut facilisis nulla, vitae auctor velit. In consequat vestibulum elementum.</p>
-                                </div>
-                                <div class="phone">
-                                    <i class="fa fa-phone"></i>
-                                    <span>(+1) 96 800 1238</span>
-                                </div>
-                                <ul class="social-list">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-skype"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END OUR TEAM, STYLE 2-->
-        <!-- CALL TO ACTION, STYLE 2-->
-        <section class="call-to-action call-to-action-layout style-2 bg-blue">
-            <div class="container">
-                <div class="call-to-action-block">
-                    <h4 class="call-to-action-content">Find Information And Get Free Insurance Quotes.</h4>
-                    <button class="au-btn au-btn-orange au-btn-md">Get a quote</button>
-                </div>
-            </div>
-        </section>
-        <!-- END CALL TO ACTION, STYLE 2-->
-    </div>
-    <!-- FOOTER-->
-    <footer>
-        <div class="main-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="services-widget">
-                            <div class="logo">
-                                <img src="img/icons/logo-2.png" alt="Logo" />
-                            </div>
-                            <div class="services-list">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <li>
-                                                <a href="services-detail-1.html">Car Insurance</a>
-                                            </li>
-                                            <li>
-                                                <a href="services-detail-2.html">Home Insurance</a>
-                                            </li>
-                                            <li>
-                                                <a href="services-detail-5.html">Life Insurance</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <li>
-                                                <a href="services-detail-4.html">Travel Insurance</a>
-                                            </li>
-                                            <li>
-                                                <a href="services-detail-1.html">Landlord Insurance</a>
-                                            </li>
-                                            <li>
-                                                <a href="services-detail-2.html">Business Insurance</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="contact-widget">
-                            <h3>Contact Us</h3>
                             <div class="content">
-                                <p>
-                                    <span class="bold">A:</span>8th floor, 379 Hudson St, New York, NY 10018</p>
-                                <p>
-                                    <span class="bold">P:</span>(+1) 96 716 6879</p>
-                                <p>
-                                    <span class="bold">E:</span>contact@site.com</p>
+                                <p>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit
+                                    odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="social-widget">
-                            <h3>Follow us</h3>
+                            <div class="phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+1) 96 716 6879</span>
+                            </div>
                             <ul class="social-list">
                                 <li>
                                     <a href="#">
@@ -632,7 +199,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-google-plus"></i>
+                                        <i class="fa fa-skype"></i>
                                     </a>
                                 </li>
                                 <li>
@@ -640,9 +207,140 @@
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="team-item style-1 match-item">
+                        <div class="team-image">
+                            <img alt="Linda Dunn" class="img-responsive" src="img/team/team-2.jpg"/>
+                        </div>
+                        <div class="team-info">
+                            <div class="name">
+                                <a href="agent-detail.html">Linda Dunn</a>
+                            </div>
+                            <div class="title-job">
+                                <span>Sales Director</span>
+                            </div>
+                            <div class="content">
+                                <p>Donec rhoncus ex ante, ut mattis enim facilisis a. Nam ex tortor, commodo eu maximus
+                                    vel, sagittis id dui . Nunc sit amet nisl tempus, finibus lectus ac, vehicula
+                                    libero.</p>
+                            </div>
+                            <div class="phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+1) 96 716 6879</span>
+                            </div>
+                            <ul class="social-list">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="team-item style-1 match-item">
+                        <div class="team-image">
+                            <img alt="Nancy Gardner" class="img-responsive" src="img/team/team-3.jpg"/>
+                        </div>
+                        <div class="team-info">
+                            <div class="name">
+                                <a href="agent-detail.html">Nancy Gardner</a>
+                            </div>
+                            <div class="title-job">
+                                <span>Agent</span>
+                            </div>
+                            <div class="content">
+                                <p>Duis ultrices, augue in auctor interdum, ipsum erat pulvinar mi, eget convallis ipsum
+                                    sapien fringilla nisi. Etiam augue tortor, gravida in finibus vitae, mattis vel.</p>
+                            </div>
+                            <div class="phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+1) 96 800 6819</span>
+                            </div>
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="team-item style-1 match-item">
+                        <div class="team-image">
+                            <img alt="Jack Johnston" class="img-responsive" src="img/team/team-4.jpg"/>
+                        </div>
+                        <div class="team-info">
+                            <div class="name">
+                                <a href="agent-detail.html">Jack Johnston</a>
+                            </div>
+                            <div class="title-job">
+                                <span>Advisor</span>
+                            </div>
+                            <div class="content">
+                                <p>Fusce vitae erat nec eros consectetur pellentesque a et nibh. Aliquam erat volutpat.
+                                    Donec ut facilisis nulla, vitae auctor velit. In consequat vestibulum elementum.</p>
+                            </div>
+                            <div class="phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+1) 96 800 1238</span>
+                            </div>
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -651,39 +349,142 @@
                 </div>
             </div>
         </div>
-        <div class="sub-footer">
-            <div class="container">
-                <p class="copyright">Copyright © 2016 Designed by AuThemes. All rights reserved.</p>
-                <ul class="quick-link">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Term & Conditions</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Sites Map</a>
-                    </li>
-                </ul>
+    </section>
+    <!-- END OUR TEAM, STYLE 2-->
+    <!-- CALL TO ACTION, STYLE 2-->
+    <section class="call-to-action call-to-action-layout style-2 bg-blue">
+        <div class="container">
+            <div class="call-to-action-block">
+                <h4 class="call-to-action-content">Find Information And Get Free Insurance Quotes.</h4>
+                <button class="au-btn au-btn-orange au-btn-md">Get a quote</button>
             </div>
         </div>
-    </footer>
-    <!-- END FOOTER-->
-    <!--Scripts-->
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="vendor/jQuery.mmenu/dist/js/jquery.mmenu.min.umd.js"></script>
-    <script src="js/mmenu-function.js"></script>
-    <script src="vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
-    <script src="js/match-height-custom.js"></script>
-    <script src="js/custom.js"></script>
-    <!--End script-->
+    </section>
+    <!-- END CALL TO ACTION, STYLE 2-->
+</div>
+<!-- FOOTER-->
+<footer>
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="services-widget">
+                        <div class="logo">
+                            <img alt="Logo" src="img/icons/logo-2.png"/>
+                        </div>
+                        <div class="services-list">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <a href="services-detail-1.html">Car Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="services-detail-2.html">Home Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="services-detail-5.html">Life Insurance</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <a href="services-detail-4.html">Travel Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="services-detail-1.html">Landlord Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="services-detail-2.html">Business Insurance</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contact-widget">
+                        <h3>Contact Us</h3>
+                        <div class="content">
+                            <p>
+                                <span class="bold">A:</span>8th floor, 379 Hudson St, New York, NY 10018</p>
+                            <p>
+                                <span class="bold">P:</span>(+1) 96 716 6879</p>
+                            <p>
+                                <span class="bold">E:</span>contact@site.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="social-widget">
+                        <h3>Follow us</h3>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <p class="copyright">Copyright © 2021 Designed by georgethedeveloper. All rights reserved.</p>
+            <ul class="quick-link">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact-6.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Term & Conditions</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Sites Map</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER-->
+<!--Scripts-->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/jQuery.mmenu/dist/js/jquery.mmenu.min.umd.js"></script>
+<script src="js/mmenu-function.js"></script>
+<script src="vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
+<script src="js/match-height-custom.js"></script>
+<script src="js/custom.js"></script>
+<!--End script-->
 </body>
 
 </html>

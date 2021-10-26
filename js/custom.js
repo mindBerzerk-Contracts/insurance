@@ -6,16 +6,16 @@
 
         /*Search form*/
         var search_select = $('.search');
-        $( ".search-input" ).on('click', function () {
-            search_select.addClass( "search-open");
+        $(".search-input").on('click', function () {
+            search_select.addClass("search-open");
             event.stopPropagation();
         });
         $(".search-submit").on('click', function (event) {
-            search_select.toggleClass( "search-open");
+            search_select.toggleClass("search-open");
             event.stopPropagation();
         });
         $(window).on('click', function () {
-            search_select.removeClass( "search-open");
+            search_select.removeClass("search-open");
         });
 
         /*Fixed Navbar*/
@@ -28,12 +28,11 @@
         // Set initial position to current position on page
         var prevTop = $(window).scrollTop();
 
-        $(window).on('scroll', function(e) {
+        $(window).on('scroll', function (e) {
             var st = $(this).scrollTop(); // Set scroll location
             if ($(window).scrollTop() > navpos.top) {
                 $header.addClass('navbar-fixed');
-            }
-            else {
+            } else {
                 $header.removeClass('navbar-fixed');
             }
             if (st > prevTop && st > $hHeight) {

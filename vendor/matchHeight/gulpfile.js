@@ -24,36 +24,36 @@ var fs = require('fs');
 var buildDirectory = 'dist';
 var server;
 
-gulp.task('release', function(callback) {
+gulp.task('release', function (callback) {
     var type = process.argv[4] || 'minor';
     sequence('lint', 'test', 'build', 'bump:' + type, 'changelog', 'tag', callback);
 });
 
-gulp.task('release:push', function(callback) {
+gulp.task('release:push', function (callback) {
     sequence('release:push:git', 'release:push:github', 'release:push:npm', callback);
 });
 
-gulp.task('release:push:github', function(callback) {
+gulp.task('release:push:github', function (callback) {
     return gulp.src([
-            'CHANGELOG.md', 
-            buildDirectory + '/jquery.matchHeight-min.js', 
-            buildDirectory + '/jquery.matchHeight.js'
-        ])
+        'CHANGELOG.md',
+        buildDirectory + '/jquery.matchHeight-min.js',
+        buildDirectory + '/jquery.matchHeight.js'
+    ])
         .pipe(release({
-          tag: pkg.version,
-          name: 'jquery.matchHeight.js ' + pkg.version
+            tag: pkg.version,
+            name: 'jquery.matchHeight.js ' + pkg.version
         }));
 });
 
-gulp.task('release:push:git', function(callback) {
+gulp.task('release:push:git', function (callback) {
     shell('git push', callback);
 });
 
-gulp.task('release:push:npm', function(callback) {
+gulp.task('release:push:npm', function (callback) {
     shell('npm publish', callback);
 });
 
-gulp.task('build', function() {
+gulp.task('build', function () {
     var build = extend(pkg);
     build.version = process.argv[4] || pkg.version;
 
@@ -64,40 +64,40 @@ gulp.task('build', function() {
 
     return gulp.src('jquery.matchHeight.js')
         .pipe(replace("version = 'master'", "version = '" + build.version + "'"))
-        .pipe(uglify({ output: { max_line_len: 500 } }))
-        .pipe(header(banner, { build: build }))
-        .pipe(rename({ suffix: '-min' }))
+        .pipe(uglify({output: {max_line_len: 500}}))
+        .pipe(header(banner, {build: build}))
+        .pipe(rename({suffix: '-min'}))
         .pipe(gulp.dest(buildDirectory));
 });
 
-gulp.task('lint', function() {
+gulp.task('lint', function () {
     return gulp.src(pkg.main)
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 });
 
-var bump = function(options) {
+var bump = function (options) {
     return gulp.src(['package.json', 'bower.json'])
         .pipe(gulpBump(options))
         .pipe(gulp.dest('.'));
 };
 
-gulp.task('bump:patch', function() {
-    return bump({ type: 'patch' });
+gulp.task('bump:patch', function () {
+    return bump({type: 'patch'});
 });
 
-gulp.task('bump:minor', function() {
-    return bump({ type: 'minor' });
+gulp.task('bump:minor', function () {
+    return bump({type: 'minor'});
 });
 
-gulp.task('bump:major', function() {
-    return bump({ type: 'major' });
+gulp.task('bump:major', function () {
+    return bump({type: 'major'});
 });
 
-gulp.task('tag', function() {
+gulp.task('tag', function () {
     return gulp.src('package.json')
-        .pipe(tag({ prefix: '' }));
+        .pipe(tag({prefix: ''}));
 });
 
 gulp.task('changelog', function () {
@@ -106,27 +106,28 @@ gulp.task('changelog', function () {
         .pipe(gulp.dest('.'));
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', function () {
     serve(false);
 });
 
-gulp.task('serve:test', function() {
+gulp.task('serve:test', function () {
     serve(true);
 });
 
-gulp.task('serve:stop', function() {
+gulp.task('serve:stop', function () {
     if (server) {
         try {
             server.emit('kill');
-        } catch (e) {} // eslint-disable-line no-empty
+        } catch (e) {
+        } // eslint-disable-line no-empty
         gutil.log('Web server stopped');
     }
 });
 
-gulp.task('selenium', function(done) {
-    var start = function(err) {
+gulp.task('selenium', function (done) {
+    var start = function (err) {
         gutil.log('Starting Selenium server...');
-        selenium.start(function(err, child) {
+        selenium.start(function (err, child) {
             gutil.log('Selenium server started');
             selenium.child = child;
             done(err);
@@ -139,19 +140,21 @@ gulp.task('selenium', function(done) {
     } catch (e) {
         gutil.log('Setting up Selenium server...');
         selenium.install({
-            logger: function(message) { gutil.log(message); }
-        }, function(err) {
+            logger: function (message) {
+                gutil.log(message);
+            }
+        }, function (err) {
             start(err);
         });
     }
 });
 
-gulp.task('test', function(done) {
-    sequence('lint', 'serve:test', 'selenium', function() {
+gulp.task('test', function (done) {
+    sequence('lint', 'serve:test', 'selenium', function () {
         var error;
         gutil.log('Starting webdriver...');
 
-        var finish = function(err) {
+        var finish = function (err) {
             gutil.log('Webdriver stopped');
             selenium.child.kill();
             gutil.log('Selenium server stopped');
@@ -163,60 +166,60 @@ gulp.task('test', function(done) {
             .pipe(webdriver({
                 baseUrl: 'http://localhost:8000'
             }))
-            .on('error', function(err) { 
+            .on('error', function (err) {
                 console.error(err);
-                error = err; 
+                error = err;
             })
             .on('finish', finish);
     });
 });
 
-gulp.task('test:cloud', ['lint', 'serve:test'], function(done) {
+gulp.task('test:cloud', ['lint', 'serve:test'], function (done) {
     ngrok.connect({
         authtoken: null,
         port: 8000
     }, function (err, url) {
         gutil.log('Tunnel started', url);
         gulp.src('test/conf/cloud.conf.js')
-        .pipe(webdriver({
-            baseUrl: url
-        }))
-        .on('finish', function(err) {
-            if (server) {
-                ngrok.disconnect();
-                ngrok.kill();
-                gutil.log('Tunnel stopped');
-                gulp.start('serve:stop');
-            }
-            done(err);
-        });
+            .pipe(webdriver({
+                baseUrl: url
+            }))
+            .on('finish', function (err) {
+                if (server) {
+                    ngrok.disconnect();
+                    ngrok.kill();
+                    gutil.log('Tunnel stopped');
+                    gulp.start('serve:stop');
+                }
+                done(err);
+            });
     });
 });
 
-gulp.task('test:cloud:all', ['lint', 'serve:test'], function(done) {
+gulp.task('test:cloud:all', ['lint', 'serve:test'], function (done) {
     ngrok.connect({
         authtoken: null,
         port: 8000
     }, function (err, url) {
         gutil.log('Tunnel started', url);
         gulp.src('test/conf/cloud-all.conf.js')
-        .pipe(webdriver({
-            baseUrl: url
-        }))
-        .on('finish', function(err) {
-            if (server) {
-                ngrok.disconnect();
-                ngrok.kill();
-                gutil.log('Tunnel stopped');
-                gulp.start('serve:stop');
-            }
-            done(err);
-        });
+            .pipe(webdriver({
+                baseUrl: url
+            }))
+            .on('finish', function (err) {
+                if (server) {
+                    ngrok.disconnect();
+                    ngrok.kill();
+                    gutil.log('Tunnel stopped');
+                    gulp.start('serve:stop');
+                }
+                done(err);
+            });
     });
 });
 
-var serve = function(isTest) {
-    process.on('uncaughtException', function(err) {
+var serve = function (isTest) {
+    process.on('uncaughtException', function (err) {
         if (err.errno === 'EADDRINUSE') {
             gutil.log('Server already running (or port is otherwise in use)');
         }
@@ -226,8 +229,8 @@ var serve = function(isTest) {
         .pipe(webserver({
             host: '0.0.0.0',
             livereload: !isTest,
-            middleware: function(req, res, next) {
-                var ieMode = (req._parsedUrl.query || '').replace('=','');
+            middleware: function (req, res, next) {
+                var ieMode = (req._parsedUrl.query || '').replace('=', '');
                 if (ieMode in emulateIEMiddleware) {
                     emulateIEMiddleware[ieMode](req, res, next);
                 } else {
@@ -240,15 +243,15 @@ var serve = function(isTest) {
 };
 
 var banner = [
-  '/*',
-  '* <%= build.name %> <%= build.version %> by @liabru',
-  '* <%= build.homepage %>',
-  '* License <%= build.license %>',
-  '*/',
-  ''
+    '/*',
+    '* <%= build.name %> <%= build.version %> by @liabru',
+    '* <%= build.homepage %>',
+    '* License <%= build.license %>',
+    '*/',
+    ''
 ].join('\n');
 
-var emulateIEMiddlewareFactory = function(version) {
+var emulateIEMiddlewareFactory = function (version) {
     return staticTransform({
         root: __dirname,
         match: /(.+)\.html/,
@@ -264,17 +267,17 @@ var emulateIEMiddleware = {
     'ie10': emulateIEMiddlewareFactory(10)
 };
 
-var shell = function(command, callback) {
+var shell = function (command, callback) {
     var args = process.argv.slice(3).join(' '),
-        proc = exec(command + ' ' + args, function(err) {
+        proc = exec(command + ' ' + args, function (err) {
             callback(err);
         });
 
-    proc.stdout.on('data', function(data) {
+    proc.stdout.on('data', function (data) {
         process.stdout.write(data);
     });
 
-    proc.stderr.on('data', function(data) {
+    proc.stderr.on('data', function (data) {
         process.stderr.write(data);
     });
 };

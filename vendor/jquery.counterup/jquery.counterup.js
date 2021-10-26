@@ -84,11 +84,10 @@
 
                 // Updates the number until we're done
                 var f = function () {
-                	if(!$this.data('counterup-nums'))
-                	{
- 						settings.callback.call(this);
- 						return;
- 					}
+                    if (!$this.data('counterup-nums')) {
+                        settings.callback.call(this);
+                        return;
+                    }
                     $this.html($this.data('counterup-nums').shift());
                     if ($this.data('counterup-nums').length) {
                         setTimeout($this.data('counterup-func'), counter.delay);

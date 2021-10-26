@@ -4,7 +4,7 @@
 
     $(document).ready(function () {
         /*SLIDER*/
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
 
             /* initialize the slider based on the Slider's ID attribute from the wrapper above */
             jQuery('#rev_slider_1').show().revolution({

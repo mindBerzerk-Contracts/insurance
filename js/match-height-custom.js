@@ -2,10 +2,8 @@
     // USE STRICT
     "use strict";
 
-    $(document).ready(function() {
-        $('.match-item').matchHeight({
-
-        });
+    $(document).ready(function () {
+        $('.match-item').matchHeight({});
     });
 
 })(jQuery);

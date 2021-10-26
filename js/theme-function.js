@@ -2,7 +2,7 @@
     // USE STRICT
     "use strict";
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         var accordion_select = $('.accordion');
         accordion_select.accordion({
             "transitionSpeed": 400
@@ -12,16 +12,13 @@
 })(jQuery);
 
 
-
-
-
 (function ($) {
     // USE STRICT
     "use strict";
 
     $(document).ready(function () {
 
-        var counter_select =  $('.counter');
+        var counter_select = $('.counter');
 
         counter_select.counterUp({
             delay: 10,
@@ -43,16 +40,16 @@
 
         /*Search form*/
         var search_select = $('.search');
-        $( ".search-input" ).on('click', function () {
-            search_select.addClass( "search-open");
+        $(".search-input").on('click', function () {
+            search_select.addClass("search-open");
             event.stopPropagation();
         });
         $(".search-submit").on('click', function (event) {
-            search_select.toggleClass( "search-open");
+            search_select.toggleClass("search-open");
             event.stopPropagation();
         });
         $(window).on('click', function () {
-            search_select.removeClass( "search-open");
+            search_select.removeClass("search-open");
         });
 
         /*Fixed Navbar*/
@@ -65,12 +62,11 @@
         // Set initial position to current position on page
         var prevTop = $(window).scrollTop();
 
-        $(window).on('scroll', function(e) {
+        $(window).on('scroll', function (e) {
             var st = $(this).scrollTop(); // Set scroll location
             if ($(window).scrollTop() > navpos.top) {
                 $header.addClass('navbar-fixed');
-            }
-            else {
+            } else {
                 $header.removeClass('navbar-fixed');
             }
             if (st > prevTop && st > $hHeight) {
@@ -123,9 +119,9 @@
 
         // filter items on button click
         $filter.each(function () {
-            $filter.on( 'click', 'li', function() {
+            $filter.on('click', 'li', function () {
                 var filterValue = $(this).attr('data-filter');
-                $isoContainer.isotope({ filter: filterValue });
+                $isoContainer.isotope({filter: filterValue});
             });
             var $buttonGroup = $('.filter-button-group');
             $buttonGroup.on('click', 'li', function () {
@@ -146,7 +142,7 @@
         });
 
         // layout Isotope after each image loads
-        $grid.imagesLoaded().progress( function() {
+        $grid.imagesLoaded().progress(function () {
             $grid.isotope('layout');
         });
     });
@@ -156,10 +152,8 @@
     // USE STRICT
     "use strict";
 
-    $(document).ready(function() {
-        $('.match-item').matchHeight({
-
-        });
+    $(document).ready(function () {
+        $('.match-item').matchHeight({});
     });
 
 })(jQuery);
@@ -167,7 +161,7 @@
     // USE STRICT
     "use strict";
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         var mmenu = $("#mmenu");
         mmenu.mmenu({
             "extensions": [
@@ -176,7 +170,7 @@
                 "shadow-page"
             ],
             "offCanvas": {
-                zposition   : "front"
+                zposition: "front"
             },
             navbar: {
                 title: "INSURANCE"
@@ -195,9 +189,9 @@
                 }
             ]
         });
-        var API = mmenu.data( "mmenu" );
+        var API = mmenu.data("mmenu");
 
-        $(".navbar-toggle").click(function() {
+        $(".navbar-toggle").click(function () {
             API.open();
         });
     });
@@ -205,23 +199,20 @@
 })(jQuery);
 
 
-
-
-
 (function ($) {
     // USE STRICT
     "use strict";
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         var owlSelector = $('.owl-carousel');
         owlSelector.each(function () {
             var owl = $(this);
             var dots = $(this).attr('data-dots');
             var center = false;
-            var col_sm =  1;
-            var col_md =  1;
-            var col_lg =  1;
-            var col_xs =  1;
+            var col_sm = 1;
+            var col_md = 1;
+            var col_lg = 1;
+            var col_xs = 1;
             var items = 1;
             if ($(this).attr('data-center') == 1) {
                 center = true;
@@ -249,24 +240,24 @@
                     // breakpoint from 0 up
                     0: {
                         items: col_xs,
-                        center:center
+                        center: center
                     },
                     // breakpoint from 480 up
                     320: {
                         items: col_sm,
-                        center:center
+                        center: center
                     },
                     // breakpoint from 768 up
                     480: {
                         items: col_md,
-                        center:center
+                        center: center
                     },
                     992: {
                         items: col_lg,
-                        center:center
+                        center: center
                     },
                     1200: {
-                        items : items
+                        items: items
                     }
                 }
             });
@@ -276,11 +267,11 @@
             });
 
             // Go to the next item
-            $('.slider-arrow .next').on('click', function() {
+            $('.slider-arrow .next').on('click', function () {
                 owl.trigger('next.owl.carousel');
             });
             // Go to the previous item
-            $('.slider-arrow .prev').on('click', function() {
+            $('.slider-arrow .prev').on('click', function () {
                 // With optional speed parameter
                 // Parameters has to be in square bracket '[]'
                 owl.trigger('prev.owl.carousel', [300]);

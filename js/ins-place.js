@@ -15,7 +15,7 @@
                 ].join(''),
                 icon: 'img/icons/location.png',
                 animation: google.maps.Animation.DROP,
-                zoom:10
+                zoom: 10
             },
             {
                 lat: 34.298450,
@@ -25,7 +25,7 @@
                 icon: 'img/icons/location.png',
                 show_infowindow: true,
                 animation: google.maps.Animation.DROP,
-                zoom:4
+                zoom: 4
             },
             {
                 lat: 35.775319,
@@ -37,7 +37,7 @@
                 ].join(''),
                 icon: 'img/icons/location.png',
                 animation: google.maps.Animation.DROP,
-                zoom:4
+                zoom: 4
             },
             {
                 lat: 39.952644,
@@ -49,10 +49,9 @@
                 ].join(''),
                 icon: 'img/icons/location.png',
                 animation: google.maps.Animation.DROP,
-                zoom:8
+                zoom: 8
             }
         ];
-
 
 
         new Maplace({
@@ -63,19 +62,19 @@
             map_options: {
                 scrollwheel: false
             },
-            start:1,
+            start: 1,
             styles: {
                 'Night': [{
                     featureType: 'all',
                     stylers: [
-                        { invert_lightness: 'true' }
+                        {invert_lightness: 'true'}
                     ]
                 }],
                 'Greyscale': [{
                     featureType: 'all',
                     stylers: [
-                        { saturation: -100 },
-                        { gamma: 0.50 }
+                        {saturation: -100},
+                        {gamma: 0.50}
                     ]
                 }],
 
