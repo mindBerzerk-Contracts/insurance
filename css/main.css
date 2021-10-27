@@ -1877,7 +1877,7 @@ Footer
 }
 
 .main-footer .services-widget .logo {
-    margin-bottom: 34px;
+    margin-bottom: 0px;
 }
 
 .main-footer .services-widget .services-list {
@@ -2108,7 +2108,7 @@ HEADER
 
 .header-main {
     /*Mid Header*/
-    padding: 5px 0;
+    padding: 0 0 0 0;
 }
 
 .header-main:after {
