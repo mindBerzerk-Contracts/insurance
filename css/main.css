@@ -2372,7 +2372,7 @@ HEADER
 }
 
 .navbar-main .search .search-icon {
-    border-radius: 3px;
+    border-radius: 10px;
     background: #f39c12;
     position: absolute;
     top: 0;
@@ -2507,6 +2507,8 @@ Heading page layout
         float: none;
     }
 }
+
+
 
 .heading-services-detail-1 {
     padding: 45px 0;
@@ -3488,11 +3490,13 @@ Get a quote
     font-size: 20px;
     font-weight: 700;
     color: #333333;
+    text-align: center;
 }
 
 .post-paragraph .post-content p {
     font-size: 14px;
     line-height: 1.5714285714;
+    text-align: center;
 }
 
 .post-table table {
