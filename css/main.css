@@ -2108,7 +2108,7 @@ HEADER
 
 .header-main {
     /*Mid Header*/
-    padding: 0 0;
+    padding: 5px 0;
 }
 
 .header-main:after {
