@@ -3,17 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Insurance Products</title>
+    <title>Compare Insurance</title>
     <meta content="no-referrer" name="referrer">
     <meta content="My Insurance" name="description">
     <meta content="My Insurance" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="img/icons/favicon.ico" rel="icon" sizes="16x16" type="image/gif">
     <!--Styles-->
+    <!--bootstrap-->
+    <link href="vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-grid.rtl.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-utilities.rtl.css" rel="stylesheet">
+    <!--bootstrap-->
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="vendor/jQuery.mmenu/dist/css/jquery.mmenu.all.css" rel="stylesheet">
-    <link href="vendor/fancyselect/fancySelect.css" rel="stylesheet">
+    <link href="vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="vendor/revolution/css/layers.css" rel="stylesheet">
+    <link href="vendor/revolution/css/navigation.css" rel="stylesheet">
+    <link href="vendor/revolution/css/settings.css" rel="stylesheet">
     <!-- Fonts-->
     <link href="fonts/open-sans/css/open-sans.css" rel="stylesheet">
     <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -75,7 +89,7 @@
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
-                        <img alt="Logo" class="img-responsive" src="img/icons/logo.png"/>
+                        <img alt="Logo" class="img-fluid" src="img/icons/logo.png"/>
                     </a>
                 </div>
                 <div class="contact-widget">
@@ -83,7 +97,7 @@
 
                         <button
                                 class="au-btn au-btn-sm au-btn-orange hidden-md-phone"
-                                onclick="window.location.href='get-a-quote.html';">Get a Quote
+                                onclick="window.location.href='compare-insurance.html';">Get a Quote
                         </button>
                     </div>
 
@@ -186,7 +200,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Retirement">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-1.jpg" class="img-responsive" src="img/projects/1.png"/>
+                            <img alt="project-1.jpg" class="img-fluid" src="img/projects/1.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">2018 Retirement Plan</a>
@@ -199,7 +213,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Insurance">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-2.jpg" class="img-responsive" src="img/projects/2.png"/>
+                            <img alt="project-2.jpg" class="img-fluid" src="img/projects/2.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">Insurance Life</a>
@@ -212,7 +226,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Financial">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-3.jpg" class="img-responsive" src="img/projects/3.png"/>
+                            <img alt="project-3.jpg" class="img-fluid" src="img/projects/3.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">Financial Report</a>
@@ -225,7 +239,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Taxes">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-4.jpg" class="img-responsive" src="img/projects/4.png"/>
+                            <img alt="project-4.jpg" class="img-fluid" src="img/projects/4.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">IEM Financial Statements</a>
@@ -238,7 +252,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Insurance">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-5.jpg" class="img-responsive" src="img/projects/5.png"/>
+                            <img alt="project-5.jpg" class="img-fluid" src="img/projects/5.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">MO Insurance Pack 2</a>
@@ -251,7 +265,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Financial">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-6.jpg" class="img-responsive" src="img/projects/6.png"/>
+                            <img alt="project-6.jpg" class="img-fluid" src="img/projects/6.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">Business Loan</a>
@@ -264,7 +278,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Investments">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-7.jpg" class="img-responsive" src="img/projects/7.png"/>
+                            <img alt="project-7.jpg" class="img-fluid" src="img/projects/7.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">Enterprise Loan</a>
@@ -277,7 +291,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Financial">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-8.jpg" class="img-responsive" src="img/projects/8.png"/>
+                            <img alt="project-8.jpg" class="img-fluid" src="img/projects/8.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">Money Market</a>
@@ -290,7 +304,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Insurance">
                     <div class="project-item match-item">
                         <div class="project-item-img">
-                            <img alt="project-9.jpg" class="img-responsive" src="img/projects/9.png"/>
+                            <img alt="project-9.jpg" class="img-fluid" src="img/projects/9.png"/>
                         </div>
                         <div class="project-item-title">
                             <a href="insurance-product-detail.html">MO Insurance</a>

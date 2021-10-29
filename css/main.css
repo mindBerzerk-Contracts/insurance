@@ -1802,11 +1802,13 @@ Content box layout
 .content-box-item.style-2 .content-holder {
     vertical-align: middle;
     display: table-cell;
+
 }
 
 .content-box-item.style-2 .content-box-icon {
     margin: 0 auto;
     background: none;
+
     float: none;
     text-align: center;
     padding-bottom: 10px;
@@ -1814,7 +1816,7 @@ Content box layout
 
 .content-box-item.style-2 .content-box-icon i {
     font-size: 48px;
-    color: #333333;
+    color: #2940d5;
 }
 
 .content-box-item.style-2 .content-box-main {
@@ -4857,7 +4859,7 @@ GET A QUOTE PAGE
 }
 
 .get-a-quote-2 .quote-container {
-    padding: 30px 0 85px 0;
+    padding: 100px 0 85px 0;
     background: #0177d7;
 }
 
