@@ -4861,6 +4861,7 @@ GET A QUOTE PAGE
 .get-a-quote-2 .quote-container {
     padding: 100px 0 85px 0;
     background: #0177d7;
+
 }
 
 .get-a-quote-2 .content-box-container {
@@ -4882,7 +4883,7 @@ GET A QUOTE PAGE
 }
 
 .get-a-quote-3 .quote-container {
-    padding-bottom: 60px;
+    padding: 10px 0 85px 0;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
