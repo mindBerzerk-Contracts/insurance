@@ -2061,7 +2061,7 @@ HEADER
 }
 
 .js-global-header-scrolling {
-    top: -62px;
+    top: -5px;
     /* Height of the header */
 }
 
@@ -3488,7 +3488,8 @@ Get a quote
   Post services
  */
 .post-paragraph .post-heading h3 {
-    font-size: 20px;
+    font-size: 28px;
+    text-decoration: underline;
     font-weight: 700;
     color: #333333;
     text-align: center;
