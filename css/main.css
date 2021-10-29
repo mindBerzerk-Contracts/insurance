@@ -2115,7 +2115,7 @@ HEADER
 
 .header-main:after {
     content: "";
-    display: table;
+    display: grid;
     clear: both;
 }
 
@@ -3492,6 +3492,13 @@ Get a quote
     font-weight: 700;
     color: #333333;
     text-align: center;
+}
+
+.post-paragraph .post-heading h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    text-align: justify;
 }
 
 .post-paragraph .post-content p {
