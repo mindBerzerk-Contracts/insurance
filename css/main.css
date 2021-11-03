@@ -2389,7 +2389,7 @@ Heading page layout
 
 
 .heading-services-detail-1 {
-    padding: 45px 0;
+    padding: 5px 0;
 }
 
 .heading-services-detail-1 .au-breadcrumb .au-breadcrumb-item {
@@ -3461,7 +3461,7 @@ Get a quote
 }
 
 .post-content-box {
-    padding: 30px 30px 10px 30px;
+    padding: 5px 5px 5px 5px;
     border: 1px solid #0e0d0d;
 }
 
@@ -4622,7 +4622,7 @@ BLOG PAGE
 }
 
 .blog-single .blog-single .post-paragraph {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .blog-single .blog-single .post-lists {
@@ -4818,44 +4818,44 @@ GET A QUOTE PAGE
 SERVICES PAGE
  */
 .services-detail-1 {
-    padding: 75px 0 100px 0;
+    padding: 5px 0 5px 0;
 }
 
 .services-detail-1 .sidebar-container {
-    margin-bottom: 35px;
+    margin-bottom: 5px;
 }
 
 .services-detail-1 .p1 {
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .services-detail-1 .p2 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .services-detail-1 .post-table {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .services-detail-1 .post-with-image {
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 .services-detail-1 .post-with-image .post-paragraph {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .services-detail-1 .p3 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .services-detail-1 .post-content-box {
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 .services-detail-1 .testinmonials {
-    padding-bottom: 45px;
+    padding-bottom: 5px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -4870,7 +4870,7 @@ SERVICES PAGE
     }
 
     .services-detail-1 .slider-medium-layout.style-1 .slider-item .slider-title {
-        padding-right: 15px;
+        padding-right: 5px;
     }
 
     .services-detail-1 .post-form-action .form-block {
@@ -4880,11 +4880,11 @@ SERVICES PAGE
 
 @media (max-width: 991px) {
     .services-detail-1 .post-services {
-        margin-bottom: 50px;
+        margin-bottom: 5px;
     }
 
     .services-detail-1 .slider-medium-layout.style-1 .slider-item .slider-btn button {
-        margin-left: 25px;
+        margin-left: 5px;
     }
 
     .services-detail-1 .slider-medium-layout.style-1 .slider-item .slider-title {
@@ -4898,13 +4898,13 @@ SERVICES PAGE
     }
 
     .services-detail-1 .post-table table tbody tr .tblock .post-btn button {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 
     .services-detail-1 .post-form-action .form-block input {
         width: 100%;
         min-width: 0;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     .services-detail-1 .slider-medium-layout.style-1 .slider-item .slider-text-holder {
