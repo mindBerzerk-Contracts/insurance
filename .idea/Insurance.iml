@@ -11,5 +11,6 @@
     <orderEntry type="library" name="mdb-ui-kit" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="bootstrap.bundle" level="application" />
+    <orderEntry type="library" name="jquery.slim" level="application" />
   </component>
 </module>

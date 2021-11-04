@@ -2188,7 +2188,7 @@ HEADER
 
 .navbar-main .menu {
     padding: 0;
-    margin: 0 0px;
+    margin: 0 0;
 }
 
 .navbar-main .menu li {
@@ -2219,7 +2219,7 @@ HEADER
     margin: 0;
     padding: 0;
     background: #fff;
-    left: 0px;
+    left: 0;
     opacity: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
