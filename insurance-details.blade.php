@@ -4,7 +4,7 @@
 Insurance Details
 @endsection
 
-<!-- HEADING PAGE-->
+@section("content")
 <!-- HEADING PAGE-->
 <div class="heading-page heading-normal heading-project">
     <div class="container">

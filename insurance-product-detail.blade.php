@@ -4,6 +4,8 @@
 Insurance Product Details
 @endsection
 
+@section("content")
+
 <div class="page-content projects-detail-page">
     <!-- HEADING PAGE-->
     <div class="heading-page heading-normal heading-project">
