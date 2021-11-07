@@ -13,10 +13,10 @@ Articles
             <ul class="au-breadcrumb">
                 <li class="au-breadcrumb-item">
                     <i class="fa fa-home"></i>
-                    <a href="resources/views/home.blade.php">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/articles.blade.php">Articles</a>
+                    <a href="/articles">Articles</a>
                 </li>
             </ul>
         </div>
@@ -29,11 +29,12 @@ Articles
                 <div class="blog-list-wrapper">
                     <div class="blog-item">
                         <div class="blog-image">
-                            <img alt="Life Insurance Charges" class="img-fluid" src="public/img/blogs/blog-1.jpg"/>
+                            <img alt="Life Insurance Charges" class="img-fluid"
+                                 src="{{asset('img/blogs/blog-1.jpg')}}"/>
                         </div>
                         <div class="blog-main">
                             <div class="blog-title">
-                                <a href="resources/views/pages/article-detail.blade.php">Life Insurance Charges</a>
+                                <a href="/article-detail">Life Insurance Charges</a>
                             </div>
                             <div class="blog-subtitle">
                                 <div class="blog-topic">
@@ -53,17 +54,17 @@ Articles
                                     faucibus.</p>
                             </div>
                             <div class="blog-link">
-                                <a href="resources/views/pages/article-detail.blade.php">Continue Reading</a>
+                                <a href="/article-detail">Continue Reading</a>
                             </div>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="blog-image">
-                            <img alt="Is Your Home At Risk?" class="img-fluid" src="public/img/blogs/blog-2.jpg"/>
+                            <img alt="Is Your Home At Risk?" class="img-fluid" src="{{asset('img/blogs/blog-2.jpg')}}"/>
                         </div>
                         <div class="blog-main">
                             <div class="blog-title">
-                                <a href="resources/views/pages/article-detail.blade.php">Is Your Home At Risk?</a>
+                                <a href="/article-detail">Is Your Home At Risk?</a>
                             </div>
                             <div class="blog-subtitle">
                                 <div class="blog-topic">
@@ -82,18 +83,18 @@ Articles
                                     Donec vehicula dolor in interdum ultrices. Nulla congue nunc et magna mattis</p>
                             </div>
                             <div class="blog-link">
-                                <a href="resources/views/pages/article-detail.blade.php">Continue Reading</a>
+                                <a href="/article-detail">Continue Reading</a>
                             </div>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="blog-image">
                             <img alt="Learn about auto insurance companies" class="img-fluid"
-                                 src="public/img/blogs/blog-3.jpg"/>
+                                 src="{{asset('img/blogs/blog-3.jpg')}}"/>
                         </div>
                         <div class="blog-main">
                             <div class="blog-title">
-                                <a href="resources/views/pages/article-detail.blade.php">Learn about auto insurance
+                                <a href="/article-detail">Learn about auto insurance
                                     companies</a>
                             </div>
                             <div class="blog-subtitle">
@@ -113,18 +114,18 @@ Articles
                                     efficitur metus</p>
                             </div>
                             <div class="blog-link">
-                                <a href="resources/views/pages/article-detail.blade.php">Continue Reading</a>
+                                <a href="/article-detail">Continue Reading</a>
                             </div>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="blog-image">
                             <img alt="How To Get A Lower Rate In Your Car Insurance" class="img-fluid"
-                                 src="public/img/blogs/blog-4.jpg"/>
+                                 src="{{asset('img/blogs/blog-4.jpg')}}"/>
                         </div>
                         <div class="blog-main">
                             <div class="blog-title">
-                                <a href="resources/views/pages/article-detail.blade.php">How To Get A Lower Rate In Your
+                                <a href="/article-detail">How To Get A Lower Rate In Your
                                     Car Insurance</a>
                             </div>
                             <div class="blog-subtitle">
@@ -144,18 +145,18 @@ Articles
                                     vestibulum at erat eu</p>
                             </div>
                             <div class="blog-link">
-                                <a href="resources/views/pages/article-detail.blade.php">Continue Reading</a>
+                                <a href="/article-detail">Continue Reading</a>
                             </div>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="blog-image">
                             <img alt="7 Habits Of Highly Effective Landlords" class="img-fluid"
-                                 src="public/img/blogs/blog-5.jpg"/>
+                                 src="{{asset('img/blogs/blog-5.jpg')}}"/>
                         </div>
                         <div class="blog-main">
                             <div class="blog-title">
-                                <a href="resources/views/article-detail.blade.php">7 Habits Of Highly Effective
+                                <a href="/article-detail">7 Habits Of Highly Effective
                                     Landlords</a>
                             </div>
                             <div class="blog-subtitle">
@@ -174,7 +175,7 @@ Articles
                                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                             </div>
                             <div class="blog-link">
-                                <a href="resources/views/article-detail.blade.php">Continue Reading</a>
+                                <a href="/article-detail">Continue Reading</a>
                             </div>
                         </div>
                     </div>

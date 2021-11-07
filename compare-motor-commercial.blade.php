@@ -14,10 +14,10 @@ Compare Motor
             <ul class="au-breadcrumb">
                 <li class="au-breadcrumb-item">
                     <i class="fa fa-home"></i>
-                    <a href="resources/views/home.blade.php">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <a href="resources/views/pages/compare-insurance.blade.php">Compare Insurance</a>
+                    <a href="/compare-insurance">Compare Insurance</a>
                 </li>
                 <li class="au-breadcrumb-item active">
                     <a href="resources/views/compare-motor-commercial.blade.php">Motor Commercial Insurance</a>

@@ -22,10 +22,10 @@ Agents-Detail
                         <div class="agent-main">
                             <ul class="au-breadcrumb">
                                 <li class="au-breadcrumb-item">
-                                    <a href="resources/views/home.blade.php">Home</a>
+                                    <a href="/home">Home</a>
                                 </li>
                                 <li class="au-breadcrumb-item active">
-                                    <a href="resources/views/home.blade.php">Agent</a>
+                                    <a href="/home">Agent</a>
                                 </li>
                             </ul>
                             <div class="heading-title">
@@ -35,17 +35,17 @@ Agents-Detail
                                 <button class="au-btn au-btn-orange au-btn-sm">Get A Quote</button>
                                 <ul class="social-list">
                                     <li class="facebook">
-                                        <a href="resources/views/home.blade.php">
+                                        <a href="/home">
                                             <i class="fa fa-facebook"></i>
                                         </a>
                                     </li>
                                     <li class="twitter">
-                                        <a href="resources/views/home.blade.php">
+                                        <a href="/home">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li class="linkedin">
-                                        <a href="resources/views/home.blade.php">
+                                        <a href="/home">
                                             <i class="fa fa-linkedin"></i>
                                         </a>
                                     </li>

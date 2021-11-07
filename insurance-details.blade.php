@@ -11,10 +11,10 @@ Insurance Details
         <ul class="au-breadcrumb">
             <li class="au-breadcrumb-item">
                 <i class="fa fa-home"></i>
-                <a href="resources/views/home.blade.php">Home</a>
+                <a href="/home">Home</a>
             </li>
             <li class="au-breadcrumb-item active">
-                <a href="resources/views/pages/compare-insurance.blade.php">Compare Insurance</a>
+                <a href="/compare-insurance">Compare Insurance</a>
             </li>
         </ul>
     </div>
@@ -41,7 +41,7 @@ Insurance Details
                                     <div class="slider-btn">
                                         <button
                                             class="au-btn au-btn-orange au-btn-sm"
-                                            onclick="window.location.href='compare-insurance.html';">Get a quote
+                                            onclick="window.location.href='/compare-insurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@ Insurance Details
                                     </div>
                                     <div class="slider-btn">
                                         <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='compare-insurance.html';">Get a quote
+                                                onclick="window.location.href='/compare-insurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ Insurance Details
                                     </div>
                                     <div class="slider-btn">
                                         <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='compare-insurance.html';">Get a quote
+                                                onclick="window.location.href='/compare-insurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>

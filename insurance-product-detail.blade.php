@@ -13,13 +13,13 @@ Insurance Product Details
             <ul class="au-breadcrumb">
                 <li class="au-breadcrumb-item">
                     <i class="fa fa-home"></i>
-                    <a href="resources/views/home.blade.php">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <a href="resources/views/home.blade.php">Insurance Product</a>
+                    <a href="/home">Insurance Product</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/home.blade.php">Business Insurance</a>
+                    <a href="/home">Business Insurance</a>
                 </li>
             </ul>
         </div>
@@ -104,7 +104,7 @@ Insurance Product Details
                         <option>Umbrella Insurance</option>
                         <option>Boat Insurance</option>
                     </select>
-                    <button class="au-btn au-btn-orange" onclick="window.location.href='compare-insurance.html';">Get a
+                    <button class="au-btn au-btn-orange" onclick="window.location.href='/compare-insurance';">Get a
                         quote
                     </button>
                 </div>

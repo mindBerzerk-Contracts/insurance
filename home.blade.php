@@ -25,12 +25,12 @@ Home
                         Why We Invest
                     </div>
                     <div
-                            class="tp-caption tp-resizeme slider-subtitle"
-                            data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-hoffset="0"
-                            data-voffset="210"
-                            data-x="left"
-                            data-y="top"
+                        class="tp-caption tp-resizeme slider-subtitle"
+                        data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-hoffset="0"
+                        data-voffset="210"
+                        data-x="left"
+                        data-y="top"
                     >
                         We have brought together top insuranceExperts to
                         <br/>provide you the best free advise on insurance and finance matters
@@ -42,7 +42,7 @@ Home
                         data-voffset="320"
                         data-x="left"
                         data-y="top"
-                        onclick="window.location.href='articles.html';"
+                        onclick="window.location.href='/compare-insurance';"
                     >
                         Read More
                     </button>
@@ -62,12 +62,12 @@ Home
                         Got an Insurance Question
                     </div>
                     <div
-                            class="tp-caption tp-resizeme slider-subtitle"
-                            data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-hoffset="0"
-                            data-voffset="210"
-                            data-x="left"
-                            data-y="top"
+                        class="tp-caption tp-resizeme slider-subtitle"
+                        data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-hoffset="0"
+                        data-voffset="210"
+                        data-x="left"
+                        data-y="top"
                     >
                         Search our Database of our 1000 answered Insurance Questions,
                         <br/> or better still ask your question on our platform and
@@ -81,7 +81,7 @@ Home
                         data-voffset="320"
                         data-x="left"
                         data-y="top"
-                        onclick="window.location.href='search.html';"
+                        onclick="window.location.href='/search.html';"
                     >
                         Start Now
                     </button>
@@ -89,7 +89,7 @@ Home
 
                 <li class="slider-item-1" data-transition="slidevertical">
                     <!-- MAIN IMAGE-->
-                    <img alt="#" class="rev-slidebg" src="{{asset('img/slider/compare-900.png') }}"/>
+                    <img alt="#" class="rev-slidebg" src="{{asset('img/slider/compare-1900.png') }}"/>
                     <div
                         class="tp-caption tp-resizeme slider-title"
                         data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -101,23 +101,23 @@ Home
                         Compare Insurance
                     </div>
                     <div
-                            class="tp-caption tp-resizeme slider-subtitle"
-                            data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-hoffset="0"
-                            data-voffset="210"
-                            data-x="left"
-                            data-y="top"
+                        class="tp-caption tp-resizeme slider-subtitle"
+                        data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-hoffset="0"
+                        data-voffset="210"
+                        data-x="left"
+                        data-y="top"
                     >
                         Compare Insurance Quotes and get the best deal <br/> from over 50 Insurance Companies
                     </div>
                     <button
-                            class="tp-caption tp-resizeme au-btn au-btn-orange"
-                            data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-hoffset="0"
-                            data-voffset="320"
-                            data-x="left"
-                            data-y="top"
-                            onclick="window.location.href='compare-insurance.html';"
+                        class="tp-caption tp-resizeme au-btn au-btn-orange"
+                        data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-hoffset="0"
+                        data-voffset="320"
+                        data-x="left"
+                        data-y="top"
+                        onclick="window.location.href='/compare-insurance';"
                     >
                         Compare Insurance
                     </button>
@@ -143,15 +143,15 @@ Home
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/pages/insurance-details.blade.php">
+                        <a class="image" href="/insurance-details">
                             <img
                                 alt="Car Insurance"
                                 class="img-fluid"
-                                src="../../public/img/product/car.png"
+                                src="{{asset('img/product/car.png') }}"
                             />
                         </a>
                         <div class="title">
-                            <a href="resources/views/pages/insurance-details.blade.php">Car Insurance</a>
+                            <a href="/insurance-details">Car Insurance</a>
                         </div>
                         <div class="content">
                             <p>
@@ -163,15 +163,15 @@ Home
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/insurance-details.blade.php">
+                        <a class="image" href="/insurance-details">
                             <img
                                 alt="Life Insurance"
                                 class="img-fluid"
-                                src="../../public/img/product/life.png"
+                                src="{{asset('img/product/life.png') }}"
                             />
                         </a>
                         <div class="title">
-                            <a href="resources/views/insurance-details.blade.php">Life Insurance</a>
+                            <a href="/insurance-details">Life Insurance</a>
                         </div>
                         <div class="content">
                             <p>
@@ -183,15 +183,15 @@ Home
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/insurance-details.blade.php">
+                        <a class="image" href="/insurance-details">
                             <img
                                 alt="Home Insurance"
                                 class="img-fluid"
-                                src="../../public/img/product/home.png"
+                                src="{{asset('img/product/home.png') }}"
                             />
                         </a>
                         <div class="title">
-                            <a href="resources/views/insurance-details.blade.php">Home Insurance</a>
+                            <a href="/insurance-details">Home Insurance</a>
                         </div>
                         <div class="content">
                             <p>
@@ -203,15 +203,15 @@ Home
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/insurance-details.blade.php">
+                        <a class="image" href="/insurance-details">
                             <img
                                 alt="Travel Insurance"
                                 class="img-fluid"
-                                src="../../public/img/product/travel.png"
+                                src="{{asset('img/product/travel.png') }}"
                             />
                         </a>
                         <div class="title">
-                            <a href="resources/views/insurance-details.blade.php">Travel Insurance</a>
+                            <a href="/insurance-details">Travel Insurance</a>
                         </div>
                         <div class="content">
                             <p>
@@ -223,15 +223,15 @@ Home
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/insurance-details.blade.php">
+                        <a class="image" href="/insurance-details">
                             <img
                                 alt="Business Insurance"
                                 class="img-fluid"
-                                src="../../public/img/product/business.png"
+                                src="{{asset('img/product/business.png') }}"
                             />
                         </a>
                         <div class="title">
-                            <a href="resources/views/insurance-details.blade.php">Business Insurance</a>
+                            <a href="/insurance-details">Business Insurance</a>
                         </div>
                         <div class="content">
                             <p>
@@ -243,15 +243,15 @@ Home
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/insurance-details.blade.php">
+                        <a class="image" href="/insurance-details">
                             <img
                                 alt="Landlord Insurance"
                                 class="img-fluid"
-                                src="../../public/img/product/landlord.png"
+                                src="{{asset('img/product/landlord.png') }}"
                             />
                         </a>
                         <div class="title">
-                            <a href="resources/views/insurance-details.blade.php">Landlord Insurance</a>
+                            <a href="/insurance-details">Landlord Insurance</a>
                         </div>
                         <div class="content">
                             <p>
@@ -286,7 +286,7 @@ Home
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Cheryl Cruz" src="../../public/img/avatar/avatar-1.jpg"/>
+                                <img alt="Cheryl Cruz" src="{{asset('img/avatar/avatar-1.jpg') }}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -312,7 +312,7 @@ Home
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Linda Campbell" src="../../public/img/avatar/avatar-2.jpg"/>
+                                <img alt="Linda Campbell" src="{{asset('img/avatar/avatar-2.jpg') }}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -338,7 +338,7 @@ Home
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="John Walker" src="../../public/img/avatar/avatar-3.jpg"/>
+                                <img alt="John Walker" src="{{asset('img/avatar/avatar-3.jpg') }}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -370,37 +370,37 @@ Home
             >
                 <div class="partner-item">
                     <a href="#">
-                        <img alt="partner" src="../../public/img/partner/1.png"/>
+                        <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
                     </a>
                 </div>
                 <div class="partner-item">
                     <a href="#">
-                        <img alt="partner" src="../../public/img/partner/2.png"/>
+                        <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
                     </a>
                 </div>
                 <div class="partner-item">
                     <a href="#">
-                        <img alt="partner" src="../../public/img/partner/3.png"/>
+                        <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
                     </a>
                 </div>
                 <div class="partner-item">
                     <a href="#">
-                        <img alt="partner" src="../../public/img/partner/4.png"/>
+                        <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
                     </a>
                 </div>
                 <div class="partner-item">
                     <a href="#">
-                        <img alt="partner" src="../../public/img/partner/5.png"/>
+                        <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
                     </a>
                 </div>
                 <div class="partner-item">
                     <a href="#">
-                        <img alt="partner" src="../../public/img/partner/6.png"/>
+                        <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
                     </a>
                 </div>
                 <div class="partner-item">
                     <a href="#">
-                        <img alt="partner" src="../../public/img/partner/7.png"/>
+                        <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
                     </a>
                 </div>
             </div>

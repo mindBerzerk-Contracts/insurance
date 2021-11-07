@@ -13,10 +13,10 @@ Agents
         <div class="container">
             <ul class="au-breadcrumb">
                 <li class="au-breadcrumb-item">
-                    <a href="resources/views/home.blade.php">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/home.blade.php">About Us</a>
+                    <a href="/home">About Us</a>
                 </li>
             </ul>
             <div class="heading-title">

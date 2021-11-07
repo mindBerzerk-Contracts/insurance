@@ -32,13 +32,13 @@
     <nav id="mmenu">
         <ul>
             <li>
-                <a href="resources/views/home.blade.php">HOME</a>
+                <a href="/home">HOME</a>
                 <ul>
                     <li>
-                        <a href="resources/views/home.blade.php">HOME LAYOUT 1</a>
+                        <a href="/home">HOME LAYOUT 1</a>
                     </li>
                     <li>
-                        <a href="resources/views/pages/compare-insurance.blade.php">HOME LAYOUT 2</a>
+                        <a href="/compare-insurance">HOME LAYOUT 2</a>
                     </li>
                 </ul>
             </li>
@@ -66,16 +66,16 @@
                 </ul>
             </li>
             <li>
-                <a href="resources/views/pages/get-a-quote.blade.php">GET A QUOTE</a>
+                <a href="/get-a-quote">GET A QUOTE</a>
                 <ul>
                     <li>
-                        <a href="resources/views/pages/get-a-quote.blade.php">QUOTE LAYOUT 1</a>
+                        <a href="/get-a-quote">QUOTE LAYOUT 1</a>
                     </li>
                     <li>
                         <a href="get-a-quote-2.blade.php">QUOTE LAYOUT 2</a>
                     </li>
                     <li>
-                        <a href="resources/views/pages/get-a-quote.blade.php">QUOTE LAYOUT 3</a>
+                        <a href="/get-a-quote">QUOTE LAYOUT 3</a>
                     </li>
                 </ul>
             </li>
@@ -149,7 +149,7 @@
         <div class="container">
             <p class="greeting">Welcome to insurance company, we're here to help you</p>
             <div class="quick-link">
-                <a href="resources/views/pages/get-a-quote.blade.php">Get a Quote</a>|
+                <a href="/get-a-quote">Get a Quote</a>|
                 <a href="resources/views/pages/agent-list.blade.php">Find an Agent</a>|
                 <a href="#">Pricing</a>|
                 <a href="resources/views/about.blade.php">FAQS</a>
@@ -159,7 +159,7 @@
     <div class="header-main">
         <div class="container">
             <div class="logo">
-                <a href="resources/views/home.blade.php">
+                <a href="/home">
                     <img alt="Logo" class="img-fluid" src="../../public/img/icons/logo.png"/>
                 </a>
             </div>
@@ -203,10 +203,10 @@
                 <nav class="navbar-menu">
                     <ul class="menu">
                         <li class="dropdown">
-                            <a href="resources/views/home.blade.php">Home</a>
+                            <a href="/home">Home</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="resources/views/home.blade.php">Home 1</a>
+                                    <a href="/home">Home 1</a>
                                 </li>
                                 <li>
                                     <a href="resources/views/compare-insurance.blade.php">Home 2</a>
@@ -254,13 +254,13 @@
                             <a href="resources/views/about.blade.php">Our Company</a>
                         </li>
                         <li class="dropdown">
-                            <a href="resources/views/articles.blade.php">Blog</a>
+                            <a href="/articles">Blog</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="resources/views/articles.blade.php">Blog List</a>
+                                    <a href="/articles">Blog List</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/article-detail.blade.php">Blog Detail</a>
+                                    <a href="/article-detail">Blog Detail</a>
                                 </li>
                             </ul>
                         </li>
@@ -297,13 +297,13 @@
                                     <a href="contact-6.blade.php">Contact</a>
                                 </li>
                                 <li class="dropdown-child">
-                                    <a href="resources/views/articles.blade.php">Blog</a>
+                                    <a href="/articles">Blog</a>
                                     <ul class="dropdown-menu-child">
                                         <li>
-                                            <a href="resources/views/articles.blade.php">Blog List</a>
+                                            <a href="/articles">Blog List</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/article-detail.blade.php">Blog Detail</a>
+                                            <a href="/article-detail">Blog Detail</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -356,10 +356,10 @@
             </div>
             <ul class="au-breadcrumb">
                 <li class="au-breadcrumb-item">
-                    <a href="resources/views/home.blade.php">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/home.blade.php">Our Products</a>
+                    <a href="/home">Our Products</a>
                 </li>
             </ul>
         </div>

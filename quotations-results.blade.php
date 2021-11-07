@@ -4,21 +4,21 @@
 Insurance Product Details
 @endsection
 
-<!-- HEADING PAGE-->
+@section("content")
 <!-- HEADING PAGE-->
 <div class="heading-page heading-normal heading-project">
     <div class="container">
         <ul class="au-breadcrumb">
             <li class="au-breadcrumb-item">
                 <i class="fa fa-home"></i>
-                <a href="resources/views/home.blade.php">Home</a>
+                <a href="/home">Home</a>
             </li>
             <li class="au-breadcrumb-item">
                 <i class="fa fa-question-circle"></i>
-                <a href="resources/views/pages/get-a-quote.blade.php">Quotations</a>
+                <a href="/get-a-quote">Quotations</a>
             </li>
             <li class="au-breadcrumb-item active">
-                <a href="resources/views/pages/compare-insurance.blade.php">Quotations Results</a>
+                <a href="/compare-insurance">Quotations Results</a>
             </li>
         </ul>
     </div>
@@ -91,7 +91,7 @@ Insurance Product Details
                                             <img
                                                 alt="post services"
                                                 class="img-fluid"
-                                                src="public/img/partner/3.png"
+                                                src="{{asset('img/partner/3.png')}}"
                                             />
                                         </div>
                                     </div>
@@ -125,7 +125,8 @@ Insurance Product Details
                                             <li>
                                                 <i class="fa fa fa-check-circle"></i>
                                                 <p>
-                                                    <span class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
+                                                    <span
+                                                        class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
                                                 </p>
                                             </li>
                                             <li>
@@ -136,7 +137,8 @@ Insurance Product Details
                                             <li>
                                                 <i class="fa fa fa-check-circle"></i>
                                                 <p>
-                                                    <span class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
+                                                    <span
+                                                        class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
                                                 </p>
                                             </li>
                                             <li>
@@ -288,7 +290,7 @@ Insurance Product Details
                                             <img
                                                 alt="post services"
                                                 class="img-fluid"
-                                                src="public/img/partner/4.png"
+                                                src="{{asset('img/partner/4.png')}}"
                                             />
                                         </div>
                                     </div>
@@ -322,7 +324,8 @@ Insurance Product Details
                                             <li>
                                                 <i class="fa fa fa-check-circle"></i>
                                                 <p>
-                                                    <span class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
+                                                    <span
+                                                        class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
                                                 </p>
                                             </li>
                                             <li>
@@ -333,7 +336,8 @@ Insurance Product Details
                                             <li>
                                                 <i class="fa fa fa-check-circle"></i>
                                                 <p>
-                                                    <span class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
+                                                    <span
+                                                        class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
                                                 </p>
                                             </li>
                                             <li>
@@ -489,7 +493,7 @@ Insurance Product Details
                                             <img
                                                 alt="post services"
                                                 class="img-fluid"
-                                                src="public/img/partner/5.png"
+                                                src="{{asset('img/partner/5.png')}}"
                                             />
                                         </div>
                                     </div>
@@ -523,7 +527,8 @@ Insurance Product Details
                                             <li>
                                                 <i class="fa fa fa-check-circle"></i>
                                                 <p>
-                                                    <span class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
+                                                    <span
+                                                        class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
                                                 </p>
                                             </li>
                                             <li>
@@ -534,7 +539,8 @@ Insurance Product Details
                                             <li>
                                                 <i class="fa fa fa-check-circle"></i>
                                                 <p>
-                                                    <span class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
+                                                    <span
+                                                        class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
                                                 </p>
                                             </li>
                                             <li>

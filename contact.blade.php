@@ -13,10 +13,10 @@ Contact
             <ul class="au-breadcrumb">
                 <li class="au-breadcrumb-item">
                     <i class="fa fa-home"></i>
-                    <a href="resources/views/home.blade.php">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/home.blade.php">Contact Us</a>
+                    <a href="/home">Contact Us</a>
                 </li>
             </ul>
         </div>
