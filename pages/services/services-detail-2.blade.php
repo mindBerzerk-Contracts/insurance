@@ -8,18 +8,17 @@
     <meta content="My Insurance" name="description">
     <meta content="My Insurance" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="../../public/img/icons/favicon.ico" rel="icon" sizes="16x16" type="image/gif">
+    <link href="public/img/icons/favicon.ico" rel="icon" sizes="16x16" type="image/gif">
     <!--Styles-->
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="vendor/jQuery.mmenu/dist/css/jquery.mmenu.all.css" rel="stylesheet">
     <link href="vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="vendor/jquery-accordion/css/jquery.accordion.css" rel="stylesheet">
     <!-- Fonts-->
-    <link href="../../public/fonts/open-sans/css/open-sans.css" rel="stylesheet">
-    <link href="../../public/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../../public/fonts/Linearicons-Free-v1.0.0/style.css" rel="stylesheet">
+    <link href="public/fonts/open-sans/css/open-sans.css" rel="stylesheet">
+    <link href="public/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="public/fonts/Linearicons-Free-v1.0.0/style.css" rel="stylesheet">
     <!--Theme style-->
     <link href="public/css/style.css" rel="stylesheet">
 </head>
@@ -29,7 +28,7 @@
 <header>
     <div id="loading">
         <div class="image-load">
-            <img alt="loader" src="../../public/img/icons/Marty.gif"/>
+            <img alt="loader" src="public/img/icons/Marty.gif"/>
         </div>
     </div>
     <nav id="mmenu">
@@ -41,27 +40,30 @@
                         <a href="/home">HOME LAYOUT 1</a>
                     </li>
                     <li>
-                        <a href="/compare-insurance">HOME LAYOUT 2</a>
+                        <a href="/compareinsurance">HOME LAYOUT 2</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="resources/views/services-list.blade.php">PRODUCTS</a>
+                <a href="resources/views/pages/services/services-list.blade.php-list.blade.php">PRODUCTS</a>
                 <ul>
                     <li>
                         <a href="resources/views/pages/insurance-details.blade.php">CAR INSURANCE</a>
                     </li>
                     <li>
-                        <a href="services-detail-2.blade.php">LIFE INSURANCE</a>
+                        <a href="resources/views/pages/services/services-detail-2.blade.php">LIFE INSURANCE</a>
                     </li>
                     <li>
-                        <a href="resources/views/services-detail-3.blade.php">HOME INSURANCE</a>
+                        <a href="resources/views/pages/services/services-detail-3.blade.phpail-3.blade.php">HOME
+                            INSURANCE</a>
                     </li>
                     <li>
-                        <a href="resources/views/services-detail-4.blade.php">TRAVEL INSURANCE</a>
+                        <a href="resources/views/pages/services/services-detail-4.blade.phpail-4.blade.php">TRAVEL
+                            INSURANCE</a>
                     </li>
                     <li>
-                        <a href="resources/views/services-detail-5.blade.php">BUSINESS INSURANCE</a>
+                        <a href="resources/views/pages/services/services-detail-5.blade.phpail-5.blade.php">BUSINESS
+                            INSURANCE</a>
                     </li>
                     <li>
                         <a href="services-detail-6.html">LANDLORD INSURANCE</a>
@@ -69,21 +71,21 @@
                 </ul>
             </li>
             <li>
-                <a href="/get-a-quote">GET A QUOTE</a>
+                <a href="/getaquote">GET A QUOTE</a>
                 <ul>
                     <li>
-                        <a href="/get-a-quote">QUOTE LAYOUT 1</a>
+                        <a href="/getaquote">QUOTE LAYOUT 1</a>
                     </li>
                     <li>
                         <a href="get-a-quote-2.blade.php">QUOTE LAYOUT 2</a>
                     </li>
                     <li>
-                        <a href="/get-a-quote">QUOTE LAYOUT 3</a>
+                        <a href="/getaquote">QUOTE LAYOUT 3</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="resources/views/about.blade.php">OUR COMPANY</a>
+                <a href="resources/views/pages/about.blade.php">OUR COMPANY</a>
             </li>
             <li>
                 <a href="resources/views/pages/articles.blade.php">BLOG</a>
@@ -152,10 +154,10 @@
         <div class="container">
             <p class="greeting">Welcome to insurance company, we're here to help you</p>
             <div class="quick-link">
-                <a href="/get-a-quote">Get a Quote</a>|
+                <a href="/getaquote">Get a Quote</a>|
                 <a href="resources/views/pages/agent-list.blade.php">Find an Agent</a>|
                 <a href="#">Pricing</a>|
-                <a href="resources/views/about.blade.php">FAQS</a>
+                <a href="resources/views/pages/about.blade.php">FAQS</a>
             </div>
         </div>
     </div>
@@ -163,7 +165,7 @@
         <div class="container">
             <div class="logo">
                 <a href="/home">
-                    <img alt="Logo" class="img-fluid" src="../../public/img/icons/logo.png"/>
+                    <img alt="Logo" class="img-fluid" src="public/img/icons/logo.png"/>
                 </a>
             </div>
             <div class="contact-widget">
@@ -212,30 +214,34 @@
                                     <a href="/home">Home 1</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/compare-insurance.blade.php">Home 2</a>
+                                    <a href="resources/views/quotations/compareinsurance.blade.php">Home 2</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="resources/views/services-list.blade.php">Products</a>
+                            <a href="resources/views/pages/services/services-list.blade.php-list.blade.php">Products</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="resources/views/insurance-details.blade.php">CAR INSURANCE</a>
+                                    <a href="resources/views/pages/insurance-details.blade.php">CAR INSURANCE</a>
                                 </li>
                                 <li>
-                                    <a href="services-detail-2.blade.php">LIFE INSURANCE</a>
+                                    <a href="resources/views/pages/services/services-detail-2.blade.php">LIFE
+                                        INSURANCE</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/services-detail-5.blade.php">HOME INSURANCE</a>
+                                    <a href="resources/views/pages/services/services-detail-5.blade.phpail-5.blade.php">HOME
+                                        INSURANCE</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/services-detail-3.blade.php">TRAVEL INSURANCE</a>
+                                    <a href="resources/views/pages/services/services-detail-3.blade.phpail-3.blade.php">TRAVEL
+                                        INSURANCE</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/services-detail-4.blade.php">BUSINESS INSURANCE</a>
+                                    <a href="resources/views/pages/services/services-detail-4.blade.phpail-4.blade.php">BUSINESS
+                                        INSURANCE</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/insurance-details.blade.php">LANDLORD INSURANCE</a>
+                                    <a href="resources/views/pages/insurance-details.blade.php">LANDLORD INSURANCE</a>
                                 </li>
                             </ul>
                         </li>
@@ -243,18 +249,18 @@
                             <a href="#">Get A Quote</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="resources/views/get-a-quote.blade.php">Get A Quote 1</a>
+                                    <a href="resources/views/quotations/getaquote.blade.php">Get A Quote 1</a>
                                 </li>
                                 <li>
                                     <a href="get-a-quote-2.blade.php">Get A Quote 2</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/get-a-quote.blade.php">Get A Quote 3</a>
+                                    <a href="resources/views/quotations/getaquote.blade.php">Get A Quote 3</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="resources/views/about.blade.php">Our Company</a>
+                            <a href="resources/views/pages/about.blade.php">Our Company</a>
                         </li>
                         <li class="dropdown">
                             <a href="/articles">Blog</a>
@@ -271,27 +277,28 @@
                             <a href="#">Pages</a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-child">
-                                    <a href="resources/views/agent-list.blade.php">Agent List</a>
+                                    <a href="resources/views/pages/agent-list.blade.php">Agent List</a>
                                     <ul class="dropdown-menu-child">
                                         <li>
-                                            <a href="resources/views/agent-list.blade.php">Agent List 1</a>
+                                            <a href="resources/views/pages/agent-list.blade.php">Agent List 1</a>
                                         </li>
                                         <li>
                                             <a href="agent-list-2.blade.php">Agent List 2</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/agent-detail.blade.php">Agent Detail</a>
+                                            <a href="resources/views/pages/agent-detail.blade.php">Agent Detail</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-child">
-                                    <a href="resources/views/insurance-products.blade.php">Projects</a>
+                                    <a href="resources/views/pages/insurance-products.blade.php">Projects</a>
                                     <ul class="dropdown-menu-child">
                                         <li>
-                                            <a href="resources/views/insurance-products.blade.php">Projects List</a>
+                                            <a href="resources/views/pages/insurance-products.blade.php">Projects
+                                                List</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/insurance-product-detail.blade.php">Project
+                                            <a href="resources/views/pages/insurance-product-detail.blade.php">Project
                                                 Detail</a>
                                         </li>
                                     </ul>
@@ -311,7 +318,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="resources/views/about.blade.php">About</a>
+                                    <a href="resources/views/pages/about.blade.php">About</a>
                                 </li>
                             </ul>
                         </li>
@@ -331,7 +338,7 @@
                                     <a href="contact-4.blade.php">Contact 4</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/contact.blade.php">Contact 5</a>
+                                    <a href="resources/views/pages/contact.blade.php">Contact 5</a>
                                 </li>
                             </ul>
                         </li>
@@ -349,102 +356,98 @@
     </div>
 </header>
 <!-- End header main-->
-<div class="page-content services-detail-3">
+<!-- HEADING PAGE-->
+<div class="heading-page heading-normal">
     <div class="container">
+        <ul class="au-breadcrumb">
+            <li class="au-breadcrumb-item">
+                <a href="/home">Home</a>
+            </li>
+            <li class="au-breadcrumb-item active">
+                <a href="/home">Our Products</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- END HEADING PAGE-->
+<div class="page-content services-detail-2">
+    <div class="container">
+        <div class="heading-page">
+            <h3 class="heading-section">Life Insurance</h3>
+        </div>
         <div class="row">
-            <div class="col-md-8 col-md-push-4">
-                <!-- HEADING PAGE-->
-                <div class="heading-page heading-normal">
-                    <ul class="au-breadcrumb">
-                        <li class="au-breadcrumb-item">
-                            <a href="/home">Home</a>
-                        </li>
-                        <li class="au-breadcrumb-item active">
-                            <a href="/home">Our Products</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END HEADING PAGE-->
-                <!-- POST SERVICES DERAIL 3-->
-                <div class="post-services post-services-detail-3">
-                    <div class="title-page">
-                        <h1 class="heading-section bold">Travel Insurance</h1>
-                    </div>
-                    <!-- SLIDER, STYLE 2-->
-                    <div class="slider slider-medium-layout style-1 style-2">
-                        <div class="slider-item">
-                            <div class="owl-carousel" data-dots=".slider-dots">
-                                <div class="owl-item">
-                                    <div class="slider-image">
-                                        <img
-                                            alt="Compare 265+ holiday insurance policies from over 40 travel insurance providers."
-                                            class="img-fluid"
-                                            src="../../public/img/slider/slider-medium-11.jpg"/>
-                                    </div>
-                                    <div class="slider-text-holder animated">
-                                        <div class="slider-title">
-                                            <a>Compare 265+ holiday insurance policies from over 40 travel insurance
-                                                providers.</a>
-                                        </div>
-                                        <div class="slider-btn">
-                                            <button class="au-btn au-btn-orange au-btn-sm">Get a quote</button>
-                                        </div>
-                                    </div>
+            <div class="col-md-8">
+                <!-- SLIDER, STYLE 2-->
+                <div class="slider slider-medium-layout style-1 style-2">
+                    <div class="slider-item">
+                        <div class="owl-carousel" data-dots=".slider-dots">
+                            <div class="owl-item">
+                                <div class="slider-image">
+                                    <img alt="Compare life insurance policies from leading providers"
+                                         class="img-fluid"
+                                         src="public/img/slider/slider-medium-8.jpg"/>
                                 </div>
-                                <div class="owl-item">
-                                    <div class="slider-image">
-                                        <img
-                                            alt="Compare 265+ holiday insurance policies from over 40 travel insurance providers."
-                                            class="img-fluid"
-                                            src="../../public/img/slider/slider-medium-12.jpg"/>
+                                <div class="slider-text-holder animated">
+                                    <div class="slider-title">
+                                        <a>Compare life insurance policies from leading providers</a>
                                     </div>
-                                    <div class="slider-text-holder animated">
-                                        <div class="slider-title">
-                                            <a>Compare 265+ holiday insurance policies from over 40 travel insurance
-                                                providers.</a>
-                                        </div>
-                                        <div class="slider-btn">
-                                            <button class="au-btn au-btn-orange au-btn-sm">Get a quote</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item">
-                                    <div class="slider-image">
-                                        <img
-                                            alt="Compare 265+ holiday insurance policies from over 40 travel insurance providers."
-                                            class="img-fluid"
-                                            src="../../public/img/slider/slider-medium-13.jpg"/>
-                                    </div>
-                                    <div class="slider-text-holder animated">
-                                        <div class="slider-title">
-                                            <a>Compare 265+ holiday insurance policies from over 40 travel insurance
-                                                providers.</a>
-                                        </div>
-                                        <div class="slider-btn">
-                                            <button class="au-btn au-btn-orange au-btn-sm">Get a quote</button>
-                                        </div>
+                                    <div class="slider-btn">
+                                        <button class="au-btn au-btn-orange au-btn-sm">Get a quote</button>
                                     </div>
                                 </div>
                             </div>
-                            <ul class="slider-dots owl-dots">
-                                <li class="owl-dot active"></li>
-                                <li class="owl-dot"></li>
-                                <li class="owl-dot"></li>
-                            </ul>
-                            <div class="slider-arrow">
-                                <div class="prev">
-                                    <i class="fa fa-chevron-left"></i>
+                            <div class="owl-item">
+                                <div class="slider-image">
+                                    <img alt="Compare life insurance policies from leading providers"
+                                         class="img-fluid"
+                                         src="public/img/slider/slider-medium-9.jpg"/>
                                 </div>
-                                <div class="next">
-                                    <i class="fa fa-chevron-right"></i>
+                                <div class="slider-text-holder animated">
+                                    <div class="slider-title">
+                                        <a>Compare life insurance policies from leading providers</a>
+                                    </div>
+                                    <div class="slider-btn">
+                                        <button class="au-btn au-btn-orange au-btn-sm">Get a quote</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="slider-image">
+                                    <img alt="Compare life insurance policies from leading providers"
+                                         class="img-fluid"
+                                         src="public/img/slider/slider-medium-10.jpg"/>
+                                </div>
+                                <div class="slider-text-holder animated">
+                                    <div class="slider-title">
+                                        <a>Compare life insurance policies from leading providers</a>
+                                    </div>
+                                    <div class="slider-btn">
+                                        <button class="au-btn au-btn-orange au-btn-sm">Get a quote</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <ul class="slider-dots owl-dots">
+                            <li class="owl-dot active"></li>
+                            <li class="owl-dot"></li>
+                            <li class="owl-dot"></li>
+                        </ul>
+                        <div class="slider-arrow">
+                            <div class="prev">
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <div class="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <!-- END SLIDER, STYLE 1-->
+                </div>
+                <!-- END SLIDER, STYLE 1-->
+                <!-- POST SERVICES DERAIL 2-->
+                <div class="post-services post-services-detail-2">
                     <div class="post-paragraph p1">
                         <div class="post-heading">
-                            <h3>Read our travel insurance guides</h3>
+                            <h3>We're here to help you get the protection you need</h3>
                         </div>
                         <div class="post-content">
                             <p>
@@ -460,7 +463,7 @@
                     </div>
                     <div class="post-paragraph p2">
                         <div class="post-heading">
-                            <h3>Everyone can save with our travel insurance comparison service</h3>
+                            <h3>The Right Coverage for You</h3>
                         </div>
                         <div class="post-content">
                             <p>
@@ -470,156 +473,84 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="post-with-image post-with-image-style-2">
+                    <!--+post_table_layout_1-->
+                    <div class="post-with-image">
+                        <div class="row">
+                            <div class="col-md-5 custom-col-5">
                                 <div class="post-image">
-                                    <img alt="Post Services" class="img-fluid"
-                                         src="../../public/img/post/post-services-6.jpg"/>
-                                </div>
-                                <div class="post-paragraph">
-                                    <div class="post-heading">
-                                        <h3>Read our top tips for cheaper travel insurance</h3>
-                                    </div>
-                                    <div class="post-content">
-                                        <p>
-                                            Suspendisse vestibulum rutrum purus, vitae sagittis arcu tincidunt vel eget
-                                            varius ligula
-                                        </p>
-                                    </div>
+                                    <img alt="post services" class="img-fluid"
+                                         src="public/img/post/post-services-3.jpg"/>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="post-with-image post-with-image-style-2">
-                                <div class="post-image">
-                                    <img alt="Post Services" class="img-fluid"
-                                         src="../../public/img/post/post-services-7.jpg"/>
-                                </div>
+                            <div class="col-md-7 custom-col-7">
                                 <div class="post-paragraph">
                                     <div class="post-heading">
-                                        <h3>Pre-existing Medical Conditions</h3>
+                                        <h3>How does life insurance work?</h3>
                                     </div>
                                     <div class="post-content">
                                         <p>
-                                            Mauris aliquam suscipit massa, non euismod justo volutpat ac. Donec quis
-                                            malesuada justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="post-with-image post-with-image-style-2">
-                                <div class="post-image">
-                                    <img alt="Post Services" class="img-fluid"
-                                         src="../../public/img/post/post-services-8.jpg"/>
-                                </div>
-                                <div class="post-paragraph">
-                                    <div class="post-heading">
-                                        <h3>European Health Insurance Card</h3>
-                                    </div>
-                                    <div class="post-content">
-                                        <p>
-                                            Vivamus at orci viverra, bibendum purus non, sollicitudin velit. Cras eu
-                                            augue ac nulla rutrum tincidunt.
+                                            Suspendisse vestibulum rutrum purus, vitae sagittis arcu tincidunt vel.
+                                            Donec eget varius ligula. Nulla facilisi. Morbi vitae leo nec sapien
+                                            consectetur lobortis. Morbi pharetra sed turpis eget sodales. Morbi
+                                            dignissim eu sem ornare ullamcorper. Proin
+                                            nisl augue, condimentum vel lorem et, consectetur pellentesque leo. Donec
+                                            bibendum erat lectus
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="post-paragraph">
-                        <div class="post-heading">
-                            <h3>Frequently asked questions about travel insurance</h3>
-                        </div>
-                        <div class="post-content">
-                            <p>
-                                Sed vel bibendum urna, in blandit nunc. Praesent eget mauris auctor, efficitur justo
-                                sed, consectetur dolor. Cras aliquet mi vitae convallis luctus. Aenean imperdiet mi et
-                                eleifend efficitur.
-                            </p>
+                    <div class="post-with-image">
+                        <div class="row">
+                            <div class="col-md-5 custom-col-5 custom-push-7">
+                                <div class="post-image">
+                                    <img alt="post services" class="img-fluid"
+                                         src="public/img/post/post-services-4.jpg"/>
+                                </div>
+                            </div>
+                            <div class="col-md-7 custom-col-7 custom-pull-5">
+                                <div class="post-paragraph">
+                                    <div class="post-heading">
+                                        <h3>Protection equals peace of mind</h3>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>
+                                            Suspendisse vestibulum rutrum purus, vitae sagittis arcu tincidunt vel.
+                                            Donec eget varius ligula. Nulla facilisi. Morbi vitae leo nec sapien
+                                            consectetur lobortis. Morbi pharetra sed turpis eget sodales. Morbi
+                                            dignissim eu sem ornare ullamcorper. Proin
+                                            nisl augue, condimentum vel lorem et, consectetur pellentesque leo. Donec
+                                            bibendum erat lectus
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="post-accordion">
-                        <div data-accordion-group="data-accordion-group">
-                            <div class="accordion" data-accordion="data-accordion">
-                                <div class="accordion-title" data-control="data-control">
-                                    <i class="fa fa-plus-circle"></i>
-                                    <h4>What type of policy should I buy?</h4>
-                                </div>
-                                <div class="accordion-content" data-content="data-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at felis vitae
-                                        ex auctor congue eget eu libero. Fusce et elementum dui, sit amet congue lorem.
-                                        Donec quis fermentum mauris. Suspendisse sagittis
-                                        et felis at porttitor. Proin et turpis tempor nisl facilisis laoreet sit amet ut
-                                        diam. Nam lobortis ornare augue non porta.</p>
+                    <div class="post-with-image">
+                        <div class="row">
+                            <div class="col-md-5 custom-col-5">
+                                <div class="post-image">
+                                    <img alt="post services" class="img-fluid"
+                                         src="public/img/post/post-services-5.jpg"/>
                                 </div>
                             </div>
-                            <div class="accordion" data-accordion="data-accordion">
-                                <div class="accordion-title" data-control="data-control">
-                                    <i class="fa fa-plus-circle"></i>
-                                    <h4>What is classed as a pre-existing medical condition and can I be covered?</h4>
-                                </div>
-                                <div class="accordion-content" data-content="data-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at felis vitae
-                                        ex auctor congue eget eu libero. Fusce et elementum dui, sit amet congue lorem.
-                                        Donec quis fermentum mauris. Suspendisse sagittis
-                                        et felis at porttitor. Proin et turpis tempor nisl facilisis laoreet sit amet ut
-                                        diam. Nam lobortis ornare augue non porta.</p>
-                                </div>
-                            </div>
-                            <div class="accordion" data-accordion="data-accordion">
-                                <div class="accordion-title" data-control="data-control">
-                                    <i class="fa fa-plus-circle"></i>
-                                    <h4>Will I be covered for day trips, excursions, and holidays with multiple
-                                        destinations?</h4>
-                                </div>
-                                <div class="accordion-content" data-content="data-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at felis vitae
-                                        ex auctor congue eget eu libero. Fusce et elementum dui, sit amet congue lorem.
-                                        Donec quis fermentum mauris. Suspendisse sagittis
-                                        et felis at porttitor. Proin et turpis tempor nisl facilisis laoreet sit amet ut
-                                        diam. Nam lobortis ornare augue non porta.]</p>
-                                </div>
-                            </div>
-                            <div class="accordion" data-accordion="data-accordion">
-                                <div class="accordion-title" data-control="data-control">
-                                    <i class="fa fa-plus-circle"></i>
-                                    <h4>What is included in my policy?</h4>
-                                </div>
-                                <div class="accordion-content" data-content="data-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at felis vitae
-                                        ex auctor congue eget eu libero. Fusce et elementum dui, sit amet congue lorem.
-                                        Donec quis fermentum mauris. Suspendisse sagittis
-                                        et felis at porttitor. Proin et turpis tempor nisl facilisis laoreet sit amet ut
-                                        diam. Nam lobortis ornare augue non porta.</p>
-                                </div>
-                            </div>
-                            <div class="accordion" data-accordion="data-accordion">
-                                <div class="accordion-title" data-control="data-control">
-                                    <i class="fa fa-plus-circle"></i>
-                                    <h4>I am having problems completing payment, why?</h4>
-                                </div>
-                                <div class="accordion-content" data-content="data-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at felis vitae
-                                        ex auctor congue eget eu libero. Fusce et elementum dui, sit amet congue lorem.
-                                        Donec quis fermentum mauris. Suspendisse sagittis
-                                        et felis at porttitor. Proin et turpis tempor nisl facilisis laoreet sit amet ut
-                                        diam. Nam lobortis ornare augue non porta.</p>
-                                </div>
-                            </div>
-                            <div class="accordion" data-accordion="data-accordion">
-                                <div class="accordion-title" data-control="data-control">
-                                    <i class="fa fa-plus-circle"></i>
-                                    <h4>Will I be covered in the event or a natural disaster or terrorism?</h4>
-                                </div>
-                                <div class="accordion-content" data-content="data-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at felis vitae
-                                        ex auctor congue eget eu libero. Fusce et elementum dui, sit amet congue lorem.
-                                        Donec quis fermentum mauris. Suspendisse sagittis
-                                        et felis at porttitor. Proin et turpis tempor nisl facilisis laoreet sit amet ut
-                                        diam. Nam lobortis ornare augue non porta.</p>
+                            <div class="col-md-7 custom-col-7">
+                                <div class="post-paragraph">
+                                    <div class="post-heading">
+                                        <h3>How do we earn money on life insurance?</h3>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>
+                                            Suspendisse vestibulum rutrum purus, vitae sagittis arcu tincidunt vel.
+                                            Donec eget varius ligula. Nulla facilisi. Morbi vitae leo nec sapien
+                                            consectetur lobortis. Morbi pharetra sed turpis eget sodales. Morbi
+                                            dignissim eu sem ornare ullamcorper. Proin
+                                            nisl augue, condimentum vel lorem et, consectetur pellentesque leo. Donec
+                                            bibendum erat lectus
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -711,61 +642,61 @@
                 </div>
                 <!-- END POST SERVICES DERAIL 2-->
             </div>
-            <div class="col-md-4 col-md-pull-8">
+            <div class="col-md-4">
                 <!-- SIDEBAR, STYLE 2-->
                 <div class="sidebar sidebar-style-1 sidebar-style-2">
                     <ul class="sidebar-container">
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-car"></i>
                                 <span>Car Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/services-detail-5.blade.php">
+                            <a href="resources/views/pages/services/services-detail-5.blade.phpail-5.blade.php">
                                 <i class="fa fa-home"></i>
                                 <span>Home Insurance</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="services-detail-2.blade.php">
+                        <li class="sidebar-item active">
+                            <a href="resources/views/pages/services/services-detail-2.blade.php">
                                 <i class="fa fa-heart"></i>
                                 <span>Life Insurance</span>
                             </a>
                         </li>
-                        <li class="sidebar-item active">
-                            <a href="resources/views/services-detail-3.blade.php">
+                        <li class="sidebar-item">
+                            <a href="resources/views/pages/services/services-detail-3.blade.phpail-3.blade.php">
                                 <i class="fa fa-plane"></i>
                                 <span>Travel Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/services-detail-4.blade.php">
+                            <a href="resources/views/pages/services/services-detail-4.blade.phpail-4.blade.php">
                                 <i class="fa fa-bank"></i>
                                 <span>Business Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/services-detail-4.blade.php">
+                            <a href="resources/views/pages/services/services-detail-4.blade.phpail-4.blade.php">
                                 <i class="fa fa-building"></i>
                                 <span>Landlord Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-umbrella"></i>
                                 <span>Umbrella Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="services-detail-2.blade.php">
+                            <a href="resources/views/pages/services/services-detail-2.blade.php">
                                 <i class="fa fa-ship"></i>
                                 <span>Boat Insurance</span>
                             </a>
                         </li>
                     </ul>
                     <div class="banner">
-                        <img alt="banner" class="img-fluid" src="../../public/img/banner/banner-2.jpg"/>
+                        <img alt="banner" class="img-fluid" src="public/img/banner/banner-2.jpg"/>
                     </div>
                     <div class="contact-widget">
                         <div class="heading-widget">
@@ -809,33 +740,39 @@
                 <div class="col-md-6 col-sm-6">
                     <div class="services-widget">
                         <div class="logo">
-                            <img alt="Logo" src="../../public/img/icons/logo-2.png"/>
+                            <img alt="Logo" src="public/img/icons/logo-2.png"/>
                         </div>
                         <div class="services-list">
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul>
                                         <li>
-                                            <a href="resources/views/insurance-details.blade.php">Car Insurance</a>
+                                            <a href="resources/views/pages/insurance-details.blade.php">Car
+                                                Insurance</a>
                                         </li>
                                         <li>
-                                            <a href="services-detail-2.blade.php">Home Insurance</a>
+                                            <a href="resources/views/pages/services/services-detail-2.blade.php">Home
+                                                Insurance</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/services-detail-5.blade.php">Life Insurance</a>
+                                            <a href="resources/views/pages/services/services-detail-5.blade.phpail-5.blade.php">Life
+                                                Insurance</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul>
                                         <li>
-                                            <a href="resources/views/services-detail-4.blade.php">Travel Insurance</a>
+                                            <a href="resources/views/pages/services/services-detail-4.blade.phpail-4.blade.php">Travel
+                                                Insurance</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/insurance-details.blade.php">Landlord Insurance</a>
+                                            <a href="resources/views/pages/insurance-details.blade.php">Landlord
+                                                Insurance</a>
                                         </li>
                                         <li>
-                                            <a href="services-detail-2.blade.php">Business Insurance</a>
+                                            <a href="resources/views/pages/services/services-detail-2.blade.php">Business
+                                                Insurance</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -896,7 +833,7 @@
             <p class="copyright">Copyright © 2021 Designed by georgethedeveloper. All rights reserved.</p>
             <ul class="quick-link">
                 <li>
-                    <a href="resources/views/about.blade.php">About</a>
+                    <a href="resources/views/pages/about.blade.php">About</a>
                 </li>
                 <li>
                     <a href="contact-6.blade.php">Contact Us</a>
@@ -920,12 +857,10 @@
 <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jQuery.mmenu/dist/js/jquery.mmenu.min.umd.js"></script>
-<script src="../../public/js/mmenu-function.js"></script>
+<script src="public/js/mmenu-function.js"></script>
 <script src="vendor/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="../../public/js/owl-custom.js"></script>
-<script src="vendor/jquery-accordion/js/jquery.accordion.js"></script>
-<script src="../../public/js/accordion-custom.js"></script>
-<script src="../../public/js/custom.js"></script>
+<script src="public/js/owl-custom.js"></script>
+<script src="public/js/custom.js"></script>
 <!--End script-->
 </body>
 

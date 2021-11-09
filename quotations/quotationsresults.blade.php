@@ -15,10 +15,10 @@ Insurance Product Details
             </li>
             <li class="au-breadcrumb-item">
                 <i class="fa fa-question-circle"></i>
-                <a href="/get-a-quote">Quotations</a>
+                <a href="/getaquote">Quotations</a>
             </li>
             <li class="au-breadcrumb-item active">
-                <a href="/compare-insurance">Quotations Results</a>
+                <a href="/compareinsurance">Quotations Results</a>
             </li>
         </ul>
     </div>
@@ -38,6 +38,7 @@ Insurance Product Details
                 </div>
 
                 <div class="row">
+                    @foreach ($responseBody as $response)
                     <div class="col-md-3">
                         <div class="post-with-image">
                             <div class="post-paragraph">
@@ -45,7 +46,7 @@ Insurance Product Details
                                     <h3>Value of Car</h3>
                                 </div>
                                 <div class="post-content">
-                                    <p>xxxxxxxxxxxx</p>
+                                    <p>{{ $response->vehicleValue }}</p>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +58,7 @@ Insurance Product Details
                                     <h3>Age</h3>
                                 </div>
                                 <div class="post-content">
-                                    <p>xxxxxxxxxx</p>
+                                    <p>{{ $response->vehicleAge }}</p>
                                 </div>
                             </div>
                         </div>
@@ -78,6 +79,7 @@ Insurance Product Details
                 <!-- Quote SERVICES DERAIL 1-->
                 <div class="post-content-box">
                     <div class="row">
+
                         <div class="col">
                             <div class="row">
                                 <div class="col">
@@ -262,7 +264,7 @@ Insurance Product Details
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">New & Young Drivers:</span>Kshs. 5,000.00 additional
                                             (Below 1 Year Experience/ Under 23 Years Old)</p>
                                     </li>
@@ -270,12 +272,14 @@ Insurance Product Details
 
                             </div>
                         </div>
+
+                        @endforeach
                     </div>
 
 
                 </div>
 
-                <div class="post-content-box">
+                <!--<div class="post-content-box">
                     <div class="row">
                         <div class="col">
                             <div class="row">
@@ -679,7 +683,7 @@ Insurance Product Details
                     </div>
 
 
-                </div>
+                </div>-->
 
                 <!-- END POST SERVICES DERAIL 1-->
             </div>

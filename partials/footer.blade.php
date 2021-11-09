@@ -19,7 +19,7 @@
                                             <a href="questions.html">I have a Question</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/services-detail-5.blade.php">Articles</a>
+                                            <a href="resources/views/pages/services/services-detail-5.blade.php">Articles</a>
                                         </li>
                                     </ul>
                                 </div>

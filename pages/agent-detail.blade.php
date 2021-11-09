@@ -160,11 +160,11 @@ Agents-Detail
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/insurance-details.blade.php">
+                        <a class="image" href="resources/views/pages/insurance-details.blade.phpde.php">
                             <img alt="Car Insurance" class="img-fluid" src="public/img/product/product-1.jpg"/>
                         </a>
                         <div class="title">
-                            <a href="resources/views/insurance-details.blade.php">Car Insurance</a>
+                            <a href="resources/views/pages/insurance-details.blade.phpde.php">Car Insurance</a>
                         </div>
                         <div class="content">
                             <p>Insurance fraud puts an extra $70 on the price of every annual car insurance premium.</p>
@@ -173,11 +173,11 @@ Agents-Detail
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/services-detail-2.blade.php">
+                        <a class="image" href="resources/views/pages/services/services-detail-2.blade.php">
                             <img alt="Life Insurance" class="img-fluid" src="public/img/product/product-2.jpg"/>
                         </a>
                         <div class="title">
-                            <a href="resources/views/services-detail-2.blade.php">Life Insurance</a>
+                            <a href="resources/views/pages/services/services-detail-2.blade.php">Life Insurance</a>
                         </div>
                         <div class="content">
                             <p>If you have a partner and children, then the two of you should think about life
@@ -187,11 +187,11 @@ Agents-Detail
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/services-detail-3.blade.php">
+                        <a class="image" href="resources/views/pages/services/services-detail-3.blade.php">
                             <img alt="Home Insurance" class="img-fluid" src="public/img/product/product-3.jpg"/>
                         </a>
                         <div class="title">
-                            <a href="resources/views/services-detail-3.blade.php">Home Insurance</a>
+                            <a href="resources/views/pages/services/services-detail-3.blade.php">Home Insurance</a>
                         </div>
                         <div class="content">
                             <p>We'll rebuild or repair your home if it's damaged or destroyed.</p>
@@ -200,11 +200,11 @@ Agents-Detail
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/services-detail-4.blade.php">
+                        <a class="image" href="resources/views/pages/services/services-detail-4.blade.php">
                             <img alt="Travel Insurance" class="img-fluid" src="public/img/product/product-4.jpg"/>
                         </a>
                         <div class="title">
-                            <a href="resources/views/services-detail-4.blade.php">Travel Insurance</a>
+                            <a href="resources/views/pages/services/services-detail-4.blade.php">Travel Insurance</a>
                         </div>
                         <div class="content">
                             <p>We can help you find the best plan for your trip and your budget.</p>
@@ -213,11 +213,11 @@ Agents-Detail
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="product-item style-1 match-item">
-                        <a class="image" href="resources/views/services-detail-5.blade.php">
+                        <a class="image" href="resources/views/pages/services/services-detail-5.blade.php">
                             <img alt="Business Insurance" class="img-fluid" src="public/img/product/product-5.jpg"/>
                         </a>
                         <div class="title">
-                            <a href="resources/views/services-detail-5.blade.php">Business Insurance</a>
+                            <a href="resources/views/pages/services/services-detail-5.blade.php">Business Insurance</a>
                         </div>
                         <div class="content">
                             <p>In truth, there are certain forms of insurance that are an absolute requirement for all

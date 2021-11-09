@@ -17,10 +17,10 @@ Compare Motor
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <a href="/compare-insurance">Compare Insurance</a>
+                    <a href="/compareinsurance">Compare Insurance</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/compare-motor-commercial.blade.php">Motor Commercial Insurance</a>
+                    <a href="resources/views/quotationre-motor-commercial.blade.php">Motor Commercial Insurance</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +40,7 @@ Compare Motor
                             <i class="fa fa-truck"></i>
                         </div>
                         <div class="title">
-                            <a href="resources/views/get-a-quote.blade.php">Own Goods</a>
+                            <a href="resources/views/pages/getaquote.blade.phpde.php">Own Goods</a>
                         </div>
                         <div class="content">
                             <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -61,7 +61,7 @@ Compare Motor
                             <i class="fa fa-truck"></i>
                         </div>
                         <div class="title">
-                            <a href="resources/views/get-a-quote.blade.php">General Cartage</a>
+                            <a href="resources/views/pages/getaquote.blade.phpde.php">General Cartage</a>
                         </div>
                         <div class="content">
                             <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -82,7 +82,7 @@ Compare Motor
                             <i class="fa fa-bus"></i>
                         </div>
                         <div class="title">
-                            <a href="resources/views/get-a-quote.blade.php">Institutional Buses / Vans</a>
+                            <a href="resources/views/pages/getaquote.blade.phpde.php">Institutional Buses / Vans</a>
                         </div>
                         <div class="content">
                             <p>If you have a partner and children, then the two of you should think about life
@@ -103,7 +103,7 @@ Compare Motor
                             <i class="fa fa-car"></i>
                         </div>
                         <div class="title">
-                            <a href="resources/views/get-a-quote.blade.php">Online Commercial </a>
+                            <a href="resources/views/pages/getaquote.blade.phpde.php">Online Commercial </a>
                         </div>
                         <div class="content">
                             <p>If you have a partner and children, then the two of you should think about life

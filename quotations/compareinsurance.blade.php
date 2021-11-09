@@ -17,7 +17,7 @@ Compare Insurance
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/compare-insurance.blade.php">Compare Insurance</a>
+                    <a href="resources/views/quotationre-insurance.blade.php">Compare Insurance</a>
                 </li>
             </ul>
         </div>
@@ -41,7 +41,7 @@ Compare Insurance
                             <i class="fa fa-car"></i>
                         </div>
                         <div class="title">
-                            <a href="{{ url('/get-a-quote') }}">Motor Private Insurance</a>
+                            <a href="{{ url('/getaquote') }}">Motor Private Insurance</a>
                         </div>
                         <div class="content">
                             <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -49,7 +49,7 @@ Compare Insurance
                         </div>
                         <div class="view-more">
                             <button class="btn btn-outline-warning"
-                                    onclick="window.location.href='/get-a-quote';"
+                                    onclick="window.location.href='/getaquote';"
                                     type="button">Get Quotation
                             </button>
                         </div>
@@ -61,7 +61,7 @@ Compare Insurance
                             <i class="fa fa-bus"></i>
                         </div>
                         <div class="title">
-                            <a href="{{ url('/compare-motor-commercial') }}">Motor Commercial Insurance</a>
+                            <a href="{{ url('/comparemotorcommercial') }}">Motor Commercial Insurance</a>
                         </div>
                         <div class="content">
                             <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -69,7 +69,7 @@ Compare Insurance
                         </div>
                         <div class="view-more">
                             <button class="btn btn-outline-warning"
-                                    onclick="window.location.href='/compare-motor-commercial';"
+                                    onclick="window.location.href='/comparemotorcommercial';"
                                     type="button">Get Quotation
                             </button>
                         </div>
@@ -81,7 +81,7 @@ Compare Insurance
                             <i class="fa fa-heartbeat"></i>
                         </div>
                         <div class="title">
-                            <a href="{{ url('/get-a-quote') }}">Medical Insurance</a>
+                            <a href="{{ url('/getaquote') }}">Medical Insurance</a>
                         </div>
                         <div class="content">
                             <p>If you have a partner and children, then the two of you should think about medical
@@ -89,7 +89,7 @@ Compare Insurance
                         </div>
                         <div class="view-more">
                             <button class="btn btn-outline-warning"
-                                    onclick="window.location.href='/compare-medical-insurance';"
+                                    onclick="window.location.href='/comparemedicalinsurance';"
                                     type="button">Get Quotation
                             </button>
                         </div>
@@ -101,14 +101,14 @@ Compare Insurance
                             <i class="fa fa-ambulance"></i>
                         </div>
                         <div class="title">
-                            <a href="{{ url('/get-a-quote') }}">Personal Accident Insurance</a>
+                            <a href="{{ url('/getaquote') }}">Personal Accident Insurance</a>
                         </div>
                         <div class="content">
                             <p>We'll rebuild or repair your home if it's damaged or destroyed.</p>
                         </div>
                         <div class="view-more">
                             <button class="btn btn-outline-warning"
-                                    onclick="window.location.href='/get-a-quote';"
+                                    onclick="window.location.href='/getaquote';"
                                     type="button">Get Quotation
                             </button>
                         </div>
@@ -120,14 +120,14 @@ Compare Insurance
                             <i class="fa fa-plane"></i>
                         </div>
                         <div class="title">
-                            <a href="{{ url('/get-a-quote') }}">Travel Policy/Insurance</a>
+                            <a href="{{ url('/getaquote') }}">Travel Policy/Insurance</a>
                         </div>
                         <div class="content">
                             <p>We can help you find the best plan for your trip and your budget.</p>
                         </div>
                         <div class="view-more">
                             <button class="btn btn-outline-warning"
-                                    onclick="window.location.href='/get-a-quote';"
+                                    onclick="window.location.href='/getaquote';"
                                     type="button">Get Quotation
                             </button>
                         </div>
@@ -139,7 +139,7 @@ Compare Insurance
                             <i class="fa fa-bank"></i>
                         </div>
                         <div class="title">
-                            <a href="{{ url('/get-a-quote') }}">Business Insurance</a>
+                            <a href="{{ url('/getaquote') }}">Business Insurance</a>
                         </div>
                         <div class="content">
                             <p>In truth, there are certain forms of insurance that are an absolute requirement for all
@@ -147,7 +147,7 @@ Compare Insurance
                         </div>
                         <div class="view-more">
                             <button class="btn btn-outline-warning"
-                                    onclick="window.location.href='/get-a-quote';"
+                                    onclick="window.location.href='/getaquote';"
                                     type="button">Get Quotation
                             </button>
                         </div>
@@ -159,14 +159,14 @@ Compare Insurance
                             <i class="fa fa-building"></i>
                         </div>
                         <div class="title">
-                            <a href="{{ url('/get-a-quote') }}">Landlord Insurance</a>
+                            <a href="{{ url('/getaquote') }}">Landlord Insurance</a>
                         </div>
                         <div class="content">
                             <p>Our rental property insurance protects your property from damages</p>
                         </div>
                         <div class="view-more">
                             <button class="btn btn-outline-warning"
-                                    onclick="window.location.href='/get-a-quote';"
+                                    onclick="window.location.href='/getaquote';"
                                     type="button">Get Quotation
                             </button>
                         </div>

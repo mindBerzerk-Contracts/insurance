@@ -14,7 +14,7 @@ Insurance Details
                 <a href="/home">Home</a>
             </li>
             <li class="au-breadcrumb-item active">
-                <a href="/compare-insurance">Compare Insurance</a>
+                <a href="/compareinsurance">Compare Insurance</a>
             </li>
         </ul>
     </div>
@@ -41,7 +41,7 @@ Insurance Details
                                     <div class="slider-btn">
                                         <button
                                             class="au-btn au-btn-orange au-btn-sm"
-                                            onclick="window.location.href='/compare-insurance';">Get a quote
+                                            onclick="window.location.href='/compareinsurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@ Insurance Details
                                     </div>
                                     <div class="slider-btn">
                                         <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='/compare-insurance';">Get a quote
+                                                onclick="window.location.href='/compareinsurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ Insurance Details
                                     </div>
                                     <div class="slider-btn">
                                         <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='/compare-insurance';">Get a quote
+                                                onclick="window.location.href='/compareinsurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>
@@ -341,49 +341,49 @@ Insurance Details
                 <div class="sidebar sidebar-style-1">
                     <ul class="sidebar-container">
                         <li class="sidebar-item active">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-car"></i>
                                 <span>Car Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-home"></i>
                                 <span>Home Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-heart"></i>
                                 <span>Life Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-plane"></i>
                                 <span>Travel Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-bank"></i>
                                 <span>Business Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-building"></i>
                                 <span>Landlord Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-umbrella"></i>
                                 <span>Umbrella Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/insurance-details.blade.php">
+                            <a href="resources/views/pages/insurance-details.blade.php">
                                 <i class="fa fa-ship"></i>
                                 <span>Boat Insurance</span>
                             </a>

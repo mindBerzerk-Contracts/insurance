@@ -17,10 +17,10 @@ Quotation
                 </li>
                 <li class="au-breadcrumb-item">
                     <i aria-hidden="true" class="fa fa-university"></i>
-                    <a href="/compare-insurance">Compare Insurance</a>
+                    <a href="/compareinsurance">Compare Insurance</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="/compare-insurance">Quotation</a>
+                    <a href="/compareinsurance">Quotation</a>
                 </li>
             </ul>
         </div>
@@ -43,6 +43,8 @@ Quotation
                                 <h4>Start your Motor Quote below.</h4>
                             </div>
                             <div class="quote-form-item">
+                                @foreach ($responseBody as $response)
+
                                 <div class="quote-form-label">
                                     <span>Vehicle Value</span>
                                 </div>
@@ -58,7 +60,7 @@ Quotation
                                 </div>
                                 <div class="input-group mb-3 ">
                                     <select class="form-select" id="inputGroupSelect01 justify-content-end">
-                                        <option selected>Choose...</option>
+                                        <option selected>{{ $response->make }}</option>
                                         <option value="1">Ford</option>
                                         <option value="2">Chevrolet</option>
                                         <option value="3">Nissan</option>
@@ -103,9 +105,11 @@ Quotation
                             <div class="form-button">
                                 <button
                                     class="au-btn au-btn-orange au-btn-md"
-                                    onclick="window.location.href='/quotations';">Get Quotations
+                                    onclick="window.location.href='/quotationsresults';">Get Quotations
                                 </button>
                             </div>
+
+                            @endforeach
 
                         </div>
 

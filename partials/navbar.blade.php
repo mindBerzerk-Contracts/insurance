@@ -18,7 +18,7 @@
             </li>
 
             <li>
-                <a href="resources/views/services-list.blade.php">Compare Insurance</a>
+                <a href="resources/views/pages/services/services-list.blade.php">Compare Insurance</a>
             </li>
 
 
@@ -76,7 +76,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="{{ url('/compare-insurance') }}">Compare Insurance</a>
+                            <a href="{{ url('/compareinsurance') }}">Compare Insurance</a>
                         </li>
 
                         <li class="dropdown">

@@ -104,7 +104,7 @@ Insurance Product Details
                         <option>Umbrella Insurance</option>
                         <option>Boat Insurance</option>
                     </select>
-                    <button class="au-btn au-btn-orange" onclick="window.location.href='/compare-insurance';">Get a
+                    <button class="au-btn au-btn-orange" onclick="window.location.href='/compareinsurance';">Get a
                         quote
                     </button>
                 </div>

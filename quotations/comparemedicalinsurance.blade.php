@@ -17,10 +17,10 @@ Compare Medical
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <a href="/compare-insurance">Compare Insurance</a>
+                    <a href="/compareinsurance">Compare Insurance</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/pages/compare-motor-commercial.blade.phpde.php">Medical Insurance</a>
+                    <a href="resources/views/pages/comparemotorcommercial.blade.phpde.php">Medical Insurance</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +40,7 @@ Compare Medical
                             <i class="fa fa-wheelchair"></i>
                         </div>
                         <div class="title">
-                            <a href="resources/views/get-a-quote.blade.php">Seniors</a>
+                            <a href="resources/views/pages/getaquote.blade.phpde.php">Seniors</a>
                         </div>
                         <div class="content">
                             <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -61,7 +61,7 @@ Compare Medical
                             <i class="fa fa-user-md"></i>
                         </div>
                         <div class="title">
-                            <a href="resources/views/get-a-quote.blade.php">Normal</a>
+                            <a href="resources/views/pages/getaquote.blade.phpde.php">Normal</a>
                         </div>
                         <div class="content">
                             <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -82,7 +82,7 @@ Compare Medical
                             <i class="fa fa-users"></i>
                         </div>
                         <div class="title">
-                            <a href="resources/views/get-a-quote.blade.php">Children</a>
+                            <a href="resources/views/pages/getaquote.blade.phpde.php">Children</a>
                         </div>
                         <div class="content">
                             <p>If you have a partner and children, then the two of you should think about life

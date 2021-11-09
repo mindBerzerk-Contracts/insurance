@@ -50,11 +50,12 @@ About
                             ornare orci, vehicula fermentum sapien dolor ac ligula.
                         </p>
                         <div class="action-group">
-                            <a class="au-btn au-btn-orange au-btn-md" href="resources/views/get-a-quote.blade.php">Get a
+                            <a class="au-btn au-btn-orange au-btn-md"
+                               href="resources/views/quotations/getaquote.blade.php">Get a
                                 quote</a>
                             <div class="sub-link">
                                 <span>or</span>
-                                <a href="resources/views/agent-list.blade.php">Find an agent</a>
+                                <a href="resources/views/pages/agent-list.blade.php">Find an agent</a>
                             </div>
                         </div>
                     </div>
