@@ -105,8 +105,8 @@ Insurance Product Details
                                         </div>
                                         <ul>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">33750.00</span></p>
                                             </li>
                                         </ul>
@@ -123,27 +123,27 @@ Insurance Product Details
                                         </div>
                                         <ul>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span
                                                         class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
                                                 </p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">Excess Protector Minimum:</span>5000.0</p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span
                                                         class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
                                                 </p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">Excess Protector Rate:</span>0.25</p>
                                             </li>
                                         </ul>
@@ -161,50 +161,50 @@ Insurance Product Details
                                 </div>
                                 <ul>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Windscreen & Window Glass:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Entertainment Unit:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Repair Authority:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Towing & Recovery Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Emergency Medical Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 5,000,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Bodily Injuries:</span>Unlimited per event
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Passenger Legal Liability:</span>Kshs. 20,000,000 per
                                             event</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Geographical Area:</span>Kenya</p>
                                     </li>
                                 </ul>
@@ -220,49 +220,49 @@ Insurance Product Details
                                 </div>
                                 <ul>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Own Damage/Partial Theft:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Partial Theft:</span>2.5% of Sum Insured Minimum Ksh
                                             20,000 and Maximum Ksh 100,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft with Anti-Theft Devices:</span>10% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft without Anti-Theft Devices:</span>20% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft with Tracking Device:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Bodily Injury:</span></p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 7,500.00
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">New & Young Drivers:</span>Kshs. 5,000.00 additional
                                             (Below 1 Year Experience/ Under 23 Years Old)</p>
                                     </li>
@@ -304,8 +304,8 @@ Insurance Product Details
                                         </div>
                                         <ul>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">33750.00</span></p>
                                             </li>
                                         </ul>
@@ -322,27 +322,27 @@ Insurance Product Details
                                         </div>
                                         <ul>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span
                                                         class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
                                                 </p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">Excess Protector Minimum:</span>5000.0</p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span
                                                         class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
                                                 </p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">Excess Protector Rate:</span>0.25</p>
                                             </li>
                                         </ul>
@@ -360,52 +360,52 @@ Insurance Product Details
                                 </div>
                                 <ul>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Windscreen & Window Glass:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Entertainment Unit:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Repair Authority:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Towing & Recovery Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Emergency Medical Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 5,000,000
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Bodily Injuries:</span>Unlimited per
                                             event
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Passenger Legal Liability:</span>Kshs. 20,000,000 per
                                             event</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Geographical Area:</span>Kenya</p>
                                     </li>
 
@@ -423,49 +423,49 @@ Insurance Product Details
                                 </div>
                                 <ul>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Own Damage/Partial Theft:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Partial Theft:</span>2.5% of Sum Insured Minimum Ksh
                                             20,000 and Maximum Ksh 100,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft with Anti-Theft Devices:</span>10% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft without Anti-Theft Devices:</span>20% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft with Tracking Device:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Bodily Injury:</span></p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 7,500.00
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">New & Young Drivers:</span>Kshs. 5,000.00 additional
                                             (Below 1 Year Experience/ Under 23 Years Old)</p>
                                     </li>
@@ -507,8 +507,8 @@ Insurance Product Details
                                         </div>
                                         <ul>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">33750.00</span></p>
                                             </li>
                                         </ul>
@@ -525,27 +525,27 @@ Insurance Product Details
                                         </div>
                                         <ul>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span
                                                         class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
                                                 </p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">Excess Protector Minimum:</span>5000.0</p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span
                                                         class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
                                                 </p>
                                             </li>
                                             <li>
-                                                <i class="fa fa fa-check-circle"></i>
-                                                <p>
+
+                                            <p>
                                                     <span class="bold">Excess Protector Rate:</span>0.25</p>
                                             </li>
                                         </ul>
@@ -563,52 +563,52 @@ Insurance Product Details
                                 </div>
                                 <ul>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Windscreen & Window Glass:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Entertainment Unit:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Repair Authority:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Towing & Recovery Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Emergency Medical Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 5,000,000
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Bodily Injuries:</span>Unlimited per
                                             event
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Passenger Legal Liability:</span>Kshs. 20,000,000 per
                                             event</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Geographical Area:</span>Kenya</p>
                                     </li>
 
@@ -626,49 +626,49 @@ Insurance Product Details
                                 </div>
                                 <ul>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Own Damage/Partial Theft:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Partial Theft:</span>2.5% of Sum Insured Minimum Ksh
                                             20,000 and Maximum Ksh 100,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft with Anti-Theft Devices:</span>10% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft without Anti-Theft Devices:</span>20% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Theft with Tracking Device:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Bodily Injury:</span></p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 7,500.00
                                         </p>
                                     </li>
                                     <li>
-                                        <i class="fa fa fa-check-circle"></i>
-                                        <p>
+
+                                    <p>
                                             <span class="bold">New & Young Drivers:</span>Kshs. 5,000.00 additional
                                             (Below 1 Year Experience/ Under 23 Years Old)</p>
                                     </li>
