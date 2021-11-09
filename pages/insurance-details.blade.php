@@ -32,7 +32,7 @@ Insurance Details
                             <div class="owl-item">
                                 <div class="slider-image">
                                     <img alt="Compare quotes from over 250 insurance brands" class="img-fluid"
-                                         src="public/img/slider/slider-medium-1.jpg"/>
+                                         src="{{asset('img/slider/slider-medium-1.jpg')}}"/>
                                 </div>
                                 <div class="slider-text-holder animated">
                                     <div class="slider-title">
@@ -49,7 +49,7 @@ Insurance Details
                             <div class="owl-item">
                                 <div class="slider-image">
                                     <img alt="Compare quotes from over 250 insurance brands" class="img-fluid"
-                                         src="public/img/slider/slider-medium-2.jpg"/>
+                                         src="{{asset('img/slider/slider-medium-2.jpg')}}"/>
                                 </div>
                                 <div class="slider-text-holder animated">
                                     <div class="slider-title">
@@ -65,7 +65,7 @@ Insurance Details
                             <div class="owl-item">
                                 <div class="slider-image">
                                     <img alt="Compare quotes from over 250 insurance brands" class="img-fluid"
-                                         src="public/img/slider/slider-medium-3.jpg"/>
+                                         src="{{asset('img/slider/slider-medium-3.jpg')}}"/>
                                 </div>
                                 <div class="slider-text-holder animated">
                                     <div class="slider-title">
@@ -176,7 +176,7 @@ Insurance Details
                                 </div>
                                 <div class="post-image">
                                     <img alt="post services" class="img-fluid"
-                                         src="public/img/post/post-services-2.jpg"/>
+                                         src="{{asset('img/post/post-services-2.jpg')}}"/>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@ Insurance Details
                                 </div>
                                 <div class="post-image">
                                     <img alt="post services" class="img-fluid"
-                                         src="public/img/post/post-services-1.jpg"/>
+                                         src="{{asset('img/post/post-services-1.jpg')}}"/>
                                 </div>
                             </div>
                         </div>
@@ -341,56 +341,56 @@ Insurance Details
                 <div class="sidebar sidebar-style-1">
                     <ul class="sidebar-container">
                         <li class="sidebar-item active">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-car"></i>
                                 <span>Car Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-home"></i>
                                 <span>Home Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-heart"></i>
                                 <span>Life Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-plane"></i>
                                 <span>Travel Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-bank"></i>
                                 <span>Business Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-building"></i>
                                 <span>Landlord Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-umbrella"></i>
                                 <span>Umbrella Insurance</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="resources/views/pages/insurance-details.blade.php">
+                            <a href="/insurance-details">
                                 <i class="fa fa-ship"></i>
                                 <span>Boat Insurance</span>
                             </a>
                         </li>
                     </ul>
                     <div class="banner">
-                        <img alt="banner" class="img-fluid" src="public/img/banner/banner-1.jpg"/>
+                        <img alt="banner" class="img-fluid" src="{{asset('img/banner/banner-1.jpg')}}"/>
                     </div>
                 </div>
                 <!-- END SIDEBAR, STYLE 1-->
