@@ -17,7 +17,7 @@ Compare Insurance
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="resources/views/quotationre-insurance.blade.php">Compare Insurance</a>
+                    <a href="/compareinsurance">Compare Insurance</a>
                 </li>
             </ul>
         </div>
