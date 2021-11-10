@@ -70,7 +70,7 @@ Insurance Product Details
                                     <h3>Make | Model</h3>
                                 </div>
                                 <div class="post-content">
-                                    <p>xxxxxxxxx</p>
+                                    <p>{{ $response->make }}</p>
                                 </div>
                             </div>
                         </div>
@@ -108,8 +108,8 @@ Insurance Product Details
                                         <ul>
                                             <li>
 
-                                            <p>
-                                                    <span class="bold">33750.00</span></p>
+                                                <p>
+                                                    <span class="bold">{{ $response->premium }}</span></p>
                                             </li>
                                         </ul>
                                     </div>
@@ -123,31 +123,16 @@ Insurance Product Details
                                                 <h4>Additional Covers</h4>
                                             </div>
                                         </div>
+                                        @foreach ($responseBody as $response)
                                         <ul>
                                             <li>
 
-                                            <p>
+                                                <p>
                                                     <span
                                                         class="bold">Political Violence and Terrorism (PVT) Minimum:</span>2500.0
                                                 </p>
                                             </li>
-                                            <li>
-
-                                            <p>
-                                                    <span class="bold">Excess Protector Minimum:</span>5000.0</p>
-                                            </li>
-                                            <li>
-
-                                            <p>
-                                                    <span
-                                                        class="bold">Political Violence and Terrorism (PVT) Rate:</span>0.25
-                                                </p>
-                                            </li>
-                                            <li>
-
-                                            <p>
-                                                    <span class="bold">Excess Protector Rate:</span>0.25</p>
-                                            </li>
+                                            @endforeach
                                         </ul>
                                     </div>
                                 </div>
@@ -164,49 +149,49 @@ Insurance Product Details
                                 <ul>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Windscreen & Window Glass:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Entertainment Unit:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Repair Authority:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Towing & Recovery Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Emergency Medical Expenses:</span>Kshs. 30,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 5,000,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Third Party Bodily Injuries:</span>Unlimited per event
                                         </p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Passenger Legal Liability:</span>Kshs. 20,000,000 per
                                             event</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Geographical Area:</span>Kenya</p>
                                     </li>
                                 </ul>
@@ -223,42 +208,42 @@ Insurance Product Details
                                 <ul>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Own Damage/Partial Theft:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Partial Theft:</span>2.5% of Sum Insured Minimum Ksh
                                             20,000 and Maximum Ksh 100,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Theft with Anti-Theft Devices:</span>10% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Theft without Anti-Theft Devices:</span>20% of Sum
                                             Insured Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Theft with Tracking Device:</span>2.5% of Sum Insured
                                             Minimum Ksh 20,000</p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Third Party Bodily Injury:</span></p>
                                     </li>
                                     <li>
 
-                                    <p>
+                                        <p>
                                             <span class="bold">Third Party Property Damage:</span>Kshs. 7,500.00
                                         </p>
                                     </li>
