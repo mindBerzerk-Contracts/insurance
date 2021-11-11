@@ -15,7 +15,7 @@
                 </li>
                 <li class="au-breadcrumb-item">
                     <i class="fa fa-question-circle"></i>
-                    <a href="/getaquote">Quotations</a>
+                    <a href="/private-motor-quotation">Quotations</a>
                 </li>
                 <li class="au-breadcrumb-item active">
                     <a href="/compareinsurance">Quotations Results</a>

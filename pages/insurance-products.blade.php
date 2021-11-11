@@ -1,7 +1,7 @@
 @extends("layouts.master")
 
 @section("title")
-Insurance Product Details
+Insurance Product
 @endsection
 
 @section("content")
@@ -47,6 +47,7 @@ Insurance Product Details
                     </li>
                 </ul>
             </div>
+
             <div class="row isotope-grid">
                 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item Retirement">
                     <div class="project-item match-item">

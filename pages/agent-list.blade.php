@@ -8,22 +8,21 @@ Agents
 
 <div class="page-content agent-list-1">
     <!-- HEADING PAGE-->
-    <section class="heading-page heading-agent-list-1 heading-services-detail-5"
-             style="background: url(&quot;img/backgrounds/heading-page-12.jpg&quot;) center center no-repeat;">
+    <!-- HEADING PAGE-->
+    <div class="heading-page heading-normal heading-project">
         <div class="container">
             <ul class="au-breadcrumb">
                 <li class="au-breadcrumb-item">
+                    <i class="fa fa-home"></i>
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="/home">About Us</a>
+                    <a href="/agents">Agents</a>
                 </li>
             </ul>
-            <div class="heading-title">
-                <h1>Agent Listing</h1>
-            </div>
         </div>
-    </section>
+    </div>
+    <!-- END HEADING PAGE-->
     <!-- END HEADING PAGE-->
     <!-- OUR TEAM, STYLE 2-->
     <section class="team team-layout style-2 style-1">

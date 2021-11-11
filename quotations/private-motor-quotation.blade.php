@@ -1,7 +1,7 @@
 @extends("layouts.master")
 
 @section('title')
-    Quotation
+    Private Motor Quotation Form
 @endsection
 
 @section('content')
@@ -43,7 +43,7 @@
                                 <h4>Step 1 of 2</h4>
                             </div>
 
-                            <form method="post" action="{{ route('quotationsresults') }}"
+                            <form method="post" action="{{ route('private-motor-quotations-results') }}"
                                   class="row g-3 needs-validation" novalidate>
                                 @csrf
 
@@ -124,7 +124,7 @@
                                 })()
                             </script>
 
-                            {{--<form method="post" action="{{ route('quotationsresults') }}">
+                            {{--<form method="post" action="{{ route('private-motor-quotations-results') }}">
                                 @csrf
 
                                 <div class="quote-form-container">
@@ -195,7 +195,7 @@
                                     <input type="submit" name="send" value="Submit" class="au-btn au-btn-orange au-btn-md">
                                     <!--<button
                                                                 class="au-btn au-btn-orange au-btn-md"
-                                                                onclick="window.location.href='/quotationsresults';">Get Quotations
+                                                                onclick="window.location.href='/private-motor-quotations-results';">Get Quotations
                                                             </button>-->
 
 

@@ -40,7 +40,7 @@
                                 <i class="fa fa-wheelchair"></i>
                             </div>
                             <div class="title">
-                                <a href="resources/views/pages/getaquote.blade.phpde.php">Seniors</a>
+                                <a href="/coming-soon">Seniors</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -61,7 +61,7 @@
                                 <i class="fa fa-user-md"></i>
                             </div>
                             <div class="title">
-                                <a href="resources/views/pages/getaquote.blade.phpde.php">Normal</a>
+                                <a href="/coming-soon">Normal</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -82,7 +82,7 @@
                                 <i class="fa fa-users"></i>
                             </div>
                             <div class="title">
-                                <a href="resources/views/pages/getaquote.blade.phpde.php">Children</a>
+                                <a href="/coming-soon">Children</a>
                             </div>
                             <div class="content">
                                 <p>If you have a partner and children, then the two of you should think about life

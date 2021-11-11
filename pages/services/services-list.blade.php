@@ -66,16 +66,16 @@
                 </ul>
             </li>
             <li>
-                <a href="/getaquote">GET A QUOTE</a>
+                <a href="/private-motor-quotation">GET A QUOTE</a>
                 <ul>
                     <li>
-                        <a href="/getaquote">QUOTE LAYOUT 1</a>
+                        <a href="/private-motor-quotation">QUOTE LAYOUT 1</a>
                     </li>
                     <li>
                         <a href="get-a-quote-2.blade.php">QUOTE LAYOUT 2</a>
                     </li>
                     <li>
-                        <a href="/getaquote">QUOTE LAYOUT 3</a>
+                        <a href="/private-motor-quotation">QUOTE LAYOUT 3</a>
                     </li>
                 </ul>
             </li>
@@ -149,7 +149,7 @@
         <div class="container">
             <p class="greeting">Welcome to insurance company, we're here to help you</p>
             <div class="quick-link">
-                <a href="/getaquote">Get a Quote</a>|
+                <a href="/private-motor-quotation">Get a Quote</a>|
                 <a href="resources/views/pages/agent-list.blade.php">Find an Agent</a>|
                 <a href="#">Pricing</a>|
                 <a href="resources/views/pages/about.blade.php">FAQS</a>
@@ -244,13 +244,15 @@
                             <a href="#">Get A Quote</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="resources/views/quotations/getaquote.blade.php">Get A Quote 1</a>
+                                    <a href="resources/views/quotations/private-motor-quotation.blade.php">Get A Quote
+                                        1</a>
                                 </li>
                                 <li>
                                     <a href="get-a-quote-2.blade.php">Get A Quote 2</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/quotations/getaquote.blade.php">Get A Quote 3</a>
+                                    <a href="resources/views/quotations/private-motor-quotation.blade.php">Get A Quote
+                                        3</a>
                                 </li>
                             </ul>
                         </li>

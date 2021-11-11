@@ -57,6 +57,8 @@
     <!--Theme style-->
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    <script src="{{asset('vendor/jquery/dist/jquery.min.js') }}"></script>
 </head>
 
 <body>
@@ -89,7 +91,7 @@
 <script src="{{asset('vendor/get-size/get-size.js') }}"></script>
 <script src="{{asset('vendor/imagesloaded/imagesloaded.js') }}"></script>
 <script src="{{asset('vendor/isotope/isotope.js') }}"></script>
-<script src="{{asset('vendor/jquery/dist/jquery.min.js') }}"></script>
+
 <script src="{{asset('vendor/jquery.counterup/jquery.counterup.js') }}"></script>
 <script src="{{asset('vendor/jQuery.mmenu/dist/js/jquery.mmenu.min.umd.js') }}"></script>
 <script src="{{asset('vendor/jQuery.accordion/js/jquery.accordion.js') }}"></script>

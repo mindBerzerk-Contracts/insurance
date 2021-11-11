@@ -20,7 +20,7 @@
                         <a href="/compareinsurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="resources/views/quotationre-motor-commercial.blade.php">Motor Commercial Insurance</a>
+                        <a href="comparemotorcommercial">Motor Commercial Insurance</a>
                     </li>
                 </ul>
             </div>
@@ -40,7 +40,7 @@
                                 <i class="fa fa-truck"></i>
                             </div>
                             <div class="title">
-                                <a href="resources/views/pages/getaquote.blade.phpde.php">Own Goods</a>
+                                <a href="/coming-soon">Own Goods</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -48,7 +48,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='coming-soon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -61,7 +61,7 @@
                                 <i class="fa fa-truck"></i>
                             </div>
                             <div class="title">
-                                <a href="resources/views/pages/getaquote.blade.phpde.php">General Cartage</a>
+                                <a href="/coming-soon">General Cartage</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -82,7 +82,7 @@
                                 <i class="fa fa-bus"></i>
                             </div>
                             <div class="title">
-                                <a href="resources/views/pages/getaquote.blade.phpde.php">Institutional Buses / Vans</a>
+                                <a href="/coming-soon">Institutional Buses / Vans</a>
                             </div>
                             <div class="content">
                                 <p>If you have a partner and children, then the two of you should think about life
@@ -103,7 +103,7 @@
                                 <i class="fa fa-car"></i>
                             </div>
                             <div class="title">
-                                <a href="resources/views/pages/getaquote.blade.phpde.php">Online Commercial </a>
+                                <a href="/coming-soon">Online Commercial </a>
                             </div>
                             <div class="content">
                                 <p>If you have a partner and children, then the two of you should think about life
