@@ -24,22 +24,23 @@
     <meta content="georgethedeveloper" name="twitter:title">
     <meta content="Imminent - The most spectacular coming soon template!" name="twitter:description">
 
-    <link href="favicon.png" rel="shortcut icon" type="{{asset('img/icons/favicon.ico')}}">
+    <link href="favicon.png" rel="shortcut icon" type="{{ asset('img/icons/favicon.ico') }}">
 
     <!-- CSS -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
     <!-- Styles -->
     <link href="css/loader.css" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/normalize.css')}}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{assert('css/font-awesome.min.css')}}">
-    <link href="{{asset('css/coming.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link href="{{ asset('css/coming.css') }}" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" href="{{assert('css/ie.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/ie.css') }}" />
     <![endif]-->
     <!-- Javascript -->
 
-    <script src="{{asset('vendor/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
 </head>
+
 <body>
 <div class="preloader">
     <div class="loading">
@@ -75,7 +76,7 @@
 
         <li class="layer" data-depth="0.25">
             <div class="sphere">
-                <img alt="sphere" src="{{asset('img/coming/sphere.png')}}">
+                <img alt="sphere" src="{{ asset('img/coming/sphere.png') }}">
             </div>
         </li>
 
@@ -94,19 +95,19 @@
 
         <li class="layer" data-depth="0.40">
             <div class="depth-1 flake1">
-                <img alt="flake" src="{{asset('img/coming/flakes/depth1/flakes1.png')}}">
+                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes1.png') }}">
             </div>
 
             <div class="depth-1 flake2">
-                <img alt="flake" src="{{asset('img/coming/flakes/depth1/flakes2.png')}}">
+                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes2.png') }}">
             </div>
 
             <div class="depth-1 flake3">
-                <img alt="flake" src="{{asset('img/coming/flakes/depth1/flakes3.png')}}">
+                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes3.png') }}">
             </div>
 
             <div class="depth-1 flake4">
-                <img alt="flake" src="{{asset('img/coming/flakes/depth1/flakes4.png')}}">
+                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes4.png') }}">
             </div>
         </li>
 
@@ -167,16 +168,18 @@
                     </li>
                 </ul>
                 Theme by <a href="https://georgethedeveloper.com/" target="_blank">georgethedeveloper</a>
-                <a class="mail" href="mailto:info@example.com?subject=Hi%20georgethedeveloper!">info@example.com</a>
+                <a class="mail"
+                   href="mailto:info@example.com?subject=Hi%20georgethedeveloper!">info@example.com</a>
             </div>
         </li>
     </ul>
 </div>
 
 <!-- Javascript -->
-<script src="{{asset('js/plugins.js')}}"></script>
-<script src="{{asset('js/jquery.countdown.min.js')}}"></script>
-<script src="{{asset('js/main.js')}}"></script>
+<script src="{{ asset('js/plugins.js') }}"></script>
+<script src="{{ asset('js/jquery.countdown.min.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 
 </body>
+
 </html>
