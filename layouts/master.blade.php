@@ -18,25 +18,18 @@
     <link href="{{asset('vendor/animate.css/animate.min.css') }}" rel="stylesheet">
     <link href="{{asset('vendor/jQuery.mmenu/dist/css/jquery.mmenu.all.css') }}" rel="stylesheet">
     <!--Owl carosel-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css"
-          integrity="sha512-nQBtu5ETxTSzk2JroACVYGz3hR7lz1wli8+RSeEhX0KERJOpLbl+j7OtGwvrqE6DGdm4xyVpt7tAfFZGBDq+ug=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+          integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css"
-          integrity="sha512-wOFbhKjhJWoAjlnxMK+uNACGNi2xrcTarIBCLpktzzajCOfxCR4AnJcT9mBEiVTFWmthRvQHY23v4OhyY981Lg=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.css"
-          integrity="sha512-qsN6rZwYgvcSFAN11Lk6OStGHLgGaOjS1sxO/OPLBaZBJPBRQO4OLqlCtocG61ZJnqG3YGhRONxEH1DdlU15zA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css"
-          integrity="sha512-7oiM8FHf/BoyQqz0JGYXWYx16l1RTfrq18Ipcr5RwTSXwkSPZ4YqVax2ZGpZ7ljEwKBhUy50jxMqAxYmoXHZQw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.green.css"
-          integrity="sha512-3GUXvTFbiIFGRFGAVc+F3fO2bxXL2MNia/7zPhZO0ei22IXXFFfkfceXF2pQQu7acdHUElf3SkuFMgS819ZWXA=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+          integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.green.min.css"
-          integrity="sha512-NEwmqSFhahW6eRMQPvFb+3+YYj4Rm5NVjaU0bpgB+oUaXwU37bd9SLVJezrejnfD39SZEwjEVOT7+B1eqiMiHg=="
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/ajax-loader.gif">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.video.play.png">
@@ -82,11 +75,11 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"
-        integrity="sha512-yG5avRhg8AWY1BsP/N//3vL3l74jbsQHivqAXOx7KB3agFQzFbeubQr9zYBinQ8+Iwsebv2s2+muvA9fMw/Ebg=="
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.js"
-        integrity="sha512-q864csiULTZqUzwMVy4ObjHRtCitK8b6HnRv0xgRtvjfzXeBRyOt9E4ahYVDa1EQl1dhWbjqtAcGsCXjFY7aJA=="
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="{{asset('vendor/desandro-matches-selector/matches_selector.js') }}"></script>
