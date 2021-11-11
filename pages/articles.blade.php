@@ -54,7 +54,7 @@ Articles
                                     faucibus.</p>
                             </div>
                             <div class="blog-link">
-                                <a href="/article-detail">Continue Reading</a>
+                                <button class="btn bg-warning"><a href="/article-detail">Continue Reading</a></button>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ Articles
                                     Donec vehicula dolor in interdum ultrices. Nulla congue nunc et magna mattis</p>
                             </div>
                             <div class="blog-link">
-                                <a href="/article-detail">Continue Reading</a>
+                                <button class="btn bg-warning"><a href="/article-detail">Continue Reading</a></button>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ Articles
                                     efficitur metus</p>
                             </div>
                             <div class="blog-link">
-                                <a href="/article-detail">Continue Reading</a>
+                                <button class="btn bg-warning"><a href="/article-detail">Continue Reading</a></button>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ Articles
                                     vestibulum at erat eu</p>
                             </div>
                             <div class="blog-link">
-                                <a href="/article-detail">Continue Reading</a>
+                                <button class="btn bg-warning"><a href="/article-detail">Continue Reading</a></button>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ Articles
                                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                             </div>
                             <div class="blog-link">
-                                <a href="/article-detail">Continue Reading</a>
+                                <button class="btn bg-warning"><a href="/article-detail">Continue Reading</a></button>
                             </div>
                         </div>
                     </div>

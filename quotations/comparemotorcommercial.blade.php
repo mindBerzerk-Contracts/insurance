@@ -69,7 +69,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>

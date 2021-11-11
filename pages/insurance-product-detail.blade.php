@@ -69,14 +69,14 @@ Insurance Product Details
 
                 <div class="col-4">
                     <div class="project-detail-imageMain">
-                        <img alt="project" src="public/img/projects/project-detail-big-1.jpg"/>
+                        <img alt="project" src="{{asset('img/projects/project-detail-big-1.jpg')}}"/>
                     </div>
                     <div class="project-detail-thumb">
                         <div class="thumb-item">
-                            <img alt="project" src="public/img/projects/project-detail-thumb-1.jpg"/>
+                            <img alt="project" src="{{asset('img/projects/project-detail-thumb-1.jpg')}}"/>
                         </div>
                         <div class="thumb-item">
-                            <img alt="project" src="public/img/projects/project-detail-thumb-2.jpg"/>
+                            <img alt="project" src="{{asset('img/projects/project-detail-thumb-1.jpg')}}"/>
                         </div>
                     </div>
                 </div>
@@ -93,17 +93,6 @@ Insurance Product Details
                     <h4>Find Information And Get Free Insurance Quotes.</h4>
                 </div>
                 <div class="call-to-action-select fancy-select-wrapper">
-                    <select class="basic">
-                        <option value="">Select something…</option>
-                        <option>Car Insurance</option>
-                        <option>Home Insurance</option>
-                        <option>Life Insurance</option>
-                        <option>Travel Insurance</option>
-                        <option>Business Insurance</option>
-                        <option>Landlord Insurance</option>
-                        <option>Umbrella Insurance</option>
-                        <option>Boat Insurance</option>
-                    </select>
                     <button class="au-btn au-btn-orange" onclick="window.location.href='/compareinsurance';">Get a
                         quote
                     </button>

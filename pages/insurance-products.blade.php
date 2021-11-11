@@ -179,18 +179,8 @@
                         <h4>Find Information And Get Free Insurance Quotes.</h4>
                     </div>
                     <div class="call-to-action-select fancy-select-wrapper">
-                        <select class="basic">
-                            <option value="">Select something…</option>
-                            <option>Car Insurance</option>
-                            <option>Home Insurance</option>
-                            <option>Life Insurance</option>
-                            <option>Travel Insurance</option>
-                            <option>Business Insurance</option>
-                            <option>Landlord Insurance</option>
-                            <option>Umbrella Insurance</option>
-                            <option>Boat Insurance</option>
-                        </select>
-                        <button class="au-btn au-btn-orange" onclick="window.location.href='/compareinsurance';">Get a
+
+                    <button class="au-btn au-btn-orange" onclick="window.location.href='/compareinsurance';">Get a
                             quote
                         </button>
                     </div>
