@@ -15,10 +15,10 @@
                 </li>
                 <li class="au-breadcrumb-item">
                     <i class="fa fa-question-circle"></i>
-                    <a href="/private-motor-quotation">Quotations</a>
+                    <a href="/motor-private-quotation">Quotations</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="/compareinsurance">Quotations Results</a>
+                    <a href="/compare-insurance">Quotations Results</a>
                 </li>
             </ul>
         </div>
@@ -27,35 +27,97 @@
     <!-- END HEADING PAGE-->
     <div class="page-content services-detail-1">
         <div class="container">
-            <h2>Motor Private Quotation Comparison</h2>
-            <h5>Vehicle Value:<strong>KSH {{number_format($responseBody["inputs"]["vehicleValue"],2) }}</strong> Vehicle
-                Age:<strong> {{$responseBody["inputs"]["vehicleAge"] }} years</strong></h5>
-            <hr/>
+            <div class="post-paragraph p1">
+                <div class="post-heading">
+                    <h3>Motor Private Quotation Results</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Value of Car</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>KSH {{number_format($responseBody["inputs"]["vehicleValue"],2) }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Vehicle Age</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>{{$responseBody["inputs"]["vehicleAge"] }} years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Make | Model</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>{{$responseBody["inputs"]["vehicleID"] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{--  <h5>Vehicle Value:<strong>KSH {{number_format($responseBody["inputs"]["vehicleValue"],2) }}</strong> Vehicle
+                      Age:<strong> {{$responseBody["inputs"]["vehicleAge"] }} years</strong></h5>
+                  <hr/>--}}
+            </div>
+
+
             @foreach ($responseBody["results"] as $response)
 
-                <div class="card" style="col-sm-11">
-                    <div class="row no-gutters">
-                        <div class="col-sm-2">
-                            <img class="card-img" src="/images/defaultimg.png" alt="Insurance Logo">
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card-body">
-                                <h5 class="card-title">{{$response["key"]}}</h5>
-                                <p class="card-text"> Premium :<strong>
-                                        KSH {{number_format($response["premium"],2)}}</strong></p>
-                                <p class="card-text"> Cover Type : {{$response["covertype"]}}</p>
+                <div class="post-content-box">
 
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text"> Additional Benefits</strong></p>
-                                <ul>
-                                    @foreach ($response["Additional-covers"] as $key=>$value)
-                                        <li> {{ $key }} : {{ $value }}</li>
-                                    @endforeach
-                                </ul>
+                    <div class="row">
 
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="card-img" src="{{ asset('img/partner/partner-1.png') }}"
+                                         alt="Insurance Logo">
+                                    <div class="card-body">
+                                        <p class="card-text"> Additional Benefits</p>
+                                        <ul>
+                                            @foreach ($response["Additional-covers"] as $key=>$value)
+                                                <li> {{ $key }} : {{ $value }}</li>
+                                            @endforeach
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+
+                                        <div class="post-paragraph">
+                                            <h5 class="card-title">{{$response["key"]}}</h5>
+                                            <div class="post-heading"> Premium :
+                                                <strong> KSH {{number_format($response["premium"],2)}}</strong>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text"> Cover Type : {{$response["covertype"]}}</p>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+
                         <div class="col-sm-5">
                             <div class="accordion" id='accordionExample-{{$response["id"]}}'>
                                 <div class="accordion-item">
@@ -108,6 +170,7 @@
                             <a href="#" class="btn btn-primary">I am Interested</a>
                         </div>
                     </div>
+
 
                 </div>
 

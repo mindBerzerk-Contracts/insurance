@@ -8,7 +8,7 @@
     <div class="page-content home-page-1">
 
         <!-- START REVOLUTION SLIDER 5.0-->
-        <div class="rev_slider_wrapper slider-primary">
+        {{--<div class="rev_slider_wrapper slider-primary">
             <div class="rev_slider" id="rev_slider_1" style="display: none">
                 <ul>
                     <li class="slider-item-1" data-transition="slidevertical">
@@ -42,7 +42,7 @@
                             data-voffset="320"
                             data-x="left"
                             data-y="top"
-                            onclick="window.location.href='/compareinsurance';"
+                            onclick="window.location.href='/compare-insurance';"
                         >
                             Read More
                         </button>
@@ -117,7 +117,7 @@
                             data-voffset="320"
                             data-x="left"
                             data-y="top"
-                            onclick="window.location.href='/compareinsurance';"
+                            onclick="window.location.href='/compare-insurance';"
                         >
                             Compare Insurance
                         </button>
@@ -126,6 +126,33 @@
                 </ul>
                 <!-- END REVOLUTION SLIDER-->
             </div>
+        </div>--}}
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{asset('img/slider/invest-1900.png') }}" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{asset('img/slider/questions-1900.png') }}" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{asset('img/slider/compare-1900.png') }}" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
         <!-- END OF SLIDER WRAPPER-->
 

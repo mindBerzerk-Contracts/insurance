@@ -17,10 +17,10 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item">
-                        <a href="/compareinsurance">Compare Insurance</a>
+                        <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="resources/views/pages/comparemotorcommercial.blade.phpde.php">Medical Insurance</a>
+                        <a href="/compare-motor-commercial">Medical Insurance</a>
                     </li>
                 </ul>
             </div>

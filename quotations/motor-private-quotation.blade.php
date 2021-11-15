@@ -1,7 +1,7 @@
 @extends("layouts.master2")
 
 @section('title')
-    Private Motor Quotation 
+    Private Motor Quotation
 @endsection
 
 @section('content')
@@ -17,36 +17,36 @@
                     </li>
                     <li class="au-breadcrumb-item">
                         <i aria-hidden="true" class="fa fa-university"></i>
-                        <a href="/compareinsurance">Compare Insurance</a>
+                        <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="/compareinsurance">Quotation</a>
+                        <a href="/compare-insurance">Quotation</a>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- END HEADING PAGE-->
-        <!-- Success message -->      
-	
+        <!-- Success message -->
+
 
         <div class="quote-container">
-	
+
             <div class="container">
-				@if($errors->any())
-					
+                @if($errors->any())
+
 					<div class="alert alert-danger">
 						<h4>{{$errors->first()}}</h4>
-					</div>
-				@endif
+                    </div>
+                @endif
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- GET A QUOTE, STYLE 3-->
                         <section class="quote-form quote-form-style-3">
                             <div class="head-section">
-                                <h4>Step 1 of 2</h4>
+                                <h4>Private Motor Quotation</h4>
                             </div>
 
-                            <form method="post" action="{{ route('private-motor-quotations-results') }}"
+                            <form method="post" action="{{ route('motor-private-quotations-results') }}"
                                   class="row g-3 needs-validation" novalidate>
                                 @csrf
 
@@ -70,15 +70,15 @@
                                         <label for="validationTooltip04" class="form-label text-white">Make |
                                             Model</label>
                                         <select name="make" class="form-select dropdown" id="make" required>
-                                            <option  selected disabled value="">Choose a Model</option>
-											@if($responseBody)
+                                            <option selected disabled value="">Choose a Make</option>
+                                            @if($responseBody)
 												@foreach ($responseBody as $response)
 													<option value="{{ $response->id }}">{{ $response->make }}</option>
 												@endforeach
 											@endif
                                         </select>
                                         <div class="invalid-tooltip">
-                                            Please select a valid Model.
+                                            Please select a valid Model | Model.
                                         </div>
 
                                     </div>
@@ -86,17 +86,17 @@
                                     <div class="col-md-12 position-relative">
                                         <label for="validationTooltip04" class="form-label text-white">Year</label>
                                         <select name="yom" class="form-select" id="yom" required>
-                                            <option  selected disabled value="">Year of Manufacture</option>                                               
-                                                <option value=2021>2021</option>
-                                                <option value=2020>2020</option>
-                                                <option value=2019>2019</option>
-                                                <option value=2018>2018</option>
-                                                <option value=2017>2017</option>
-                                                <option value=2016>2016</option>
-                                                <option value=2015>2015</option>
-                                                <option value=2014>2014</option>
-                                                <option value=2013>2013</option>
-                                                <option value=2012>2012</option>
+                                            <option selected disabled value="">Year of Manufacture</option>
+                                            <option value=2021>2021</option>
+                                            <option value=2020>2020</option>
+                                            <option value=2019>2019</option>
+                                            <option value=2018>2018</option>
+                                            <option value=2017>2017</option>
+                                            <option value=2016>2016</option>
+                                            <option value=2015>2015</option>
+                                            <option value=2014>2014</option>
+                                            <option value=2013>2013</option>
+                                            <option value=2012>2012</option>
                                                 <option value=2011>2011</option>
                                                 <option value=2010>2010</option>
                                                 <option value=2009>2009</option>

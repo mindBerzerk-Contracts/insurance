@@ -40,7 +40,7 @@
                         <a href="/home">HOME LAYOUT 1</a>
                     </li>
                     <li>
-                        <a href="/compareinsurance">HOME LAYOUT 2</a>
+                        <a href="/compare-insurance">HOME LAYOUT 2</a>
                     </li>
                 </ul>
             </li>
@@ -71,16 +71,16 @@
                 </ul>
             </li>
             <li>
-                <a href="/private-motor-quotation">GET A QUOTE</a>
+                <a href="/motor-private-quotation">GET A QUOTE</a>
                 <ul>
                     <li>
-                        <a href="/private-motor-quotation">QUOTE LAYOUT 1</a>
+                        <a href="/motor-private-quotation">QUOTE LAYOUT 1</a>
                     </li>
                     <li>
                         <a href="get-a-quote-2.blade.php">QUOTE LAYOUT 2</a>
                     </li>
                     <li>
-                        <a href="/private-motor-quotation">QUOTE LAYOUT 3</a>
+                        <a href="/motor-private-quotation">QUOTE LAYOUT 3</a>
                     </li>
                 </ul>
             </li>
@@ -154,7 +154,7 @@
         <div class="container">
             <p class="greeting">Welcome to insurance company, we're here to help you</p>
             <div class="quick-link">
-                <a href="/private-motor-quotation">Get a Quote</a>|
+                <a href="/motor-private-quotation">Get a Quote</a>|
                 <a href="resources/views/pages/agent-list.blade.php">Find an Agent</a>|
                 <a href="#">Pricing</a>|
                 <a href="resources/views/pages/about.blade.php">FAQS</a>
@@ -214,7 +214,7 @@
                                     <a href="/home">Home 1</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/quotations/compareinsurance.blade.php">Home 2</a>
+                                    <a href="resources/views/quotations/compare-insurance.blade.php">Home 2</a>
                                 </li>
                             </ul>
                         </li>
@@ -249,14 +249,14 @@
                             <a href="#">Get A Quote</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="resources/views/quotations/private-motor-quotation.blade.php">Get A Quote
+                                    <a href="resources/views/quotations/motor-private-quotation.blade.php">Get A Quote
                                         1</a>
                                 </li>
                                 <li>
                                     <a href="get-a-quote-2.blade.php">Get A Quote 2</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/quotations/private-motor-quotation.blade.php">Get A Quote
+                                    <a href="resources/views/quotations/motor-private-quotation.blade.php">Get A Quote
                                         3</a>
                                 </li>
                             </ul>

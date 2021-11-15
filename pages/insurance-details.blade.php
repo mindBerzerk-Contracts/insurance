@@ -1,30 +1,30 @@
-@extends("layouts.master")
+@extends("layouts.master2")
 
 @section("title")
 Insurance Details
 @endsection
 
 @section("content")
-<!-- HEADING PAGE-->
-<div class="heading-page heading-normal heading-project">
-    <div class="container">
-        <ul class="au-breadcrumb">
-            <li class="au-breadcrumb-item">
-                <i class="fa fa-home"></i>
-                <a href="/home">Home</a>
-            </li>
-            <li class="au-breadcrumb-item active">
-                <a href="/compareinsurance">Compare Insurance</a>
-            </li>
-        </ul>
+    <!-- HEADING PAGE-->
+    <div class="heading-page heading-normal heading-project">
+        <div class="container">
+            <ul class="au-breadcrumb">
+                <li class="au-breadcrumb-item">
+                    <i class="fa fa-home"></i>
+                    <a href="/home">Home</a>
+                </li>
+                <li class="au-breadcrumb-item active">
+                    <a href="/compare-insurance">Compare Insurance</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<!-- END HEADING PAGE-->
-<!-- END HEADING PAGE-->
-<div class="page-content services-detail-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-9">
+    <!-- END HEADING PAGE-->
+    <!-- END HEADING PAGE-->
+    <div class="page-content services-detail-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
                 <!-- SLIDER, STYLE 1-->
                 <div class="slider slider-medium-layout style-1">
                     <div class="slider-item">
@@ -41,7 +41,7 @@ Insurance Details
                                     <div class="slider-btn">
                                         <button
                                             class="au-btn au-btn-orange au-btn-sm"
-                                            onclick="window.location.href='/compareinsurance';">Get a quote
+                                            onclick="window.location.href='/compare-insurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@ Insurance Details
                                     </div>
                                     <div class="slider-btn">
                                         <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='/compareinsurance';">Get a quote
+                                                onclick="window.location.href='/compare-insurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ Insurance Details
                                     </div>
                                     <div class="slider-btn">
                                         <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='/compareinsurance';">Get a quote
+                                                onclick="window.location.href='/compare-insurance';">Get a quote
                                         </button>
                                     </div>
                                 </div>

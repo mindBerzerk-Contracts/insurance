@@ -54,7 +54,7 @@
                             </p>
                             <div class="action-group">
                                 <a class="au-btn au-btn-orange au-btn-md"
-                                   href="resources/views/quotations/private-motor-quotation.blade.php">Get a
+                                   href="resources/views/quotations/motor-private-quotation.blade.php">Get a
                                     quote</a>
                                 <div class="sub-link">
                                     <span>or</span>
