@@ -1,7 +1,7 @@
-@extends("layouts.master")
+@extends("layouts.master2")
 
 @section('title')
-    Private Motor Quotation Form
+    Private Motor Quotation 
 @endsection
 
 @section('content')
@@ -26,15 +26,18 @@
             </div>
         </div>
         <!-- END HEADING PAGE-->
-        <!-- Success message -->
-        @if (Session::has('success'))
-            <div class="alert alert-success">
-                {{ Session::get('success') }}
-            </div>
-        @endif
+        <!-- Success message -->      
+	
 
         <div class="quote-container">
+	
             <div class="container">
+				@if($errors->any())
+					
+					<div class="alert alert-danger">
+						<h4>{{$errors->first()}}</h4>
+					</div>
+				@endif
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- GET A QUOTE, STYLE 3-->
@@ -56,10 +59,7 @@
                                         <label for="validationTooltip03" class="form-label text-white">Vehicle
                                             Value</label>
                                         {{-- @foreach ($responseBody as $response)--}}
-                                        <input
-                                            {{-- value="{{ $response->vehicleValue }}"--}}
-                                            value="{{ csrf_token() }}"
-                                            type="number" class="form-control" id="vehicleValue" required>
+                                        <input type="number" class="form-control" id="vehicleValue" name="vehicleValue" required>
                                         {{-- @endforeach--}}
                                         <div class="invalid-tooltip">
                                             Please provide a valid Car Value.
@@ -69,11 +69,13 @@
                                     <div class="col-md-12 position-relative">
                                         <label for="validationTooltip04" class="form-label text-white">Make |
                                             Model</label>
-                                        <select class="form-select dropdown" id="make" required>
-                                            <option selected disabled value="">Choose a Model</option>
-                                            @foreach ($responseBody as $response)
-                                                <option value="{{ $response->id }}">{{ $response->make }}</option>
-                                            @endforeach
+                                        <select name="make" class="form-select dropdown" id="make" required>
+                                            <option  selected disabled value="">Choose a Model</option>
+											@if($responseBody)
+												@foreach ($responseBody as $response)
+													<option value="{{ $response->id }}">{{ $response->make }}</option>
+												@endforeach
+											@endif
                                         </select>
                                         <div class="invalid-tooltip">
                                             Please select a valid Model.
@@ -83,16 +85,34 @@
 
                                     <div class="col-md-12 position-relative">
                                         <label for="validationTooltip04" class="form-label text-white">Year</label>
-                                        <select class="form-select" id="yom" required>
-                                            <option selected disabled value="">Year of Manufacture</option>
-                                            <option>...</option>
+                                        <select name="yom" class="form-select" id="yom" required>
+                                            <option  selected disabled value="">Year of Manufacture</option>                                               
+                                                <option value=2021>2021</option>
+                                                <option value=2020>2020</option>
+                                                <option value=2019>2019</option>
+                                                <option value=2018>2018</option>
+                                                <option value=2017>2017</option>
+                                                <option value=2016>2016</option>
+                                                <option value=2015>2015</option>
+                                                <option value=2014>2014</option>
+                                                <option value=2013>2013</option>
+                                                <option value=2012>2012</option>
+                                                <option value=2011>2011</option>
+                                                <option value=2010>2010</option>
+                                                <option value=2009>2009</option>
+                                                <option value=2008>2008</option>
+                                                <option value=2007>2007</option>
+                                                <option value=2006>2006</option>
+                                                <option value=2005>2005</option>
+                                                <option value=2004>2004</option>
+                                                <option value=2003>2003</option>
                                         </select>
                                         <div class="invalid-tooltip">
                                             Please select a valid Year of Manufacture.
                                         </div>
                                     </div>
                                     <div class="privateSubmit">
-                                        <button class="btn-warning btn" type="submit">Submit form</button>
+                                        <button class="btn-warning btn" type="submit">Get a Quote</button>
                                     </div>
                                 </div>
 
@@ -123,89 +143,6 @@
                                         })
                                 })()
                             </script>
-
-                            {{--<form method="post" action="{{ route('private-motor-quotations-results') }}">
-                                @csrf
-
-                                <div class="quote-form-container">
-                                    <div class="quote-form-heading">
-                                        <h4>Start your Motor Quote below.</h4>
-                                    </div>
-                                    <div class="quote-form-item">
-
-
-                                        <div class="quote-form-label">
-                                            <span>Vehicle Value</span>
-                                        </div>
-
-                                        <div class="input-group mb-3">
-                                            <input id="vehicleValue"
-                                                placeholder="xxxxxx" value=""
-                                                   aria-describedby="inputGroup-sizing-default"
-                                                   aria-label="Sizing example input" class="form-control" type="text">
-                                        </div>
-
-                                        <div class="quote-form-label">
-                                            <span>Make | Model</span>
-                                        </div>
-                                        <div class="input-group mb-3 ">
-
-                                            <select class="form-select dropdown" name=""
-                                                    id="make">
-                                                <option hidden>Choose a Model</option>
-                                                @foreach ($responseBody as $response)
-                                                <option value="{{ $response->id }}">{{ $response->make }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-
-
-                                        <div class="quote-form-label">
-                                            <span>Year Of Manufacture</span>
-                                        </div>
-                                        <div class="input-group date dropdown">
-                                            <select aria-label="Example select with button addon" class="form-select"
-                                                    id="year">
-                                                <option selected>Year</option>
-                                                <option value="1">2021</option>
-                                                <option value="2">2020</option>
-                                                <option value="3">2019</option>
-                                                <option value="4">2018</option>
-                                                <option value="5">2017</option>
-                                                <option value="6">2016</option>
-                                                <option value="7">2015</option>
-                                                <option value="8">2014</option>
-                                                <option value="8">2013</option>
-                                                <option value="8">2012</option>
-                                                <option value="8">2011</option>
-                                                <option value="8">2010</option>
-                                                <option value="8">2009</option>
-                                                <option value="8">2008</option>
-                                                <option value="8">2007</option>
-                                                <option value="8">2006</option>
-                                                <option value="8">2005</option>
-                                                <option value="8">2004</option>
-                                                <option value="8">2003</option>
-                                            </select>
-                                        </div>
-
-
-                                    </div>
-
-                                    <input type="submit" name="send" value="Submit" class="au-btn au-btn-orange au-btn-md">
-                                    <!--<button
-                                                                class="au-btn au-btn-orange au-btn-md"
-                                                                onclick="window.location.href='/private-motor-quotations-results';">Get Quotations
-                                                            </button>-->
-
-
-                                </div>
-
-
-
-                            </form>--}}
-
-
                         </section>
                         <!-- END GET A QUOTE, STYLE 1-->
                     </div>
