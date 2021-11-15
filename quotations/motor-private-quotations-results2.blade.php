@@ -90,27 +90,33 @@
                                 <div class="col">
                                     <img class="card-img" src="{{ asset('img/partner/partner-1.png') }}"
                                          alt="Insurance Logo">
-                                    <div class="card-body">
-                                        <p class="card-text"> Additional Benefits</p>
+                                    {{--<div class="post-paragraph">
+                                        <div class="post-heading">
+                                            <h4>Additional Benefits</h4>
+                                        </div>
                                         <ul>
                                             @foreach ($response["Additional-covers"] as $key=>$value)
                                                 <li> {{ $key }} : {{ $value }}</li>
                                             @endforeach
                                         </ul>
+                                    </div>--}}
 
-                                    </div>
                                 </div>
-                                <div class="col">
+
+                                <div class="col-sm-5">
                                     <div class="card-body">
-
-                                        <div class="post-paragraph">
-                                            <h5 class="card-title">{{$response["key"]}}</h5>
-                                            <div class="post-heading"> Premium :
-                                                <strong> KSH {{number_format($response["premium"],2)}}</strong>
+                                        <div class="post-with-image">
+                                            <div class="post-paragraph">
+                                                <div class="post-heading">
+                                                    <h4>{{$response["key"]}}</h4>
+                                                </div>
+                                                <div class="post-heading"> Premium :
+                                                    <strong> KSH {{number_format($response["premium"],2)}}</strong>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <p class="card-text"> Cover Type : {{$response["covertype"]}}</p>
+                                            <p class="card-text"> Cover Type : {{$response["covertype"]}}</p>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -119,13 +125,16 @@
 
 
                         <div class="col-sm-5">
+
                             <div class="accordion" id='accordionExample-{{$response["id"]}}'>
+
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne-{{$response['id']}}">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
                                                 data-bs-target="#collapseOne-{{$response['id']}}" aria-expanded="false"
                                                 aria-controls="collapseOne-{{$response['id']}}">
-                                            Limits
+                                            Additional Benefits
                                         </button>
                                     </h2>
                                     <div id="collapseOne-{{$response['id']}}" class="accordion-collapse collapse"
@@ -133,20 +142,22 @@
                                          data-bs-parent="#accordionExample-{{$response['id']}}">
                                         <div class="accordion-body">
                                             <ul>
-                                                @foreach ($response["limits"] as $key=>$value)
-                                                    <li> {{ $key }} : {{ $value }}</li>
+                                                @foreach ($response["Additional-covers"] as $key=>$value)
+                                                    <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
+                                                    </li>
                                                 @endforeach
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo{{$response['id']}}">
+                                    <h2 class="accordion-header" id="headingTwo-{{$response['id']}}">
                                         <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target="#collapseTwo-{{$response['id']}}" aria-expanded="false"
                                                 aria-controls="collapseTwo-{{$response['id']}}">
-                                            Applicable Excesses
+                                            Limits Of Liability
                                         </button>
                                     </h2>
                                     <div id="collapseTwo-{{$response['id']}}" class="accordion-collapse collapse"
@@ -154,8 +165,33 @@
                                          data-bs-parent="#accordionExample-{{$response['id']}}">
                                         <div class="accordion-body">
                                             <ul>
+                                                @foreach ($response["limits"] as $key=>$value)
+                                                    <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree-{{$response['id']}}">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree-{{$response['id']}}"
+                                                aria-expanded="false"
+                                                aria-controls="collapseThree-{{$response['id']}}">
+                                            Applicable Excesses
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree-{{$response['id']}}" class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree-{{$response['id']}}"
+                                         data-bs-parent="#accordionExample-{{$response['id']}}">
+                                        <div class="accordion-body">
+                                            <ul>
                                                 @foreach ($response["excess"] as $key=>$value)
-                                                    <li> {{ $key }} : {{ $value }}</li>
+                                                    <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
+                                                    </li>
                                                 @endforeach
                                             </ul>
                                         </div>
@@ -167,7 +203,7 @@
                         </div>
 
                         <div class="col-sm-2">
-                            <a href="#" class="btn btn-primary">I am Interested</a>
+                            <a href="#" class="btn btn-outline-success">I am Interested</a>
                         </div>
                     </div>
 

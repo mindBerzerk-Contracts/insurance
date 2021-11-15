@@ -50,7 +50,7 @@
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
                                         onclick="window.location.href='/motor-private-quotation';"
-                                        type="button">Get Quotation
+                                        type="button">Get Private Motor Quotation
                                 </button>
                             </div>
                         </div>
@@ -69,8 +69,8 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/compare-motor-commercial';"
-                                        type="button">Get Quotation
+                                        onclick="window.location.href='/motor-commercial';"
+                                        type="button">Get Motor Commercial Quotation
                                 </button>
                             </div>
                         </div>

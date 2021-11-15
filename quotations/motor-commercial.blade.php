@@ -1,4 +1,4 @@
-@extends("layouts.master")
+@extends("layouts.master2")
 
 @section("title")
     Compare Motor
@@ -20,7 +20,7 @@
                         <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="compare-motor-commercial">Motor Commercial Insurance</a>
+                        <a href="motor-commercial">Motor Commercial Insurance</a>
                     </li>
                 </ul>
             </div>
