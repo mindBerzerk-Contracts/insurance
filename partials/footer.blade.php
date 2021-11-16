@@ -60,7 +60,7 @@
 
                 <div class="col-md-3 col-sm-6">
                     <div class="social-widget">
-                        <h3>Subscribe</h3>
+                        <h3>Socials</h3>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Subscribe" aria-label="Search">
                             <button class="btn btn-outline-warning" type="submit">Submit</button>
