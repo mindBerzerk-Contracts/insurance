@@ -215,7 +215,7 @@
                             <div class="content-box-item style-2 match-item">
                                 <div class="content-holder">
                                     <div class="content-box-icon">
-                                        <i class="fa fa-clock-o"></i>
+                                        <i class="far fa-clock"></i>
                                     </div>
                                     <div class="content-box-main">
                                         <div class="title">

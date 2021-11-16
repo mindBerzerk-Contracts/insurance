@@ -157,10 +157,10 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-bank"></i>
+                                <i class="fas fa-city"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/underconstruction') }}">commercial lines Insurance</a>
+                                <a href="{{ url('/underconstruction') }}">Commercial lines Insurance</a>
                             </div>
                             <div class="content">
                                 <p>In truth, there are certain forms of insurance that are an absolute requirement for
