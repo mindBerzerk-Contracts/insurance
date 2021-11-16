@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-md-push-6">
                         <div class="image">
-                            <img alt="Our Team" src="public/img/call-to-action/call-to-action-3.jpg"/>
+                            <img alt="Our Team" src="{{asset('img/call-to-action/call-to-action-3.jpg')}}"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-md-pull-6">
@@ -136,7 +136,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Cheryl Cruz" src="public/img/avatar/avatar-1.jpg"/>
+                                <img alt="Cheryl Cruz" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -159,7 +159,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Linda Campbell" src="public/img/avatar/avatar-2.jpg"/>
+                                <img alt="Linda Campbell" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -180,7 +180,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="John Walker" src="public/img/avatar/avatar-3.jpg"/>
+                                <img alt="John Walker" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">

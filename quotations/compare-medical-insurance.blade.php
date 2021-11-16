@@ -40,7 +40,7 @@
                                 <i class="fa fa-wheelchair"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Seniors</a>
+                                <a href="/underconstruction">Seniors</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -48,7 +48,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='underconstruction';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -61,7 +61,7 @@
                                 <i class="fa fa-user-md"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Normal</a>
+                                <a href="/underconstruction">Normal</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -69,7 +69,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='underconstruction';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -82,7 +82,7 @@
                                 <i class="fa fa-users"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Children</a>
+                                <a href="/underconstruction">Children</a>
                             </div>
                             <div class="content">
                                 <p>If you have a partner and children, then the two of you should think about life
@@ -90,7 +90,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='underconstruction';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -114,37 +114,37 @@
                 >
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/1.png"/>
+                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/2.png"/>
+                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/3.png"/>
+                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/4.png"/>
+                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/5.png"/>
+                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/6.png"/>
+                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/7.png"/>
+                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
                         </a>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Cheryl Cruz" src="public/img/avatar/avatar-1.jpg"/>
+                                <img alt="Cheryl Cruz" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -192,7 +192,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Linda Campbell" src="public/img/avatar/avatar-2.jpg"/>
+                                <img alt="Linda Campbell" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -213,7 +213,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="John Walker" src="public/img/avatar/avatar-3.jpg"/>
+                                <img alt="John Walker" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">

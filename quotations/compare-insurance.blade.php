@@ -81,7 +81,7 @@
                                 <i class="fa fa-heartbeat"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/motor-private-quotation') }}">Medical Insurance</a>
+                                <a href="{{ url('/underconstruction') }}">Medical Insurance</a>
                             </div>
                             <div class="content">
                                 <p>If you have a partner and children, then the two of you should think about medical
@@ -101,14 +101,14 @@
                                 <i class="fa fa-ambulance"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/motor-private-quotation') }}">Personal Accident Insurance</a>
+                                <a href="{{ url('/underconstruction') }}">Personal Accident Insurance</a>
                             </div>
                             <div class="content">
                                 <p>We'll rebuild or repair your home if it's damaged or destroyed.</p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/motor-private-quotation';"
+                                        onclick="window.location.href='/underconstruction';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -120,14 +120,14 @@
                                 <i class="fa fa-plane"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/motor-private-quotation') }}">Travel Policy/Insurance</a>
+                                <a href="{{ url('/underconstruction') }}">Travel Policy/Insurance</a>
                             </div>
                             <div class="content">
                                 <p>We can help you find the best plan for your trip and your budget.</p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/motor-private-quotation';"
+                                        onclick="window.location.href='/underconstruction';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -139,7 +139,7 @@
                                 <i class="fa fa-bank"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/motor-private-quotation') }}">Business Insurance</a>
+                                <a href="{{ url('/underconstruction') }}">Business Insurance</a>
                             </div>
                             <div class="content">
                                 <p>In truth, there are certain forms of insurance that are an absolute requirement for
@@ -148,7 +148,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/motor-private-quotation';"
+                                        onclick="window.location.href='/underconstruction';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -160,14 +160,14 @@
                                 <i class="fa fa-building"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/motor-private-quotation') }}">Landlord Insurance</a>
+                                <a href="{{ url('/underconstruction') }}">Landlord Insurance</a>
                             </div>
                             <div class="content">
                                 <p>Our rental property insurance protects your property from damages</p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/motor-private-quotation';"
+                                        onclick="window.location.href='/underconstruction';"
                                         type="button">Get Quotation
                                 </button>
                             </div>

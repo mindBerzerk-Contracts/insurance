@@ -106,10 +106,10 @@
             </p>
             <ul class="quick-link">
                 <li>
-                    <a href="about.blade.php">About</a>
+                    <a href="/about">About</a>
                 </li>
                 <li>
-                    <a href="contact.blade.php">Contact Us</a>
+                    <a href="/contact">Contact Us</a>
                 </li>
                 <li>
                     <a href="#">Term & Conditions</a>
@@ -118,7 +118,7 @@
                     <a href="#">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="contact">Sites Map</a>
+                    <a href="/contact">Sites Map</a>
                 </li>
             </ul>
         </div>
