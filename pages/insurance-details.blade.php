@@ -1,4 +1,4 @@
-@extends("layouts.master2")
+@extends("layouts.master")
 
 @section("title")
 Insurance Details
@@ -25,84 +25,49 @@ Insurance Details
         <div class="container">
             <div class="row">
                 <div class="col-9">
-                <!-- SLIDER, STYLE 1-->
-                <div class="slider slider-medium-layout style-1">
-                    <div class="slider-item">
-                        <div class="owl-carousel" data-dots=".slider-dots">
-                            <div class="owl-item">
-                                <div class="slider-image">
-                                    <img alt="Compare quotes from over 250 insurance brands" class="img-fluid"
-                                         src="{{asset('img/slider/slider-medium-1.jpg')}}"/>
-                                </div>
-                                <div class="slider-text-holder animated">
-                                    <div class="slider-title">
-                                        <a>Compare quotes from over 250 insurance brands</a>
-                                    </div>
-                                    <div class="slider-btn">
-                                        <button
-                                            class="au-btn au-btn-orange au-btn-sm"
-                                            onclick="window.location.href='/compare-insurance';">Get a quote
-                                        </button>
-                                    </div>
-                                </div>
+
+                    <!-- SLIDER, STYLE 1-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="{{asset('img/slider/invest-1900.png') }}"
+                                     alt="First slide">
                             </div>
-                            <div class="owl-item">
-                                <div class="slider-image">
-                                    <img alt="Compare quotes from over 250 insurance brands" class="img-fluid"
-                                         src="{{asset('img/slider/slider-medium-2.jpg')}}"/>
-                                </div>
-                                <div class="slider-text-holder animated">
-                                    <div class="slider-title">
-                                        <a>Compare quotes from over 250 insurance brands</a>
-                                    </div>
-                                    <div class="slider-btn">
-                                        <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='/compare-insurance';">Get a quote
-                                        </button>
-                                    </div>
-                                </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/slider/questions-1900.png') }}"
+                                     alt="Second slide">
                             </div>
-                            <div class="owl-item">
-                                <div class="slider-image">
-                                    <img alt="Compare quotes from over 250 insurance brands" class="img-fluid"
-                                         src="{{asset('img/slider/slider-medium-3.jpg')}}"/>
-                                </div>
-                                <div class="slider-text-holder animated">
-                                    <div class="slider-title">
-                                        <a>Compare quotes from over 250 insurance brands</a>
-                                    </div>
-                                    <div class="slider-btn">
-                                        <button class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='/compare-insurance';">Get a quote
-                                        </button>
-                                    </div>
-                                </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/slider/compare-1900.png') }}"
+                                     alt="Third slide">
                             </div>
                         </div>
-                        <ul class="slider-dots owl-dots">
-                            <li class="owl-dot active"></li>
-                            <li class="owl-dot"></li>
-                            <li class="owl-dot"></li>
-                        </ul>
-                        <div class="slider-arrow">
-                            <div class="prev">
-                                <i class="fa fa-chevron-left"></i>
-                            </div>
-                            <div class="next">
-                                <i class="fa fa-chevron-right"></i>
-                            </div>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                </div>
-                <!-- END SLIDER, STYLE 1-->
-                <!-- POST SERVICES DERAIL 1-->
-                <section class="post-services post-services-detail-1">
-                    <div class="post-paragraph p1">
-                        <div class="post-heading">
-                            <h3>Car Insurance Prepares You for the Unexpected</h3>
-                        </div>
-                        <div class="post-content">
-                            <p>
+                    <!-- END SLIDER, STYLE 1-->
+
+                    <!-- POST SERVICES DERAIL 1-->
+                    <section class="post-services post-services-detail-1">
+                        <div class="post-paragraph p1">
+                            <div class="post-heading">
+                                <h3>Car Insurance Prepares You for the Unexpected</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>
                                 Nulla commodo iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et
                                 tempus sem. Donec sit amet elit a felis tristique eleifend. Aliquam erat volutpat. Cras
                                 metus ipsum, tincidunt in bibendum vitae, fringilla ac ipsum. Sed at eros quis

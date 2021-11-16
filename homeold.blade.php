@@ -1,4 +1,4 @@
-@extends("layouts.master2")
+@extends("layouts.master")
 
 @section("title")
     Home
@@ -7,34 +7,127 @@
 @section("content")
     <div class="page-content home-page-1">
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{asset('img/slider/invest-1900.png') }}" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{asset('img/slider/questions-1900.png') }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{asset('img/slider/compare-1900.png') }}" alt="Third slide">
-                </div>
+        <!-- START REVOLUTION SLIDER 5.0-->
+        <div class="rev_slider_wrapper slider-primary">
+            <div class="rev_slider" id="rev_slider_1" style="display: none">
+                <ul>
+                    <li class="slider-item-1" data-transition="slidevertical">
+                        <!-- MAIN IMAGE-->
+                        <img alt="#" class="rev-slidebg" src="{{asset('img/slider/invest-1900.png') }}"/>
+                        <div
+                            class="tp-caption tp-resizeme slider-title"
+                            data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="115"
+                            data-x="left"
+                            data-y="top"
+                        >
+                            Why We Invest
+                        </div>
+                        <div
+                            class="tp-caption tp-resizeme slider-subtitle"
+                            data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="210"
+                            data-x="left"
+                            data-y="top"
+                        >
+                            We have brought together top insuranceExperts to
+                            <br/>provide you the best free advise on insurance and finance matters
+                        </div>
+                        <button
+                            class="tp-caption tp-resizeme au-btn au-btn-white"
+                            data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="320"
+                            data-x="left"
+                            data-y="top"
+                            onclick="window.location.href='/compare-insurance';"
+                        >
+                            Read More
+                        </button>
+                    </li>
+
+                    <li class="slider-item-1" data-transition="slidevertical">
+                        <!-- MAIN IMAGE-->
+                        <img alt="#" class="rev-slidebg" src="{{asset('img/slider/questions-1900.png') }}"/>
+                        <div
+                            class="tp-caption tp-resizeme slider-title"
+                            data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="115"
+                            data-x="left"
+                            data-y="top"
+                        >
+                            Got an Insurance Question
+                        </div>
+                        <div
+                            class="tp-caption tp-resizeme slider-subtitle"
+                            data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="210"
+                            data-x="left"
+                            data-y="top"
+                        >
+                            Search our Database of our 1000 answered Insurance Questions,
+                            <br/> or better still ask your question on our platform and
+                            <br/> one of our export will sorely answer you within 24 hours
+                            <br/>
+                        </div>
+                        <button
+                            class="tp-caption tp-resizeme au-btn au-btn-blue"
+                            data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="320"
+                            data-x="left"
+                            data-y="top"
+                            onclick="window.location.href='/search.html';"
+                        >
+                            Start Now
+                        </button>
+                    </li>
+
+                    <li class="slider-item-1" data-transition="slidevertical">
+                        <!-- MAIN IMAGE-->
+                        <img alt="#" class="rev-slidebg" src="{{asset('img/slider/compare-1900.png') }}"/>
+                        <div
+                            class="tp-caption tp-resizeme slider-title"
+                            data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="115"
+                            data-x="left"
+                            data-y="top"
+                        >
+                            Compare Insurance
+                        </div>
+                        <div
+                            class="tp-caption tp-resizeme slider-subtitle"
+                            data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="210"
+                            data-x="left"
+                            data-y="top"
+                        >
+                            Compare Insurance Quotes and get the best deal <br/> from over 50 Insurance Companies
+                        </div>
+                        <button
+                            class="tp-caption tp-resizeme au-btn au-btn-orange"
+                            data-frames='[{"delay":300,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-hoffset="0"
+                            data-voffset="320"
+                            data-x="left"
+                            data-y="top"
+                            onclick="window.location.href='/compare-insurance';"
+                        >
+                            Compare Insurance
+                        </button>
+                    </li>
+
+                </ul>
+                <!-- END REVOLUTION SLIDER-->
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
         <!-- END OF SLIDER WRAPPER-->
-
 
         <!-- PRODUCT, STYLE 1-->
         <section class="product product-layout style-1">
@@ -173,57 +266,6 @@
         </section>
         <!-- END PRODUCT, STYLE 1-->
 
-        <!-- PARTNER-->
-        <div class="partner partner-layout style-1">
-            <div class="container">
-                <div
-                    class="partner-list owl-carousel"
-                    data-center="0"
-                    data-col-lg="4"
-                    data-col-md="2"
-                    data-col-sm="1"
-                    data-items="5"
-                >
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END PARTNER-->
-
         <!-- TESTINMONIAL, STYLE 1-->
         <section class="testinmonials testinmonials-layout style-1">
             <div class="container">
@@ -315,6 +357,56 @@
         <!-- END TESTINMONIAL, STYLE 1-->
 
 
+        <!-- PARTNER-->
+        <div class="partner partner-layout style-1">
+            <div class="container">
+                <div
+                    class="partner-list owl-carousel"
+                    data-center="0"
+                    data-col-lg="4"
+                    data-col-md="2"
+                    data-col-sm="1"
+                    data-items="5"
+                >
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PARTNER-->
     </div>
 
 @endsection

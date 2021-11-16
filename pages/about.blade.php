@@ -1,4 +1,4 @@
-@extends("layouts.master2")
+@extends("layouts.master")
 
 @section('title')
     About
@@ -16,7 +16,7 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="/home">About Us</a>
+                        <a href="/about">About Us</a>
                     </li>
                 </ul>
                 <div class="heading-title">

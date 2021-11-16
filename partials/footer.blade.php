@@ -12,24 +12,25 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul>
+
                                         <li>
-                                            <a href="about.blade.php">About</a>
+                                            <a href="/about">About</a>
                                         </li>
                                         <li>
-                                            <a href="questions.html">I have a Question</a>
+                                            <a href="/questions">I have a Question</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/pages/services/services-detail-5.blade.php">Articles</a>
+                                            <a href="/articles">Articles</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul>
                                         <li>
-                                            <a href="compare-insurance.blade.php">Compare Insurance</a>
+                                            <a href="/compare-insurance">Compare Insurance</a>
                                         </li>
                                         <li>
-                                            <a href="resources/views/pages/insurance-products.blade.php"
+                                            <a href="/insurance-products"
                                             >Insurance Products</a
                                             >
                                         </li>
@@ -56,35 +57,42 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6">
                     <div class="social-widget">
-                        <h3>Follow us</h3>
+                        <h3>Subscribe</h3>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Subscribe" aria-label="Search">
+                            <button class="btn btn-outline-warning" type="submit">Submit</button>
+                        </form>
+
                         <ul class="social-list">
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-facebook"></i>
+                                    <i class="fab fa-facebook-square"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="fab fa-twitter-square"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-google-plus"></i>
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fab fa-google-plus-square"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-instagram"></i>
+                                    <i class="fab fa-linkedin-square"></i>
                                 </a>
                             </li>
+
                         </ul>
                     </div>
                 </div>

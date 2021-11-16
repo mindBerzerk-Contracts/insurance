@@ -1,4 +1,4 @@
-@extends("layouts.master2")
+@extends("layouts.master")
 
 @section('title')
     Article Detail
@@ -18,7 +18,7 @@
                     </li>
                     <li class="au-breadcrumb-item">
                         <i aria-hidden="true" class="fa fa-file-text"></i>
-                        <a href="resources/views/pages/articles.blade.phpde.php">Articles</a>
+                        <a href="/articles">Articles</a>
                     </li>
                     <li class="au-breadcrumb-item active">
                         <a href="/article-detail">Article Detail</a>
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                         <div class="post-image">
-                            <img alt="Blog Single" class="img-fluid" src="public/img/blogs/blog-detail-1.jpg"/>
+                            <img alt="Blog Single" class="img-fluid" src="{{asset('img/blogs/blog-detail-1.jpg')}}"/>
                         </div>
                         <div class="post-paragraph">
                             <div class="post-heading">
@@ -186,7 +186,7 @@
                                 <li class="post-comments-has-reply">
                                     <div class="post-comments-item">
                                         <div class="post-comments-item-image">
-                                            <img alt="user" class="img-fluid" src="public/img/avatar/user-1.jpg"/>
+                                            <img alt="user" class="img-fluid" src="{{asset('img/avatar/user-1.jpg')}}"/>
                                         </div>
                                         <div class="post-comments-item-main">
                                             <div class="content">
@@ -209,7 +209,7 @@
                                             <div class="post-comments-item">
                                                 <div class="post-comments-item-image">
                                                     <img alt="user" class="img-fluid"
-                                                         src="public/img/avatar/user-2.jpg"/>
+                                                         src="{{asset('img/avatar/user-1.jpg')}}"/>
                                                 </div>
                                                 <div class="post-comments-item-main">
                                                     <div class="content">
@@ -230,7 +230,7 @@
                                 <li>
                                     <div class="post-comments-item">
                                         <div class="post-comments-item-image">
-                                            <img alt="user" class="img-fluid" src="public/img/avatar/user-3.jpg"/>
+                                            <img alt="user" class="img-fluid" src="{{asset('img/avatar/user-1.jpg')}}"/>
                                         </div>
                                         <div class="post-comments-item-main">
                                             <div class="content">
@@ -342,4 +342,4 @@
         </div>
     </div>
 
-@section('content')
+@endsection('content')
