@@ -78,26 +78,6 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-car"></i>
-                            </div>
-                            <div class="title">
-                                <a href="/motor-commercial-quotation">Online Commercial </a>
-                            </div>
-                            <div class="content">
-                                <p><strong>Class 3</strong></p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='motor-commercial-quotation';"
-                                        type="button">Get Online Commercial Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
                                 <i class="fa fa-truck"></i>
                             </div>
                             <div class="title">
