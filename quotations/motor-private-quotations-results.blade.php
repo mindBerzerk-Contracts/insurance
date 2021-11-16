@@ -1,7 +1,7 @@
 @extends("layouts.master2")
 
 @section('title')
-    Insurance Product Details
+   Motor Private Quotation
 @endsection
 
 @section('content')
@@ -14,11 +14,11 @@
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <i class="fa fa-question-circle"></i>
-                    <a href="/motor-private-quotation">Quotations</a>
+                    <i class="fa fa-car"></i>
+                    <a href="/motor-private-quotation">Motor Private Quotation</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="/compare-insurance">Quotations Results</a>
+                    <a href="/motor-private-quotations-results">Motor Private Quotations Results</a>
                 </li>
             </ul>
         </div>
@@ -27,198 +27,200 @@
     <!-- END HEADING PAGE-->
     <div class="page-content services-detail-1">
         <div class="container">
-
-            <div class="row">
-                <div class="col">
-
-                    <div class="post-paragraph p1">
-                        <div class="post-heading">
-                            <h3>Motor Private Quotation Results</h3>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-3">
-                            <div class="post-with-image">
-                                <div class="post-paragraph">
-                                    <div class="post-heading">
-                                        <h3>Value of Car</h3>
-                                    </div>
-                                    <div class="post-content">
-                                        <p>KSH {{number_format($responseBody["inputs"]["vehicleValue"],2) }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="post-with-image">
-                                <div class="post-paragraph">
-                                    <div class="post-heading">
-                                        <h3>Vehicle Age</h3>
-                                    </div>
-                                    <div class="post-content">
-                                        <p>{{$responseBody["inputs"]["vehicleAge"] }} years</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="post-with-image">
-                                <div class="post-paragraph">
-                                    <div class="post-heading">
-                                        <h3>Make | Model</h3>
-                                    </div>
-                                    <div class="post-content">
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote SERVICES DERAIL 1-->
-                    @foreach ($responseBody["results"] as $response)
-                        <div class="post-content-box">
-
-                            <div class="row">
-
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="post-with-image">
-                                                <div class="post-paragraph">
-                                                    <div class="post-heading">
-                                                        <h4>{{$response["key"]}} Insurance</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="post-image">
-                                                    <img alt="post services" class="img-fluid"
-                                                         src="{{ asset('img/partner/partner-1.png') }}"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="post-with-image">
-                                                <div class="post-paragraph">
-                                                    <div class="post-heading">
-                                                        <p></p>
-                                                        <h4>Basic Premium</h4>
-                                                    </div>
-                                                </div>
-                                                <ul>
-                                                    <li>
-
-                                                        <p>
-                                                            <span
-                                                                class="bold">KSH {{number_format($response["premium"],2)}}</span>
-                                                        </p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="post-with-image">
-                                                <div class="post-paragraph">
-                                                    <div class="post-heading">
-                                                        <h4>Additional Covers</h4>
-                                                    </div>
-                                                </div>
-
-                                                <ul>
-                                                    <li>
-                                                        @foreach ($response["Additional-covers"] as $key=>$value)
-                                                            <p>
-                                                                <span class="bold">{{ $key }} : </span> {{ $value }}
-                                                            </p>
-                                                        @endforeach
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            <div class="col">
-                                <div class="post-with-image">
-                                    <div class="post-paragraph">
-                                        <div class="post-heading">
-                                            <h4>Limits Of Liability</h4>
-                                        </div>
-                                    </div>
-                                    <ul>
-                                        <li>
-
-                                            <p>
-                                                <span class="bold">Windscreen & Window Glass:</span>Kshs. 30,000
-                                            </p>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="post-with-image">
-                                    <div class="post-paragraph">
-                                        <div class="post-heading">
-                                            <h4>Applicable Excess</h4>
-                                        </div>
-                                    </div>
-                                    <ul>
-                                        <li>
-
-                                            <p>
-                                                <span class="bold">Own Damage/Partial Theft:</span>2.5% of Sum
-                                                Insured
-                                                Minimum Ksh 20,000
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-
-                            </div>
-
-
-                        </div>
-
-                    @endforeach
-
-
+            <div class="post-paragraph p1">
+                <div class="post-heading">
+                    <h3>Motor Private Quotation Results</h3>
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Value of Car</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>KSH {{number_format($privateResponseBody["inputs"]["vehicleValue"],2) }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Vehicle Age</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>{{$privateResponseBody["inputs"]["vehicleAge"] }} years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Date</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>{{$privateResponseBody["inputs"]["dt"] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Total Results</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>{{$privateResponseBody["inputs"]["result size"] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{--  <h5>Vehicle Value:<strong>KSH {{number_format($privateResponseBody["inputs"]["vehicleValue"],2) }}</strong> Vehicle
+                      Age:<strong> {{$privateResponseBody["inputs"]["vehicleAge"] }} years</strong></h5>
+                  <hr/>--}}
+            </div>
+
+
+            @foreach ($privateResponseBody["results"] as $privateResponse)
+
+                <div class="post-content-box">
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="card-img" src="{{ asset('img/partner/partner-1.png') }}"
+                                         alt="Insurance Logo">
+
+                                </div>
+
+                                <div class="col-sm-5">
+                                    <div class="card-body">
+                                        <div class="post-with-image">
+                                            <div class="post-paragraph">
+                                                <div class="post-heading">
+                                                    <h4>{{$privateResponse["key"]}}</h4>
+                                                </div>
+                                                <p class="card-text"> Premium :
+                                                    <strong>
+                                                        KSH {{number_format($privateResponse["premium"],2)}}</strong>
+                                                </p>
+                                            </div>
+
+                                            <p class="card-text"> Cover Type : {{$privateResponse["covertype"]}}</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-5">
+
+                            <div class="accordion" id='accordionExample-{{$privateResponse["id"]}}'>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne-{{$privateResponse['id']}}">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne-{{$privateResponse['id']}}"
+                                                aria-expanded="false"
+                                                aria-controls="collapseOne-{{$privateResponse['id']}}">
+                                            Additional Benefits
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne-{{$privateResponse['id']}}" class="accordion-collapse collapse"
+                                         aria-labelledby="headingOne-{{$privateResponse['id']}}"
+                                         data-bs-parent="#accordionExample-{{$privateResponse['id']}}">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                @foreach ($privateResponse["Additional-covers"] as $key=>$value)
+                                                    <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo-{{$privateResponse['id']}}">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo-{{$privateResponse['id']}}"
+                                                aria-expanded="false"
+                                                aria-controls="collapseTwo-{{$privateResponse['id']}}">
+                                            Limits Of Liability
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo-{{$privateResponse['id']}}" class="accordion-collapse collapse"
+                                         aria-labelledby="headingTwo-{{$privateResponse['id']}}"
+                                         data-bs-parent="#accordionExample-{{$privateResponse['id']}}">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                @foreach ($privateResponse["limits"] as $key=>$value)
+                                                    <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree-{{$privateResponse['id']}}">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree-{{$privateResponse['id']}}"
+                                                aria-expanded="false"
+                                                aria-controls="collapseThree-{{$privateResponse['id']}}">
+                                            Applicable Excesses
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree-{{$privateResponse['id']}}"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree-{{$privateResponse['id']}}"
+                                         data-bs-parent="#accordionExample-{{$privateResponse['id']}}">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                @foreach ($privateResponse["excess"] as $key=>$value)
+                                                    <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#" class="btn btn-outline-success">I am Interested</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            @endforeach
         </div>
-        <!--Pagination-->
-        <div class="container">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!--Pagination-->
+
     </div>
 
 

@@ -1,7 +1,7 @@
 @extends("layouts.master2")
 
 @section("title")
-    Compare Motor
+    Motor Commercial
 @endsection
 
 @section("content")
@@ -34,43 +34,22 @@
                     <h3 class="heading-section">Motor Commercial Insurance</h3>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-truck"></i>
-                            </div>
-                            <div class="title">
-                                <a href="/coming-soon">Own Goods</a>
-                            </div>
-                            <div class="content">
-                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
-                                    premium.</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='coming-soon';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-truck"></i>
+                                <i class="fas fa-truck-moving"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">General Cartage</a>
+                                <a href="/motor-commercial-quotation">Tanker- Carrying Flammable Liquid</a>
                             </div>
                             <div class="content">
-                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
-                                    premium.</p>
+                                <p><strong>Class 1</strong></p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='comingsoon';"
-                                        type="button">Get Quotation
+                                        onclick="window.location.href='motor-commercial-quotation';"
+                                        type="button">Get Tanker Quotation
                                 </button>
                             </div>
                         </div>
@@ -82,16 +61,15 @@
                                 <i class="fa fa-bus"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Institutional Buses / Vans</a>
+                                <a href="/motor-commercial-quotation">Institutional Vehicles, School Buses</a>
                             </div>
                             <div class="content">
-                                <p>If you have a partner and children, then the two of you should think about life
-                                    insurance</p>
+                                <p><strong>Class 2</strong></p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='comingsoon';"
-                                        type="button">Get Quotation
+                                        onclick="window.location.href='motor-commercial-quotation';"
+                                        type="button">Get Institutional Vehicles Quotation
                                 </button>
                             </div>
                         </div>
@@ -103,16 +81,75 @@
                                 <i class="fa fa-car"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Online Commercial </a>
+                                <a href="/motor-commercial-quotation">Online Commercial </a>
                             </div>
                             <div class="content">
-                                <p>If you have a partner and children, then the two of you should think about life
-                                    insurance</p>
+                                <p><strong>Class 3</strong></p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='comingsoon';"
-                                        type="button">Get Quotation
+                                        onclick="window.location.href='motor-commercial-quotation';"
+                                        type="button">Get Online Commercial Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-truck"></i>
+                            </div>
+                            <div class="title">
+                                <a href="/motor-commercial-quotation">General Cartage</a>
+                            </div>
+                            <div class="content">
+                                <p><strong>Class 3</strong></p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='motor-commercial-quotation';"
+                                        type="button">Get General Cartage Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fas fa-truck-pickup"></i>
+                            </div>
+                            <div class="title">
+                                <a href="/motor-commercial-quotation">Own Goods</a>
+                            </div>
+                            <div class="content">
+                                <p><strong>Class 4</strong></p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='motor-commercial-quotation';"
+                                        type="button">Get Own Goods Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-taxi"></i>
+                            </div>
+                            <div class="title">
+                                <a href="/motor-commercial-quotation">Online Taxi (PSV UBER)</a>
+                            </div>
+                            <div class="content">
+                                <p><strong>Class 5</strong></p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='motor-commercial-quotation';"
+                                        type="button">Get Online Taxi Quotation
                                 </button>
                             </div>
                         </div>
@@ -137,37 +174,37 @@
                 >
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/1.png"/>
+                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/2.png"/>
+                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/3.png"/>
+                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/4.png"/>
+                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/5.png"/>
+                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/6.png"/>
+                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="public/img/partner/7.png"/>
+                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
                         </a>
                     </div>
                 </div>
@@ -192,7 +229,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Cheryl Cruz" src="public/img/avatar/avatar-1.jpg"/>
+                                <img alt="Cheryl Cruz" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -215,7 +252,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Linda Campbell" src="public/img/avatar/avatar-2.jpg"/>
+                                <img alt="Linda Campbell" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -236,7 +273,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="John Walker" src="public/img/avatar/avatar-3.jpg"/>
+                                <img alt="John Walker" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">

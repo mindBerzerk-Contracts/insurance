@@ -1,7 +1,7 @@
 @extends("layouts.master2")
 
 @section('title')
-    Insurance Product Details
+    Motor Commercial Quotation
 @endsection
 
 @section('content')
@@ -14,11 +14,12 @@
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <i class="fa fa-question-circle"></i>
-                    <a href="/motor-private-quotation">Quotations</a>
+                    <i class="fa fa-car"></i>
+                    <a href="/motor-commercial-quotation">Motor Commercial Quotation</a>
                 </li>
-                <li class="au-breadcrumb-item active">
-                    <a href="/compare-insurance">Quotations Results</a>
+                <li class="au-breadcrumb-item">
+                    <i class="fa fa-question-circle"></i>
+                    <a href="/motor-commercial-quotations-results">Motor Commercial Quotations Results</a>
                 </li>
             </ul>
         </div>
@@ -29,57 +30,83 @@
         <div class="container">
             <div class="post-paragraph p1">
                 <div class="post-heading">
-                    <h3>Motor Private Quotation Results</h3>
+                    <h3>Motor Commercial Quotation Results</h3>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md">
                     <div class="post-with-image">
                         <div class="post-paragraph">
                             <div class="post-heading">
                                 <h3>Value of Car</h3>
                             </div>
                             <div class="post-content">
-                                <p>KSH {{number_format($responseBody["inputs"]["vehicleValue"],2) }}</p>
+                                <p>KSH {{number_format($commercialResponseBody["inputs"]["vehicleValue"],2) }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md">
                     <div class="post-with-image">
                         <div class="post-paragraph">
                             <div class="post-heading">
                                 <h3>Vehicle Age</h3>
                             </div>
                             <div class="post-content">
-                                <p>{{$responseBody["inputs"]["vehicleAge"] }} years</p>
+                                <p>{{$commercialResponseBody["inputs"]["vehicleAge"] }} years</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md">
                     <div class="post-with-image">
                         <div class="post-paragraph">
                             <div class="post-heading">
-                                <h3>Make | Model</h3>
+                                <h3>Class</h3>
                             </div>
                             <div class="post-content">
-                                <p>{{$responseBody["inputs"]["vehicleID"] }}</p>
+                                <p>{{$commercialResponseBody["inputs"]["class"] }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {{--  <h5>Vehicle Value:<strong>KSH {{number_format($responseBody["inputs"]["vehicleValue"],2) }}</strong> Vehicle
-                      Age:<strong> {{$responseBody["inputs"]["vehicleAge"] }} years</strong></h5>
+                <div class="col-md">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>No of Seats</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>{{$commercialResponseBody["inputs"]["seats"] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="post-with-image">
+                        <div class="post-paragraph">
+                            <div class="post-heading">
+                                <h3>Total Results</h3>
+                            </div>
+                            <div class="post-content">
+                                <p>{{$commercialResponseBody["inputs"]["result size"] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{--  <h5>Vehicle Value:<strong>KSH {{number_format($commercialResponseBody["inputs"]["vehicleValue"],2) }}</strong> Vehicle
+                      Age:<strong> {{$commercialResponseBody["inputs"]["vehicleAge"] }} years</strong></h5>
                   <hr/>--}}
             </div>
 
 
-            @foreach ($responseBody["results"] as $response)
+            @foreach ($commercialResponseBody["results"] as $commercialResponse)
 
                 <div class="post-content-box">
 
@@ -90,17 +117,6 @@
                                 <div class="col">
                                     <img class="card-img" src="{{ asset('img/partner/partner-1.png') }}"
                                          alt="Insurance Logo">
-                                    {{--<div class="post-paragraph">
-                                        <div class="post-heading">
-                                            <h4>Additional Benefits</h4>
-                                        </div>
-                                        <ul>
-                                            @foreach ($response["Additional-covers"] as $key=>$value)
-                                                <li> {{ $key }} : {{ $value }}</li>
-                                            @endforeach
-                                        </ul>
-                                    </div>--}}
-
                                 </div>
 
                                 <div class="col-sm-5">
@@ -108,14 +124,15 @@
                                         <div class="post-with-image">
                                             <div class="post-paragraph">
                                                 <div class="post-heading">
-                                                    <h4>{{$response["key"]}}</h4>
+                                                    <h4>{{$commercialResponse["key"]}}</h4>
                                                 </div>
                                                 <div class="post-heading"> Premium :
-                                                    <strong> KSH {{number_format($response["premium"],2)}}</strong>
+                                                    <strong>
+                                                        KSH {{number_format($commercialResponse["premium"],2)}}</strong>
                                                 </div>
                                             </div>
 
-                                            <p class="card-text"> Cover Type : {{$response["covertype"]}}</p>
+                                            <p class="card-text"> Cover Type : {{$commercialResponse["covertype"]}}</p>
                                         </div>
 
                                     </div>
@@ -126,23 +143,25 @@
 
                         <div class="col-sm-5">
 
-                            <div class="accordion" id='accordionExample-{{$response["id"]}}'>
+                            <div class="accordion" id='accordionExample-{{$commercialResponse["id"]}}'>
 
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne-{{$response['id']}}">
+                                    <h2 class="accordion-header" id="headingOne-{{$commercialResponse['id']}}">
                                         <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne-{{$response['id']}}" aria-expanded="false"
-                                                aria-controls="collapseOne-{{$response['id']}}">
+                                                data-bs-target="#collapseOne-{{$commercialResponse['id']}}"
+                                                aria-expanded="false"
+                                                aria-controls="collapseOne-{{$commercialResponse['id']}}">
                                             Additional Benefits
                                         </button>
                                     </h2>
-                                    <div id="collapseOne-{{$response['id']}}" class="accordion-collapse collapse"
-                                         aria-labelledby="headingOne-{{$response['id']}}"
-                                         data-bs-parent="#accordionExample-{{$response['id']}}">
+                                    <div id="collapseOne-{{$commercialResponse['id']}}"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="headingOne-{{$commercialResponse['id']}}"
+                                         data-bs-parent="#accordionExample-{{$commercialResponse['id']}}">
                                         <div class="accordion-body">
                                             <ul>
-                                                @foreach ($response["Additional-covers"] as $key=>$value)
+                                                @foreach ($commercialResponse["Additional-covers"] as $key=>$value)
                                                     <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
                                                     </li>
                                                 @endforeach
@@ -152,20 +171,22 @@
                                 </div>
 
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo-{{$response['id']}}">
+                                    <h2 class="accordion-header" id="headingTwo-{{$commercialResponse['id']}}">
                                         <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse"
-                                                data-bs-target="#collapseTwo-{{$response['id']}}" aria-expanded="false"
-                                                aria-controls="collapseTwo-{{$response['id']}}">
+                                                data-bs-target="#collapseTwo-{{$commercialResponse['id']}}"
+                                                aria-expanded="false"
+                                                aria-controls="collapseTwo-{{$commercialResponse['id']}}">
                                             Limits Of Liability
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo-{{$response['id']}}" class="accordion-collapse collapse"
-                                         aria-labelledby="headingTwo-{{$response['id']}}"
-                                         data-bs-parent="#accordionExample-{{$response['id']}}">
+                                    <div id="collapseTwo-{{$commercialResponse['id']}}"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="headingTwo-{{$commercialResponse['id']}}"
+                                         data-bs-parent="#accordionExample-{{$commercialResponse['id']}}">
                                         <div class="accordion-body">
                                             <ul>
-                                                @foreach ($response["limits"] as $key=>$value)
+                                                @foreach ($commercialResponse["limits"] as $key=>$value)
                                                     <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
                                                     </li>
                                                 @endforeach
@@ -175,21 +196,22 @@
                                 </div>
 
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree-{{$response['id']}}">
+                                    <h2 class="accordion-header" id="headingThree-{{$commercialResponse['id']}}">
                                         <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse"
-                                                data-bs-target="#collapseThree-{{$response['id']}}"
+                                                data-bs-target="#collapseThree-{{$commercialResponse['id']}}"
                                                 aria-expanded="false"
-                                                aria-controls="collapseThree-{{$response['id']}}">
+                                                aria-controls="collapseThree-{{$commercialResponse['id']}}">
                                             Applicable Excesses
                                         </button>
                                     </h2>
-                                    <div id="collapseThree-{{$response['id']}}" class="accordion-collapse collapse"
-                                         aria-labelledby="headingThree-{{$response['id']}}"
-                                         data-bs-parent="#accordionExample-{{$response['id']}}">
+                                    <div id="collapseThree-{{$commercialResponse['id']}}"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree-{{$commercialResponse['id']}}"
+                                         data-bs-parent="#accordionExample-{{$commercialResponse['id']}}">
                                         <div class="accordion-body">
                                             <ul>
-                                                @foreach ($response["excess"] as $key=>$value)
+                                                @foreach ($commercialResponse["excess"] as $key=>$value)
                                                     <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
                                                     </li>
                                                 @endforeach
