@@ -17,7 +17,7 @@
                                             <a href="/about">About</a>
                                         </li>
                                         <li>
-                                            <a href="/questions">I have a Question</a>
+                                            <a href="/underconstruction">I have a Question</a>
                                         </li>
                                         <li>
                                             <a href="/articles">Articles</a>
@@ -35,7 +35,7 @@
                                             >
                                         </li>
                                         <li>
-                                            <a href="questions.html"
+                                            <a href="/underconstruction"
                                             >Q & A</a
                                             >
                                         </li>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="contact-widget">
-                        <h3>Contact Us</h3>
+                        <h3 class="text-white">Contact Us</h3>
                         <div class="content">
                             <p>
                                 <span class="bold">Address:</span>8th floor, Nairobi
