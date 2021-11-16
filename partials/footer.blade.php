@@ -102,7 +102,9 @@
     <div class="sub-footer">
         <div class="container">
             <p class="copyright">
-                Copyright © 2021 Designed by georgethedeveloper. All rights reserved.
+                Copyright © 2021 Designed by <a target="_blank" rel="noopener noreferrer"
+                                                href="https://georgethedeveloper.tech/#/home">georgethedeveloper</a> All
+                rights reserved.
             </p>
             <ul class="quick-link">
                 <li>
