@@ -34,8 +34,8 @@
             <div class="container">
                 @if($errors->any())
 
-					<div class="alert alert-danger">
-						<h4>{{$errors->first()}}</h4>
+                    <div class="alert alert-danger">
+                        <h4>{{$errors->first()}}</h4>
                     </div>
                 @endif
                 <div class="row">
@@ -59,7 +59,8 @@
                                         <label for="validationTooltip03" class="form-label text-white">Vehicle
                                             Value</label>
                                         {{-- @foreach ($privateResponseBody as $privateResponse)--}}
-                                        <input type="number" class="form-control" id="vehicleValue" name="vehicleValue" required>
+                                        <input type="number" class="form-control" id="vehicleValue" name="vehicleValue"
+                                               required>
                                         {{-- @endforeach--}}
                                         <div class="invalid-tooltip">
                                             Please provide a valid Car Value.
@@ -98,15 +99,15 @@
                                             <option value=2014>2014</option>
                                             <option value=2013>2013</option>
                                             <option value=2012>2012</option>
-                                                <option value=2011>2011</option>
-                                                <option value=2010>2010</option>
-                                                <option value=2009>2009</option>
-                                                <option value=2008>2008</option>
-                                                <option value=2007>2007</option>
-                                                <option value=2006>2006</option>
-                                                <option value=2005>2005</option>
-                                                <option value=2004>2004</option>
-                                                <option value=2003>2003</option>
+                                            <option value=2011>2011</option>
+                                            <option value=2010>2010</option>
+                                            <option value=2009>2009</option>
+                                            <option value=2008>2008</option>
+                                            <option value=2007>2007</option>
+                                            <option value=2006>2006</option>
+                                            <option value=2005>2005</option>
+                                            <option value=2004>2004</option>
+                                            <option value=2003>2003</option>
                                         </select>
                                         <div class="invalid-tooltip">
                                             Please select a valid Year of Manufacture.

@@ -90,7 +90,7 @@
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
                                         onclick="window.location.href='/compare-medical-insurance';"
-                                        type="button">Get Quotation
+                                        type="button">Get Medical Insurance Quotation
                                 </button>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
                                         onclick="window.location.href='/underconstruction';"
-                                        type="button">Get Quotation
+                                        type="button">Get Personal Accident Quotation
                                 </button>
                             </div>
                         </div>
@@ -128,18 +128,39 @@
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
                                         onclick="window.location.href='/underconstruction';"
-                                        type="button">Get Quotation
+                                        type="button">Get Travel Policy Insurance Quotation
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-building"></i>
+                            </div>
+                            <div class="title">
+                                <a href="{{ url('/underconstruction') }}">Home Insurance</a>
+                            </div>
+                            <div class="content">
+                                <p>Our rental property insurance protects your property from damages</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='/underconstruction';"
+                                        type="button">Get Home Insurance Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
                                 <i class="fa fa-bank"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/underconstruction') }}">Business Insurance</a>
+                                <a href="{{ url('/underconstruction') }}">commercial lines Insurance</a>
                             </div>
                             <div class="content">
                                 <p>In truth, there are certain forms of insurance that are an absolute requirement for
@@ -149,30 +170,12 @@
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
                                         onclick="window.location.href='/underconstruction';"
-                                        type="button">Get Quotation
+                                        type="button">Get commercial lines Quotation
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-building"></i>
-                            </div>
-                            <div class="title">
-                                <a href="{{ url('/underconstruction') }}">Landlord Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>Our rental property insurance protects your property from damages</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/underconstruction';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

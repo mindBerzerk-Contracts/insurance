@@ -1,103 +1,62 @@
-<!-- Header main-->
-<header>
-    <div id="loading">
-        <div class="image-load">
-            <img alt="loader" src="{{asset('img/icons/Marty.gif') }}"/>
-        </div>
-    </div>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
 
-    <!--Mobile Menu-->
-    <nav id="mmenu">
-        <ul>
-            <li>
-                <a href="{{ url('/') }}">Home</a>
-            </li>
+    <div class="container-fluid">
 
-            <li>
-                <a href="resources/views/pages/insurance-products.blade.php">Insurance Products</a>
-            </li>
-
-            <li>
-                <a href="resources/views/pages/services/services-list.blade.php">Compare Insurance</a>
-            </li>
+        <a class="navbar-brand" href="#">
+            <img src="{{asset('img/icons/logo-2.png')}}" alt="" width="210" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-            <li>
-                <a href="articles.blade.php">Articles</a>
-            </li>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/compare-insurance">
+                        Compare Insurance
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/articles">
+                        Articles
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/underconstruction">
+                        Q&A
+                    </a>
+                </li>
+            </ul>
 
-            <li>
-                <a href="about.blade.php">Q & A</a>
-            </li>
-        </ul>
-    </nav>
-    <!--Mobile Menu-->
-
-    <div class="navbar-main ">
-        <div class="container">
-            <div class="navbar-holder">
-
-                <a class="navbar-toggle collapsed" href="#mmenu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-
-                <nav class="navbar-menu">
-
-                    <!-- <div class="header-main">
-                         <div class="container">
-                             <div class="logo">
-                                 <a href="index.blade.php">
-                                     <img alt="Logo" class="img-fluid" src="img/icons/logo-2.png"/>
-                                 </a>
-                             </div>
-                             <div class="contact-widget">
-                                 <div class="contact-list hidden-lg-tablet">
-                                     <button
-                                             class="au-btn au-btn-sm au-btn-orange hidden-md-phone"
-                                             onclick="window.location.href='compare-insurance.blade.php';">Get a Quote
-                                     </button>
-                                 </div>
-                             </div>
-
-                         </div>
-                     </div>-->
-
-                    <ul class="menu">
-                        <li class="dropdown">
-                            <a href="{{ url('/') }}">Home</a>
+            <form class="d-flex">
+                <input class="form-control me-lg-1" type="search" placeholder="Search" aria-label="Search">
+                <!-- Example split danger button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success">Search</button>
+                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/compare-insurance">Compare Insurance</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
                         </li>
-
-                        <li class="dropdown">
-                            <a href="{{ url('/insurance-products') }}">INSURANCE Products</a>
-
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="{{ url('/compare-insurance') }}">Compare Insurance</a>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="{{ url('/articles') }}">Articles</a>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="">Q & A</a>
-                        </li>
+                        <li><a class="dropdown-item" href="/motor-private-quotation">Motor Private Quotation</a></li>
+                        <li><a class="dropdown-item" href="/motor-commercial">Motor Commercial</a></li>
                     </ul>
-                </nav>
+                </div>
+            </form>
 
-                <!-- search start -->
-                <!--<form class="d-flex">
-                    <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>-->
-                <!-- search end -->
-
-            </div>
         </div>
+
+
     </div>
-</header>
-<!-- End header main-->
+</nav>

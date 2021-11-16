@@ -23,7 +23,9 @@
                         <h5 class="text-white bold">Compare Insurance</h5>
                         <p class="text-white"> Compare Insurance Quotes and get the best deal <br/> from over 50
                             Insurance Companies</p>
-                        <button class="bt btn-warning">Compare</button>
+                        <button class="bt btn-warning btn-lg" onclick="window.location.href='compare-insurance';">
+                            Compare
+                        </button>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
@@ -32,7 +34,9 @@
                         <h5 class="text-white bold">Why We Invest</h5>
                         <p class="text-white"> We have brought together top insuranceExperts to
                             <br/>provide you the best free advise on insurance and finance matters</p>
-                        <button class="bt btn-warning">Invest</button>
+                        <button class="bt btn-primary btn-lg" onclick="window.location.href='underconstruction';">
+                            Invest
+                        </button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -42,7 +46,8 @@
                         <p class="text-white">Search our Database of our 1000 answered Insurance Questions,
                             <br/> or better still ask your question on our platform and
                             <br/> one of our export will sorely answer you within 24 hours</p>
-                        <button class="bt btn-warning">Q&A</button>
+                        <button class="bt btn-success btn-lg" onclick="window.location.href='underconstruction';">Q&A
+                        </button>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 @extends("layouts.master")
 
 @section('title')
-   Motor Private Quotation
+    Motor Private Quotation
 @endsection
 
 @section('content')

@@ -57,7 +57,7 @@
 <body>
 
 
-@include('partials.navbar3')
+@include('partials.navbar')
 @yield('content')
 @include('partials.footer')
 

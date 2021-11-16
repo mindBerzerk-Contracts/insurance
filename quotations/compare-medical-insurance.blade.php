@@ -37,7 +37,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-wheelchair"></i>
+                                <i class="fas fa-hand-holding-heart"></i>
                             </div>
                             <div class="title">
                                 <a href="/underconstruction">Seniors</a>
@@ -58,7 +58,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-user-md"></i>
+                                <i class="fas fa-users"></i>
                             </div>
                             <div class="title">
                                 <a href="/underconstruction">Normal</a>
@@ -79,7 +79,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-users"></i>
+                                <i class="fas fa-baby"></i>
                             </div>
                             <div class="title">
                                 <a href="/underconstruction">Children</a>

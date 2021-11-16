@@ -63,7 +63,7 @@
 
 <body>
 
-@include('partials.navbar')
+@include('partials.navbarold')
 
 @yield('content')
 
