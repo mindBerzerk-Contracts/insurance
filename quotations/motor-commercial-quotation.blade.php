@@ -70,7 +70,7 @@
                                         </label>
                                         {{-- @foreach ($commercialResponseBody as $commercialResponse)--}}
                                         <input type="number" class="form-control" id="class" name="class" min="1"
-                                               max="5" placeholder="between 1 and 5" required>
+                                               max="5" placeholder="class" required>
                                         {{-- @endforeach--}}
                                         <div class="invalid-tooltip">
                                             Please provide a Class.
