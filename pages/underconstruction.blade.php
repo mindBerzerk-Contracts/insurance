@@ -5,7 +5,7 @@
 @endsection
 
 @section("content")
-    <div class="container p-0 d-flex align-items-center vh-100 justify-content-center">
+    <div class="container p-0 d-flex align-items-center vh-180 justify-content-center">
         <div class="row w-100">
             <div class="col-md-12 text-center">
                 <div class="underconstruction">
