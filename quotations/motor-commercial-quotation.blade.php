@@ -66,6 +66,19 @@
 
                                     <div class="col-md-12 position-relative">
                                         <label for="validationTooltip03" class="form-label text-white">
+                                            Vehicle Use
+                                        </label>
+                                        {{-- @foreach ($commercialResponseBody as $commercialResponse)--}}
+                                        <input type="number" class="form-control" id="class" name="class" min="1"
+                                               max="5" placeholder="between 1 and 5" required>
+                                        {{-- @endforeach--}}
+                                        <div class="invalid-tooltip">
+                                            Please provide a Class.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 position-relative">
+                                        <label for="validationTooltip03" class="form-label text-white">
                                             Vehicle Value
                                         </label>
                                         {{-- @foreach ($commercialResponseBody as $commercialResponse)--}}
@@ -89,18 +102,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-12 position-relative">
-                                        <label for="validationTooltip03" class="form-label text-white">
-                                            Type of Class
-                                        </label>
-                                        {{-- @foreach ($commercialResponseBody as $commercialResponse)--}}
-                                        <input type="number" class="form-control" id="class" name="class" min="1"
-                                               max="5" placeholder="between 1 and 5" required>
-                                        {{-- @endforeach--}}
-                                        <div class="invalid-tooltip">
-                                            Please provide a Class.
-                                        </div>
-                                    </div>
 
                                     {{--<div class="col-md-12 position-relative">
                                         <label for="validationTooltip04" class="form-label text-white">
@@ -120,7 +121,7 @@
                                     </div>--}}
 
 
-                                    <div class="col-md-12 position-relative">
+                                    {{--<div class="col-md-12 position-relative">
                                         <label for="validationTooltip04" class="form-label text-white">Make |
                                             Model</label>
                                         <select name="make" class="form-select dropdown" id="make" required>
@@ -135,7 +136,7 @@
                                         <div class="invalid-tooltip">
                                             Please select a valid Model | Model.
                                         </div>
-                                    </div>
+                                    </div>--}}
 
                                     <div class="col-md-12 position-relative">
                                         <label for="validationTooltip04" class="form-label text-white">Year</label>

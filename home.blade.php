@@ -66,7 +66,7 @@
 
 
         <!-- PRODUCT, STYLE 1-->
-        <section class="product product-layout style-1">
+       {{-- <section class="product product-layout style-1">
             <div class="container">
                 <div class="heading">
                     <h3 class="heading-section">Our Products</h3>
@@ -199,12 +199,15 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- END PRODUCT, STYLE 1-->
+        </section>--}}
+    <!-- END PRODUCT, STYLE 1-->
 
         <!-- PARTNER-->
         <div class="partner partner-layout style-1">
             <div class="container">
+                <div class="heading">
+                    <h3 class="heading-section">Our Partners</h3>
+                </div>
                 <div
                     class="partner-list owl-carousel"
                     data-center="0"

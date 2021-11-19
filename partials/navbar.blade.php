@@ -38,21 +38,9 @@
             <form class="d-flex">
                 <input class="form-control me-lg-1" type="search" placeholder="Search" aria-label="Search">
                 <!-- Example split danger button -->
-                <div class="btn-group">
-                    <button type="button" class="btn btn-success">Search</button>
-                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/compare-insurance">Compare Insurance</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="/motor-private-quotation">Motor Private Quotation</a></li>
-                        <li><a class="dropdown-item" href="/motor-commercial">Motor Commercial</a></li>
-                    </ul>
-                </div>
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
             </form>
 
         </div>
