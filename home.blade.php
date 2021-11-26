@@ -7,200 +7,58 @@
 @section("content")
     <div class="page-content home-page-1">
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <!-- END OF SLIDER WRAPPER-->
+        <div id="CarouselSlider" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#CarouselSlider" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#CarouselSlider" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#CarouselSlider" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#CarouselSlider" data-bs-slide-to="3"
                         aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="{{asset('img/slider/compare-1900.png')}}" class="d-block w-100" alt="caption">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-white bold">Compare Insurance</h5>
-                        <p class="text-white"> Compare Insurance Quotes and get the best deal <br/> from over 50
-                            Insurance Companies</p>
-                        <button class="bt btn-warning btn-lg" onclick="window.location.href='compare-insurance';">
-                            Compare
-                        </button>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="{{asset('img/slider/invest-1900.png')}}" class="d-block w-100" alt="caption">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-white bold">Why We Invest</h5>
-                        <p class="text-white"> We have brought together top insuranceExperts to
-                            <br/>provide you the best free advise on insurance and finance matters</p>
-                        <button class="bt btn-primary btn-lg" onclick="window.location.href='underconstruction';">
-                            Invest
-                        </button>
+                <div class="carousel-item active">
+                    <img src="{{asset('img/slider/compare-1900.png')}}" class="d-block w-100" alt="Carousel Two">
+                    <div class="carousel-caption text-white d-none d-md-block col-6">
+                        <h3 class="fs-1">Compare Insurance</h3>
+                        <p>Compare Insurance Quotes and get the best deal from over 50 Insurance Companies.</p>
+                        <a href="compare-insurance" class="btn btn-primary mt-3">Start Now</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('img/slider/questions-1900.png')}}" class="d-block w-100" alt="caption">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-white bold">Got a Insurance Question</h5>
-                        <p class="text-white">Search our Database of our 1000 answered Insurance Questions,
+                    <img src="{{asset('img/slider/invest-1900.png')}}" class="d-block w-100" alt="Carousel One">
+                    <div class="carousel-caption text-white d-none d-md-block col-6">
+                        <h3 class="fs-1">Why We Invest</h3>
+                        <p>We have brought together top insuranceExperts to
+                            <br/>provide you the best free advise on insurance and finance matters.</p>
+                        <a href="#" class="btn btn-warning mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{asset('img/slider/questions-1900.png')}}" class="d-block w-100" alt="Carousel Three">
+                    <div class="carousel-caption text-white d-none d-md-block col-6">
+                        <h3 class="fs-1">Got an Insurance Question?</h3>
+                        <p> Search our Database of our 1000 answered Insurance Questions,
                             <br/> or better still ask your question on our platform and
-                            <br/> one of our export will sorely answer you within 24 hours</p>
-                        <button class="bt btn-success btn-lg" onclick="window.location.href='underconstruction';">Q&A
-                        </button>
+                            <br/> one of our export will sorely answer you within 24 hours
+                            <br/></p>
+                        <a href="#" class="btn btn-success mt-3">Search Now</a>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselSlider" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#CarouselSlider" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- END OF SLIDER WRAPPER-->
 
-
-        <!-- PRODUCT, STYLE 1-->
-       {{-- <section class="product product-layout style-1">
-            <div class="container">
-                <div class="heading">
-                    <h3 class="heading-section">Our Products</h3>
-                </div>
-                <div class="sub-heading">
-                    <span>We have brought together top insurance Experts
-                        <br/>to provide you the best free advise on insurance and finance matters.</span>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-1 match-item">
-                            <a class="image" href="/insurance-details">
-                                <img
-                                    alt="Car Insurance"
-                                    class="img-fluid"
-                                    src="{{asset('img/product/car.png') }}"
-                                />
-                            </a>
-                            <div class="title">
-                                <a href="/insurance-details">Car Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>
-                                    Insurance fraud puts an extra ks7000 on the price of every
-                                    annual car insurance premium.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-1 match-item">
-                            <a class="image" href="/insurance-details">
-                                <img
-                                    alt="Life Insurance"
-                                    class="img-fluid"
-                                    src="{{asset('img/product/life.png') }}"
-                                />
-                            </a>
-                            <div class="title">
-                                <a href="/insurance-details">Life Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>
-                                    If you have a partner and children, then the two of you
-                                    should think about life insurance
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-1 match-item">
-                            <a class="image" href="/insurance-details">
-                                <img
-                                    alt="Home Insurance"
-                                    class="img-fluid"
-                                    src="{{asset('img/product/home.png') }}"
-                                />
-                            </a>
-                            <div class="title">
-                                <a href="/insurance-details">Home Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>
-                                    We'll rebuild or repair your home if it's damaged or
-                                    destroyed.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-1 match-item">
-                            <a class="image" href="/insurance-details">
-                                <img
-                                    alt="Travel Insurance"
-                                    class="img-fluid"
-                                    src="{{asset('img/product/travel.png') }}"
-                                />
-                            </a>
-                            <div class="title">
-                                <a href="/insurance-details">Travel Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>
-                                    We can help you find the best plan for your trip and your
-                                    budget.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-1 match-item">
-                            <a class="image" href="/insurance-details">
-                                <img
-                                    alt="Business Insurance"
-                                    class="img-fluid"
-                                    src="{{asset('img/product/business.png') }}"
-                                />
-                            </a>
-                            <div class="title">
-                                <a href="/insurance-details">Business Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>
-                                    In truth, there are certain forms of insurance that are an
-                                    absolute requirement for all businesses
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-1 match-item">
-                            <a class="image" href="/insurance-details">
-                                <img
-                                    alt="Landlord Insurance"
-                                    class="img-fluid"
-                                    src="{{asset('img/product/landlord.png') }}"
-                                />
-                            </a>
-                            <div class="title">
-                                <a href="/insurance-details">Landlord Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>
-                                    Our rental property insurance protects your property from
-                                    damages
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>--}}
-    <!-- END PRODUCT, STYLE 1-->
 
         <!-- PARTNER-->
         <div class="partner partner-layout style-1">

@@ -1,7 +1,7 @@
 @extends("layouts.master")
 
 @section("title")
-    Compare Medical
+   Medical Insurance
 @endsection
 
 @section("content")
@@ -17,9 +17,11 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item">
+                        <i class="fas fa-building"></i>
                         <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
+                        <i class="fa fa-heartbeat"></i>
                         <a href="/compare-motor-commercial">Medical Insurance</a>
                     </li>
                 </ul>
@@ -30,24 +32,20 @@
         <!-- PRODUCT, STYLE 4-->
         <section class="product product-layout style-3">
             <div class="container">
-                <div class="heading">
-                    <h3 class="heading-section">Medical Insurance</h3>
-                </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fas fa-hand-holding-heart"></i>
+                                <i class="fas fa-walking"></i>
                             </div>
                             <div class="title">
                                 <a href="/underconstruction">Seniors</a>
                             </div>
                             <div class="content">
-                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
-                                    premium.</p>
+                                <p></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='underconstruction';"
                                         type="button">Get Quotation
                                 </button>
@@ -64,11 +62,10 @@
                                 <a href="/underconstruction">Normal</a>
                             </div>
                             <div class="content">
-                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
-                                    premium.</p>
+                                <p></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='underconstruction';"
                                         type="button">Get Quotation
                                 </button>
@@ -85,11 +82,10 @@
                                 <a href="/underconstruction">Children</a>
                             </div>
                             <div class="content">
-                                <p>If you have a partner and children, then the two of you should think about life
-                                    insurance</p>
+                                <p></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='underconstruction';"
                                         type="button">Get Quotation
                                 </button>

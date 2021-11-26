@@ -30,9 +30,6 @@
         <!-- PRODUCT, STYLE 4-->
         <section class="product product-layout style-3">
             <div class="container">
-                <div class="heading">
-                    <h3 class="heading-section">Motor Commercial Insurance</h3>
-                </div>
                 <div class="row">
 
                     <div class="col-md-4 col-sm-6">
@@ -47,7 +44,7 @@
                                 <p><strong>Class 1</strong></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='motor-commercial-quotation';"
                                         type="button">Get Tanker Quotation
                                 </button>
@@ -67,7 +64,7 @@
                                 <p><strong>Class 2</strong></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='motor-commercial-quotation';"
                                         type="button">Get Institutional Vehicles Quotation
                                 </button>
@@ -87,7 +84,7 @@
                                 <p><strong>Class 3</strong></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='motor-commercial-quotation';"
                                         type="button">Get General Cartage Quotation
                                 </button>
@@ -107,7 +104,7 @@
                                 <p><strong>Class 4</strong></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='motor-commercial-quotation';"
                                         type="button">Get Own Goods Quotation
                                 </button>
@@ -127,7 +124,7 @@
                                 <p><strong>Class 5</strong></p>
                             </div>
                             <div class="view-more">
-                                <button class="btn btn-outline-warning"
+                                <button class="btn btn-warning"
                                         onclick="window.location.href='motor-commercial-quotation';"
                                         type="button">Get Online Taxi Quotation
                                 </button>

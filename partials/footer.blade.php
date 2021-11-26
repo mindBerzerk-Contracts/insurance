@@ -63,7 +63,7 @@
                         <h3>Socials</h3>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Subscribe" aria-label="Search">
-                            <button class="btn btn-outline-warning" type="submit">Submit</button>
+                            <button class="btn btn-warning" type="submit">Submit</button>
                         </form>
 
                         <ul class="social-list">
