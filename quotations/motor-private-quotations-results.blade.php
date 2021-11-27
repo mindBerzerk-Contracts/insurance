@@ -18,6 +18,7 @@
                     <a href="/motor-private-quotation">Motor Private Quotation</a>
                 </li>
                 <li class="au-breadcrumb-item active">
+                    <i class="fas fa-poll"></i>
                     <a href="/motor-private-quotations-results">Motor Private Quotations Results</a>
                 </li>
             </ul>

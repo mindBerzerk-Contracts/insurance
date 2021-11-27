@@ -14,11 +14,11 @@
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <i class="fa fa-car"></i>
+                    <i class="fa fa-bus"></i>
                     <a href="/motor-commercial-quotation">Motor Commercial Quotation</a>
                 </li>
                 <li class="au-breadcrumb-item">
-                    <i class="fa fa-question-circle"></i>
+                    <i class="fas fa-poll"></i>
                     <a href="/motor-commercial-quotations-results">Motor Commercial Quotations Results</a>
                 </li>
             </ul>

@@ -20,6 +20,7 @@
                         <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
+                        <i class="fas fa-car"></i>
                         <a href="/compare-insurance">Motor Private Quotation</a>
                     </li>
                 </ul>
@@ -32,12 +33,14 @@
         <div class="quote-container">
 
             <div class="container">
+
                 @if($errors->any())
 
-                    <div class="alert alert-danger">
+                    <div class="alert alert-danger alert-dismissible fade show" role='alert'>
                         <h4>{{$errors->first()}}</h4>
                     </div>
                 @endif
+
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- GET A QUOTE, STYLE 3-->

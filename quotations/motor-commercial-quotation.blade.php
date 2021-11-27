@@ -24,6 +24,7 @@
                         <a href="/motor-commercial">Motor Commercial Quotation</a>
                     </li>
                     <li class="au-breadcrumb-item active">
+                        <i aria-hidden="true" class="fa fa-bus"></i>
                         <a href="/motor-commercial-quotation">Motor Commercial Quotation</a>
                     </li>
                 </ul>
@@ -40,9 +41,9 @@
         <div class="quote-container">
 
             <div class="container">
-                @if($errors->any())
 
-                    <div class="alert alert-danger">
+                @if($errors->any())
+                    <div class="alert alert-danger alert-dismissible fade show" role='alert'>
                         <h4>{{$errors->first()}}</h4>
                     </div>
                 @endif
