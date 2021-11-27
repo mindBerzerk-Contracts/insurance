@@ -28,15 +28,17 @@
     <!-- END HEADING PAGE-->
     <div class="page-content services-detail-1">
         <div class="container">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong> Total Results!</strong> {{$privateResponseBody["inputs"]["result size"] }}
+            </div>
 
             <div class="post-paragraph p1">
                 <div class="post-heading">
                     <h3>Motor Private Quotation Results</h3>
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="post-with-image">
                         <div class="post-paragraph">
                             <div class="post-heading">
@@ -49,7 +51,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="post-with-image">
                         <div class="post-paragraph">
                             <div class="post-heading">
@@ -62,7 +64,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="post-with-image">
                         <div class="post-paragraph">
                             <div class="post-heading">
@@ -75,22 +77,6 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="post-with-image">
-                        <div class="post-paragraph">
-                            <div class="post-heading">
-                                <h3>Total Results</h3>
-                            </div>
-                            <div class="post-content">
-                                <p>{{$privateResponseBody["inputs"]["result size"] }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {{--  <h5>Vehicle Value:<strong>KSH {{number_format($privateResponseBody["inputs"]["vehicleValue"],2) }}</strong> Vehicle
-                      Age:<strong> {{$privateResponseBody["inputs"]["vehicleAge"] }} years</strong></h5>
-                  <hr/>--}}
             </div>
 
 
@@ -233,6 +219,8 @@
 
 
             @endforeach
+
+
         </div>
 
     </div>

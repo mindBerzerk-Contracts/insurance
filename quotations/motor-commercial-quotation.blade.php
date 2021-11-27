@@ -84,7 +84,7 @@
                                         </label>
                                         {{-- @foreach ($commercialResponseBody as $commercialResponse)--}}
                                         <input type="number" class="form-control" id="vehicleValue" name="vehicleValue"
-                                               placeholder="Ksh" required>
+                                               placeholder="000,000" required>
                                         {{-- @endforeach--}}
                                         <div class="invalid-tooltip">
                                             Please provide a valid Car Value.
