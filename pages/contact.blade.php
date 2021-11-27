@@ -131,27 +131,27 @@
                                                         <ul class="social social-dark social-bg-dark">
                                                             <li class="facebook">
                                                                 <a href="http://facebook.com">
-                                                                    <i class="fa fa-facebook"></i>
+                                                                    <i class="fab fa-facebook-square"></i>
                                                                 </a>
                                                             </li>
                                                             <li class="twitter">
                                                                 <a href="http://twitter.com">
-                                                                    <i class="fa fa-twitter"></i>
+                                                                    <i class="fab fa-twitter-square"></i>
                                                                 </a>
                                                             </li>
                                                             <li class="google-plus">
                                                                 <a href="http://plus.google.com">
-                                                                    <i class="fa fa-google-plus"></i>
+                                                                    <i class="fab fa-google-plus-square"></i>
                                                                 </a>
                                                             </li>
                                                             <li class="youtube">
                                                                 <a href="http://youtube.com">
-                                                                    <i class="fa fa-youtube-play"></i>
+                                                                    <i class="fab fa-youtube-square"></i>
                                                                 </a>
                                                             </li>
                                                             <li class="linkedin">
                                                                 <a href="http://linkedin.com">
-                                                                    <i class="fa fa-linkedin"></i>
+                                                                    <i class="fab fa-linkedin"></i>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -192,28 +192,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact_layout_8">
-            <div class="contact-wrapper">
-                <div class="container">
-
-                    <div class="contact-map">
-                        <h3 class="text-cap">Find Us On Google</h3>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="sidebar-left sidebar-control-map">
-                                    <div id="controls"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="google-map" id="google_map" style="width:100%;height:320px;"></div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>

@@ -62,8 +62,9 @@
                     <div class="social-widget">
                         <h3>Socials</h3>
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Subscribe" aria-label="Search">
-                            <button class="btn btn-warning" type="submit">Submit</button>
+                            <input class="form-control me-2" type="search" placeholder="Subscribe" aria-label="Search"
+                                   autofocus>
+                            <button class="btn btn-primary" type="submit">Submit</button>
                         </form>
 
                         <ul class="social-list">
@@ -102,9 +103,9 @@
     <div class="sub-footer">
         <div class="container">
             <p class="copyright">
-                Copyright © 2021 Designed by <a target="_blank" rel="noopener noreferrer"
-                                                href="https://georgethedeveloper.tech/#/home">georgethedeveloper</a> All
-                rights reserved.
+                Copyright © {{ now()->year }} Designed by
+                <a target="_blank" rel="noopener noreferrer" href="https://georgethedeveloper.tech">
+                    georgethedeveloper</a> All rights reserved.
             </p>
             <ul class="quick-link">
                 <li>

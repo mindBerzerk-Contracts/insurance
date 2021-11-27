@@ -225,7 +225,7 @@
                         </div>
 
                         <div class="col-sm-2">
-                            <a href="#" class="btn btn-outline-success">I am Interested</a>
+                            <a href="#" class="btn btn-success">I am Interested</a>
                         </div>
                     </div>
 

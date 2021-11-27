@@ -23,7 +23,7 @@
                 <div class="carousel-item active">
                     <img src="{{asset('img/slider/compare-1900.png')}}" class="d-block w-100" alt="Carousel Two">
                     <div class="carousel-caption text-white d-none d-md-block col-6">
-                        <h3 class="fs-1">Compare Insurance</h3>
+                        <h3 class="fs-4 fw-bold">Compare Insurance</h3>
                         <p>Compare Insurance Quotes and get the best deal from over 50 Insurance Companies.</p>
                         <a href="compare-insurance" class="btn btn-primary mt-3">Start Now</a>
                     </div>
@@ -31,7 +31,7 @@
                 <div class="carousel-item">
                     <img src="{{asset('img/slider/invest-1900.png')}}" class="d-block w-100" alt="Carousel One">
                     <div class="carousel-caption text-white d-none d-md-block col-6">
-                        <h3 class="fs-1">Why We Invest</h3>
+                        <h3 class="fs-4 fw-bold">Why We Invest</h3>
                         <p>We have brought together top insuranceExperts to
                             <br/>provide you the best free advise on insurance and finance matters.</p>
                         <a href="#" class="btn btn-warning mt-3">Learn More</a>
@@ -40,7 +40,7 @@
                 <div class="carousel-item">
                     <img src="{{asset('img/slider/questions-1900.png')}}" class="d-block w-100" alt="Carousel Three">
                     <div class="carousel-caption text-white d-none d-md-block col-6">
-                        <h3 class="fs-1">Got an Insurance Question?</h3>
+                        <h3 class="fs-5 fw-bold">Got an Insurance Question?</h3>
                         <p> Search our Database of our 1000 answered Insurance Questions,
                             <br/> or better still ask your question on our platform and
                             <br/> one of our export will sorely answer you within 24 hours
@@ -64,51 +64,44 @@
         <div class="partner partner-layout style-1">
             <div class="container">
                 <div class="heading">
-                    <h3 class="heading-section">Our Partners</h3>
+                    <h3 class="heading-section">Skelta Trusted Partners</h3>
                 </div>
-                <div
-                    class="partner-list owl-carousel"
-                    data-center="0"
-                    data-col-lg="4"
-                    data-col-md="2"
-                    data-col-sm="1"
-                    data-items="5"
-                >
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
-                        </a>
+
+                <div id="CarouselSliderPartner" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                     data-bs-interval="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col"><img src="{{asset('img/partner/1.png') }}" alt="1 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/2.png') }}" alt="2 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/13.png') }}" alt="3 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/4.png') }}" alt="4 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/5.png') }}" alt="5 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/6.png') }}" alt="6 slide"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><img src="{{asset('img/partner/7.png') }}" alt="4 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/8.png') }}" alt="5 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/9.png') }}" alt="6 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/10.png') }}" alt="4 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/11.png') }}" alt="5 slide"></div>
+                                <div class="col"><img src="{{asset('img/partner/12.png') }}" alt="6 slide"></div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
-                        </a>
-                    </div>
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#CarouselSliderPartner"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true" hidden></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#CarouselSliderPartner"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true" hidden></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>

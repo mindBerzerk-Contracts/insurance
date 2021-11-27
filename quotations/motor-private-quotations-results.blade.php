@@ -27,6 +27,7 @@
     <!-- END HEADING PAGE-->
     <div class="page-content services-detail-1">
         <div class="container">
+
             <div class="post-paragraph p1">
                 <div class="post-heading">
                     <h3>Motor Private Quotation Results</h3>
@@ -98,67 +99,75 @@
 
                     <div class="row">
 
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <img class="card-img" src="{{ asset('img/partner/partner-1.png') }}"
-                                         alt="Insurance Logo">
+                        <div class="col-sm-4">
 
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="card-img" style="padding: 15px 15px 15px 15px;"
+                                         src="{{ asset('img/partner/partner-1.png') }}"
+                                         alt="Insurance Logo">
                                 </div>
 
-                                <div class="col-sm-5">
+                                <div class="col-sm-6">
                                     <div class="card-body">
                                         <div class="post-with-image">
                                             <div class="post-paragraph">
                                                 <div class="post-heading">
                                                     <h4>{{$privateResponse["key"]}}</h4>
                                                 </div>
-                                                <p class="card-text"> Premium :
+                                                Premium:<p class="fw-bold">
                                                     <strong>
                                                         KSH {{number_format($privateResponse["premium"],2)}}</strong>
                                                 </p>
                                             </div>
 
-                                            <p class="card-text"> Cover Type : {{$privateResponse["covertype"]}}</p>
+                                            Cover Type : <p class="fw-bold"> {{$privateResponse["covertype"]}}</p>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                            <div class="row">
+                                <div class="accordion accordion-flush" id='accordionExample-{{$privateResponse["id"]}}'>
 
-                        <div class="col-sm-5">
-
-                            <div class="accordion" id='accordionExample-{{$privateResponse["id"]}}'>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne-{{$privateResponse['id']}}">
-                                        <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne-{{$privateResponse['id']}}"
-                                                aria-expanded="false"
-                                                aria-controls="collapseOne-{{$privateResponse['id']}}">
-                                            Additional Benefits
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne-{{$privateResponse['id']}}" class="accordion-collapse collapse"
-                                         aria-labelledby="headingOne-{{$privateResponse['id']}}"
-                                         data-bs-parent="#accordionExample-{{$privateResponse['id']}}">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                @foreach ($privateResponse["Additional-covers"] as $key=>$value)
-                                                    <li><p><span class="bold"> {{ $key }} : </span> {{ $value }} </p>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne-{{$privateResponse['id']}}">
+                                            <button class="accordion-button collapsed fw-bold active" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne-{{$privateResponse['id']}}"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseOne-{{$privateResponse['id']}}">
+                                                Additional Benefits
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne-{{$privateResponse['id']}}"
+                                             class="accordion-collapse collapse show"
+                                             aria-labelledby="headingOne-{{$privateResponse['id']}}"
+                                             data-bs-parent="#accordionExample-{{$privateResponse['id']}}">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    @foreach ($privateResponse["Additional-covers"] as $key=>$value)
+                                                        <li><p><span class="bold"> {{ $key }} : </span> {{ $value }}
+                                                            </p>
+                                                        </li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
+
+
                                 </div>
 
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="accordion accordion-flush" id='accordionExample-{{$privateResponse["id"]}}'>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo-{{$privateResponse['id']}}">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed fw-bold" type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target="#collapseTwo-{{$privateResponse['id']}}"
                                                 aria-expanded="false"
@@ -166,7 +175,8 @@
                                             Limits Of Liability
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo-{{$privateResponse['id']}}" class="accordion-collapse collapse"
+                                    <div id="collapseTwo-{{$privateResponse['id']}}"
+                                         class="accordion-collapse collapse show"
                                          aria-labelledby="headingTwo-{{$privateResponse['id']}}"
                                          data-bs-parent="#accordionExample-{{$privateResponse['id']}}">
                                         <div class="accordion-body">
@@ -182,7 +192,7 @@
 
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree-{{$privateResponse['id']}}">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed fw-bold" type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target="#collapseThree-{{$privateResponse['id']}}"
                                                 aria-expanded="false"
@@ -210,12 +220,15 @@
                         </div>
 
                         <div class="col-sm-2">
-                            <a href="#" class="btn btn-outline-success">I am Interested</a>
+                            <a href="#" class="btn btn-success" style="margin-top:180%;">I am Interested</a>
                         </div>
+
+
                     </div>
 
 
                 </div>
+
 
 
             @endforeach

@@ -34,7 +34,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/underconstruction">
+                    <a class="nav-link active" aria-current="page" href="/intermediary">
                         Intermediary
                     </a>
                 </li>
@@ -42,7 +42,7 @@
 
             <form class="d-flex">
                 <input class="form-control me-lg-1" type="search" placeholder="Search" aria-label="Search"
-                       style="height:50px;font-size:14pt;">
+                       style="height:50px;font-size:14pt;" autofocus>
                 <!-- Example split danger button -->
                 <button type="submit" class="searchButton">
                     <i class="fa fa-search"></i>

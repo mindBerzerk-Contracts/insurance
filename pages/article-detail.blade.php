@@ -17,10 +17,11 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item">
-                        <i aria-hidden="true" class="fa fa-file-text"></i>
+                        <i class="fas fa-newspaper"></i>
                         <a href="/articles">Articles</a>
                     </li>
                     <li class="au-breadcrumb-item active">
+                        <i class="fas fa-file-alt"></i>
                         <a href="/article-detail">Article Detail</a>
                     </li>
                 </ul>

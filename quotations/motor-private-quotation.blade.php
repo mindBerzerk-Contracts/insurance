@@ -16,7 +16,7 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item">
-                        <i aria-hidden="true" class="fa fa-university"></i>
+                        <i class="fas fa-university"></i>
                         <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
@@ -56,11 +56,12 @@
                                     </div>
 
                                     <div class="col-md-12 position-relative">
-                                        <label for="validationTooltip03" class="form-label text-white">Vehicle
-                                            Value</label>
+                                        <label for="validationTooltip03" class="form-label text-white">
+                                            Vehicle Value
+                                        </label>
                                         {{-- @foreach ($privateResponseBody as $privateResponse)--}}
                                         <input type="number" class="form-control" id="vehicleValue" name="vehicleValue"
-                                               required>
+                                               value="" placeholder="000,000" required>
                                         {{-- @endforeach--}}
                                         <div class="invalid-tooltip">
                                             Please provide a valid Car Value.

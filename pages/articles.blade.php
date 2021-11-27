@@ -16,6 +16,7 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item active">
+                        <i class="fas fa-newspaper"></i>
                         <a href="/articles">Articles</a>
                     </li>
                 </ul>

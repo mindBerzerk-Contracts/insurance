@@ -17,7 +17,7 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-university"></i>
                         <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                 </ul>

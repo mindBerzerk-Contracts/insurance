@@ -17,9 +17,11 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item">
+                        <i class="fa fa-university"></i>
                         <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
+                        <i class="fa fa-bus"></i>
                         <a href="motor-commercial">Motor Commercial Insurance</a>
                     </li>
                 </ul>
