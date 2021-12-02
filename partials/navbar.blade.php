@@ -3,7 +3,7 @@
     <div class="container-fluid">
 
         <a class="navbar-brand" href="#">
-            <img src="{{asset('img/icons/skelta.png')}}" alt="">
+            SKELTA{{--<img src="{{asset('img/icons/skelta.png')}}" alt="">--}}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,12 +41,13 @@
             </ul>
 
             <form class="d-flex">
-                <input class="form-control me-lg-1" type="search" placeholder="Search" aria-label="Search"
+                <input class="form-control me-lg-1" type="search" placeholder="search here " aria-label="Search"
                        style="height:50px;font-size:14pt;" autofocus>
                 <!-- Example split danger button -->
                 <button type="submit" class="searchButton">
                     <i class="fa fa-search"></i>
                 </button>
+                <span>Democratizing Health and Insurance</span>
             </form>
 
         </div>
