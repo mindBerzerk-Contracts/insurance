@@ -6,7 +6,8 @@
                 <div class="col-md-6 col-sm-6">
                     <div class="services-widget">
                         <div class="logo">
-                            <img alt="Logo" src="{{asset('img/icons/logo-2.png') }}"/>
+                            {{--<img alt="Logo" src="{{asset('img/icons/logo-2.png') }}"/>--}}
+                            <h1>Skelta</h1>
                         </div>
                         <div class="services-list">
                             <div class="row">
@@ -53,7 +54,7 @@
                                 <span class="bold">Address:</span>8th floor, Nairobi
                             </p>
                             <p><span class="bold">Phone:</span>(+254) 96 716 6879</p>
-                            <p><span class="bold">Email:</span>contact@site.com</p>
+                            <p><span class="bold">Email:</span>skelta@site.com</p>
                         </div>
                     </div>
                 </div>
@@ -62,9 +63,10 @@
                     <div class="social-widget">
                         <h3>Socials</h3>
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Subscribe" aria-label="Search"
+                            <input style="border-radius: 20px;" class="form-control me-2" type="search"
+                                   placeholder="Subscribe" aria-label="Search"
                                    autofocus>
-                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button style="border-radius: 20px;" class="btn btn-primary" type="submit">Submit</button>
                         </form>
 
                         <ul class="social-list">
